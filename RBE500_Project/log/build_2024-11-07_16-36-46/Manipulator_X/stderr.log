@@ -1,0 +1,5 @@
+  File "/home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X/ros_wrapper.py", line 4
+    import Manipulator_X import kinematic_library
+                         ^^^^^^
+SyntaxError: invalid syntax
+

@@ -1,0 +1,3 @@
+[console_scripts]
+joint_listener = Manipulator_X.ros_wrapper:main
+

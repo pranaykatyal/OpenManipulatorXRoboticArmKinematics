@@ -1,0 +1,30 @@
+[0.362s] Invoking command in '/home/lucasb/RBE500_Project/src/Manipulator_X': PYTHONPATH=/home/lucasb/RBE500_Project/build/Manipulator_X/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/Manipulator_X build --build-base /home/lucasb/RBE500_Project/build/Manipulator_X/build install --record /home/lucasb/RBE500_Project/build/Manipulator_X/install.log --single-version-externally-managed install_data
+[0.493s] running egg_info
+[0.494s] writing ../../build/Manipulator_X/Manipulator_X.egg-info/PKG-INFO
+[0.494s] writing dependency_links to ../../build/Manipulator_X/Manipulator_X.egg-info/dependency_links.txt
+[0.494s] writing entry points to ../../build/Manipulator_X/Manipulator_X.egg-info/entry_points.txt
+[0.494s] writing requirements to ../../build/Manipulator_X/Manipulator_X.egg-info/requires.txt
+[0.494s] writing top-level names to ../../build/Manipulator_X/Manipulator_X.egg-info/top_level.txt
+[0.495s] reading manifest file '../../build/Manipulator_X/Manipulator_X.egg-info/SOURCES.txt'
+[0.495s] adding license file 'LICENSE'
+[0.495s] writing manifest file '../../build/Manipulator_X/Manipulator_X.egg-info/SOURCES.txt'
+[0.496s] running build
+[0.496s] running build_py
+[0.496s] copying Manipulator_X/ros_wrapper.py -> /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X
+[0.496s] running install
+[0.496s] running install_lib
+[0.496s] copying /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X/ros_wrapper.py -> /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X
+[0.496s] byte-compiling /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X/ros_wrapper.py to ros_wrapper.cpython-310.pyc
+[0.497s] running install_data
+[0.497s]   File "/home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X/ros_wrapper.py", line 4
+[0.497s]     import Manipulator_X import kinematic_library
+[0.497s]                          ^^^^^^
+[0.497s] SyntaxError: invalid syntax
+[0.497s] 
+[0.497s] running install_egg_info
+[0.498s] removing '/home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X-0.0.0-py3.10.egg-info' (and everything under it)
+[0.498s] Copying ../../build/Manipulator_X/Manipulator_X.egg-info to /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X-0.0.0-py3.10.egg-info
+[0.498s] running install_scripts
+[0.511s] Installing joint_listener script to /home/lucasb/RBE500_Project/install/Manipulator_X/lib/Manipulator_X
+[0.511s] writing list of installed files to '/home/lucasb/RBE500_Project/build/Manipulator_X/install.log'
+[0.525s] Invoked command in '/home/lucasb/RBE500_Project/src/Manipulator_X' returned '0': PYTHONPATH=/home/lucasb/RBE500_Project/build/Manipulator_X/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/Manipulator_X build --build-base /home/lucasb/RBE500_Project/build/Manipulator_X/build install --record /home/lucasb/RBE500_Project/build/Manipulator_X/install.log --single-version-externally-managed install_data
