@@ -21,12 +21,10 @@ class Joint_Subscriber(Node):
         self.get_logger().info(f'The End Effector Pose is \n{pose}') # Posting the result to the terminal
 
 
-
 def main():
     rclpy.init()
     joint_sub = Joint_Subscriber() # initializing the subscriber object
     rclpy.spin(joint_sub)  # Running the node continously
     
-def inv_kin_main():
-    rclpy
-
+    
+  

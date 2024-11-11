@@ -1,0 +1,49 @@
+[0.351s] Invoking command in '/home/lucasb/RBE500_Project/src/Manipulator_X': PYTHONPATH=/home/lucasb/RBE500_Project/build/Manipulator_X/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/Manipulator_X build --build-base /home/lucasb/RBE500_Project/build/Manipulator_X/build install --record /home/lucasb/RBE500_Project/build/Manipulator_X/install.log --single-version-externally-managed install_data
+[0.482s] running egg_info
+[0.482s] creating ../../build/Manipulator_X/Manipulator_X.egg-info
+[0.482s] writing ../../build/Manipulator_X/Manipulator_X.egg-info/PKG-INFO
+[0.482s] writing dependency_links to ../../build/Manipulator_X/Manipulator_X.egg-info/dependency_links.txt
+[0.482s] writing entry points to ../../build/Manipulator_X/Manipulator_X.egg-info/entry_points.txt
+[0.482s] writing requirements to ../../build/Manipulator_X/Manipulator_X.egg-info/requires.txt
+[0.482s] writing top-level names to ../../build/Manipulator_X/Manipulator_X.egg-info/top_level.txt
+[0.482s] writing manifest file '../../build/Manipulator_X/Manipulator_X.egg-info/SOURCES.txt'
+[0.483s] reading manifest file '../../build/Manipulator_X/Manipulator_X.egg-info/SOURCES.txt'
+[0.483s] adding license file 'LICENSE'
+[0.484s] writing manifest file '../../build/Manipulator_X/Manipulator_X.egg-info/SOURCES.txt'
+[0.484s] running build
+[0.484s] running build_py
+[0.484s] creating /home/lucasb/RBE500_Project/build/Manipulator_X/build
+[0.484s] creating /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib
+[0.484s] creating /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X
+[0.484s] copying Manipulator_X/ros_wrapper.py -> /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X
+[0.484s] copying Manipulator_X/__init__.py -> /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X
+[0.484s] copying Manipulator_X/kinematic_library.py -> /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X
+[0.484s] copying Manipulator_X/inv_kin_client.py -> /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X
+[0.484s] copying Manipulator_X/inv_kin_server.py -> /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X
+[0.484s] running install
+[0.484s] running install_lib
+[0.485s] creating /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X
+[0.485s] copying /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X/ros_wrapper.py -> /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X
+[0.485s] copying /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X/__init__.py -> /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X
+[0.485s] copying /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X/kinematic_library.py -> /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X
+[0.485s] copying /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X/inv_kin_client.py -> /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X
+[0.485s] copying /home/lucasb/RBE500_Project/build/Manipulator_X/build/lib/Manipulator_X/inv_kin_server.py -> /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X
+[0.485s] byte-compiling /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X/ros_wrapper.py to ros_wrapper.cpython-310.pyc
+[0.485s] byte-compiling /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X/__init__.py to __init__.cpython-310.pyc
+[0.485s] byte-compiling /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X/kinematic_library.py to kinematic_library.cpython-310.pyc
+[0.486s] byte-compiling /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X/inv_kin_client.py to inv_kin_client.cpython-310.pyc
+[0.486s] byte-compiling /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X/inv_kin_server.py to inv_kin_server.cpython-310.pyc
+[0.486s] running install_data
+[0.486s] creating /home/lucasb/RBE500_Project/install/Manipulator_X/share/ament_index
+[0.486s] creating /home/lucasb/RBE500_Project/install/Manipulator_X/share/ament_index/resource_index
+[0.486s] creating /home/lucasb/RBE500_Project/install/Manipulator_X/share/ament_index/resource_index/packages
+[0.486s] copying resource/Manipulator_X -> /home/lucasb/RBE500_Project/install/Manipulator_X/share/ament_index/resource_index/packages
+[0.486s] copying package.xml -> /home/lucasb/RBE500_Project/install/Manipulator_X/share/Manipulator_X
+[0.486s] running install_egg_info
+[0.488s] Copying ../../build/Manipulator_X/Manipulator_X.egg-info to /home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages/Manipulator_X-0.0.0-py3.10.egg-info
+[0.488s] running install_scripts
+[0.501s] Installing inverse_client script to /home/lucasb/RBE500_Project/install/Manipulator_X/lib/Manipulator_X
+[0.501s] Installing inverse_server script to /home/lucasb/RBE500_Project/install/Manipulator_X/lib/Manipulator_X
+[0.501s] Installing joint_listener script to /home/lucasb/RBE500_Project/install/Manipulator_X/lib/Manipulator_X
+[0.501s] writing list of installed files to '/home/lucasb/RBE500_Project/build/Manipulator_X/install.log'
+[0.514s] Invoked command in '/home/lucasb/RBE500_Project/src/Manipulator_X' returned '0': PYTHONPATH=/home/lucasb/RBE500_Project/build/Manipulator_X/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucasb/RBE500_Project/install/Manipulator_X/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/Manipulator_X build --build-base /home/lucasb/RBE500_Project/build/Manipulator_X/build install --record /home/lucasb/RBE500_Project/build/Manipulator_X/install.log --single-version-externally-managed install_data

@@ -1,0 +1,20 @@
+[0.149s] Invoking command in '/home/lucasb/RBE500_Project/build/custom_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/RBE500_Project/install/Manipulator_X:/opt/ros/humble /usr/bin/cmake /home/lucasb/RBE500_Project/src/custom_messages -DCMAKE_INSTALL_PREFIX=/home/lucasb/RBE500_Project/install/custom_messages
+[0.159s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.240s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.256s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.257s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.261s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.267s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.274s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.297s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.301s] CMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[0.301s]   rosidl_generate_interfaces() the passed file 'geometry_msgs/Pose.msg'
+[0.301s]   doesn't exist relative to the CMAKE_CURRENT_SOURCE_DIR
+[0.301s]   '/home/lucasb/RBE500_Project/src/custom_messages'
+[0.301s] Call Stack (most recent call first):
+[0.301s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[0.301s] 
+[0.301s] 
+[0.301s] -- Configuring incomplete, errors occurred!
+[0.301s] See also "/home/lucasb/RBE500_Project/build/custom_messages/CMakeFiles/CMakeOutput.log".
+[0.304s] Invoked command in '/home/lucasb/RBE500_Project/build/custom_messages' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/RBE500_Project/install/Manipulator_X:/opt/ros/humble /usr/bin/cmake /home/lucasb/RBE500_Project/src/custom_messages -DCMAKE_INSTALL_PREFIX=/home/lucasb/RBE500_Project/install/custom_messages

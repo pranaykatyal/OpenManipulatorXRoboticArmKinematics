@@ -10,6 +10,8 @@ setup.py
 ../../build/Manipulator_X/Manipulator_X.egg-info/top_level.txt
 ../../build/Manipulator_X/Manipulator_X.egg-info/zip-safe
 Manipulator_X/__init__.py
+Manipulator_X/inv_kin_client.py
+Manipulator_X/inv_kin_server.py
 Manipulator_X/kinematic_library.py
 Manipulator_X/ros_wrapper.py
 resource/Manipulator_X

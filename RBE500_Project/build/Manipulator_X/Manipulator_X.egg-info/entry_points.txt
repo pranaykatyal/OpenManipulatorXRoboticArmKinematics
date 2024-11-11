@@ -1,3 +1,5 @@
 [console_scripts]
+inverse_client = Manipulator_X.inv_kin_client:main
+inverse_server = Manipulator_X.inv_kin_server:main
 joint_listener = Manipulator_X.ros_wrapper:main
 

@@ -16,6 +16,7 @@
   <exec_depend>math</exec_depend>
   <exec_depend>numpy</exec_depend>
   <depend>Manipulator_X.kinematic_library.py</depend>
+  <depend>custom_messages</depend>
 
   <export>
     <build_type>ament_python</build_type>

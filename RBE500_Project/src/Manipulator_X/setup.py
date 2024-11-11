@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        'joint_listener = Manipulator_X.ros_wrapper:main'
+        'joint_listener = Manipulator_X.ros_wrapper:main',
+        'inverse_server = Manipulator_X.inv_kin_server:main',
+        'inverse_client = Manipulator_X.inv_kin_client:main'
         ],
     },
 )
