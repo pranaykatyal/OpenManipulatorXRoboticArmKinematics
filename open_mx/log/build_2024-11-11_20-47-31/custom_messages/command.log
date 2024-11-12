@@ -1,0 +1,4 @@
+Invoking command in '/home/lucasb/open_mx/build/custom_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/open_mx/install/robot_omx:/opt/ros/humble /usr/bin/cmake --build /home/lucasb/open_mx/build/custom_messages -- -j20 -l20
+Invoked command in '/home/lucasb/open_mx/build/custom_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/open_mx/install/robot_omx:/opt/ros/humble /usr/bin/cmake --build /home/lucasb/open_mx/build/custom_messages -- -j20 -l20
+Invoking command in '/home/lucasb/open_mx/build/custom_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/open_mx/install/robot_omx:/opt/ros/humble /usr/bin/cmake --install /home/lucasb/open_mx/build/custom_messages
+Invoked command in '/home/lucasb/open_mx/build/custom_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/open_mx/install/robot_omx:/opt/ros/humble /usr/bin/cmake --install /home/lucasb/open_mx/build/custom_messages

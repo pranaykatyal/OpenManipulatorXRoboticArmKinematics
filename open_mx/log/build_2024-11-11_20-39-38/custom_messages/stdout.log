@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/custom_messages/custom_messages.egg-info
+writing ../../build/custom_messages/custom_messages.egg-info/PKG-INFO
+writing dependency_links to ../../build/custom_messages/custom_messages.egg-info/dependency_links.txt
+writing entry points to ../../build/custom_messages/custom_messages.egg-info/entry_points.txt
+writing requirements to ../../build/custom_messages/custom_messages.egg-info/requires.txt
+writing top-level names to ../../build/custom_messages/custom_messages.egg-info/top_level.txt
+writing manifest file '../../build/custom_messages/custom_messages.egg-info/SOURCES.txt'
+reading manifest file '../../build/custom_messages/custom_messages.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/custom_messages/custom_messages.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/lucasb/open_mx/build/custom_messages/build
+creating /home/lucasb/open_mx/build/custom_messages/build/lib
+creating /home/lucasb/open_mx/build/custom_messages/build/lib/custom_messages
+copying custom_messages/__init__.py -> /home/lucasb/open_mx/build/custom_messages/build/lib/custom_messages
+running install
+running install_lib
+creating /home/lucasb/open_mx/install/custom_messages/lib/python3.10/site-packages/custom_messages
+copying /home/lucasb/open_mx/build/custom_messages/build/lib/custom_messages/__init__.py -> /home/lucasb/open_mx/install/custom_messages/lib/python3.10/site-packages/custom_messages
+byte-compiling /home/lucasb/open_mx/install/custom_messages/lib/python3.10/site-packages/custom_messages/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/lucasb/open_mx/install/custom_messages/share/ament_index
+creating /home/lucasb/open_mx/install/custom_messages/share/ament_index/resource_index
+creating /home/lucasb/open_mx/install/custom_messages/share/ament_index/resource_index/packages
+copying resource/custom_messages -> /home/lucasb/open_mx/install/custom_messages/share/ament_index/resource_index/packages
+copying package.xml -> /home/lucasb/open_mx/install/custom_messages/share/custom_messages
+running install_egg_info
+Copying ../../build/custom_messages/custom_messages.egg-info to /home/lucasb/open_mx/install/custom_messages/lib/python3.10/site-packages/custom_messages-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/lucasb/open_mx/build/custom_messages/install.log'
