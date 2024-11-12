@@ -1,8 +1,0 @@
-CMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
-  rosidl_generate_interfaces() the passed file 'geometry_msgs/Pose.msg'
-  doesn't exist relative to the CMAKE_CURRENT_SOURCE_DIR
-  '/home/lucasb/RBE500_Project/src/custom_messages'
-Call Stack (most recent call first):
-  CMakeLists.txt:16 (rosidl_generate_interfaces)
-
-
