@@ -2,7 +2,7 @@ import numpy as np
 from numpy import sin, cos, arctan2
 
 #Link Lengths
-l1 = 60.25
+l1 = 96.326
 l2 = 130.2306 # calculated from given lengths
 l3 = 124.0
 l4 = 133.4
@@ -24,9 +24,10 @@ DH_table = np.array([[0, l1, 90, q1_rad],
                      [l3, 0, 0, 90 - phi + q3_rad],
                      [l4, 0 , 0 ,q4_rad]])
 
-print(DH_table)+--+6
+print(DH_table)
 np.set_printoptions(precision=4, suppress=True)
 # Transformation matrices : 
+
 
 A1 = np.array([[cos(np.deg2rad(q1)), -sin(np.deg2rad(q1))*cos(np.pi/2), sin(np.deg2rad(q1))*sin(np.pi/2), 0*cos(np.deg2rad(q1))],
     [sin(np.deg2rad(q1)), cos(np.deg2rad(q1))*cos(np.pi/2), -cos(np.deg2rad(q1))*sin(np.pi/2), 0*sin(np.deg2rad(q1))],
