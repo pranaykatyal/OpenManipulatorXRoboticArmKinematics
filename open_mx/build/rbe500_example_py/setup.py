@@ -1,1 +1,0 @@
-/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/rbe500_example_py/setup.py
