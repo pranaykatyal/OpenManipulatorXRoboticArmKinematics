@@ -1,0 +1,69 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found open_manipulator_msgs: 2.2.0 (/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake)
+-- Found open_manipulator_x_libs: 2.3.0 (/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_controller
+[ 50%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_controller.dir/src/open_manipulator_x_controller.cpp.o[0m
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:[m[K In member function ‘[01m[Kvoid open_manipulator_x_controller::OpenManipulatorXController::init_publisher()[m[K’:
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:103:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kname[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  103 |   for (auto const & [01;35m[Kname[m[K:tools_name)
+      |                     [01;35m[K^~~~[m[K
+[100%] [32m[1mLinking CXX executable open_manipulator_x_controller[0m
+[100%] Built target open_manipulator_x_controller
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/lib/open_manipulator_x_controller/open_manipulator_x_controller
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/99-open-manipulator-cdc.rules
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/launch/open_manipulator_x_controller.launch.py
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/param/open_manipulator_x_controller_params.yaml
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/lib/open_manipulator_x_controller/create_udev_rules
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_controller
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_controller
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/environment/ament_prefix_path.sh
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/environment/ament_prefix_path.dsv
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/environment/path.sh
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/environment/path.dsv
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/local_setup.bash
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/local_setup.sh
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/local_setup.zsh
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/local_setup.dsv
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/package.dsv
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/ament_index/resource_index/packages/open_manipulator_x_controller
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/cmake/open_manipulator_x_controllerConfig.cmake
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/cmake/open_manipulator_x_controllerConfig-version.cmake
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_controller/share/open_manipulator_x_controller/package.xml

@@ -1,1 +1,1 @@
-prepend-non-duplicate;LD_LIBRARY_PATH;lib
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/ament_cmake_environment_hooks/library_path.dsv

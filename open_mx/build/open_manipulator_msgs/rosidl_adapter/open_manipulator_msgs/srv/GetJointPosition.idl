@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from open_manipulator_msgs/srv/GetJointPosition.srv
+// generated code does not contain a copyright notice
+
+#include "open_manipulator_msgs/msg/JointPosition.idl"
+
+module open_manipulator_msgs {
+  module srv {
+    struct GetJointPosition_Request {
+      string planning_group;
+    };
+    struct GetJointPosition_Response {
+      open_manipulator_msgs::msg::JointPosition joint_position;
+    };
+  };
+};

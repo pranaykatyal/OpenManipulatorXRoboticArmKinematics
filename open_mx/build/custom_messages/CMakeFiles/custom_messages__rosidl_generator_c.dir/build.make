@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lucasb/open_mx/src/custom_messages
+CMAKE_SOURCE_DIR = /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lucasb/open_mx/build/custom_messages
+CMAKE_BINARY_DIR = /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages
 
 # Include any dependencies generated for this target.
 include CMakeFiles/custom_messages__rosidl_generator_c.dir/depend.make
@@ -143,8 +143,8 @@ rosidl_generator_c/custom_messages/srv/inv_kin.h: /opt/ros/humble/share/std_msgs
 rosidl_generator_c/custom_messages/srv/inv_kin.h: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_c/custom_messages/srv/inv_kin.h: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_c/custom_messages/srv/inv_kin.h: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lucasb/open_mx/build/custom_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/lucasb/open_mx/build/custom_messages/rosidl_generator_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.h: rosidl_generator_c/custom_messages/srv/inv_kin.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.h
@@ -161,16 +161,16 @@ rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c: rosidl_gener
 CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o: CMakeFiles/custom_messages__rosidl_generator_c.dir/flags.make
 CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o: rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c
 CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o: CMakeFiles/custom_messages__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucasb/open_mx/build/custom_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o -MF CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o.d -o CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o -c /home/lucasb/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o -MF CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o.d -o CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o -c /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c
 
 CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lucasb/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c > CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c > CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.i
 
 CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lucasb/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c -o CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c -o CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.s
 
 # Object files for target custom_messages__rosidl_generator_c
 custom_messages__rosidl_generator_c_OBJECTS = \
@@ -187,7 +187,7 @@ libcustom_messages__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interf
 libcustom_messages__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcustom_messages__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libcustom_messages__rosidl_generator_c.so: CMakeFiles/custom_messages__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lucasb/open_mx/build/custom_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libcustom_messages__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libcustom_messages__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_messages__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -203,6 +203,6 @@ CMakeFiles/custom_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/cu
 CMakeFiles/custom_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_messages/srv/detail/inv_kin__struct.h
 CMakeFiles/custom_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_messages/srv/detail/inv_kin__type_support.h
 CMakeFiles/custom_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_messages/srv/inv_kin.h
-	cd /home/lucasb/open_mx/build/custom_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lucasb/open_mx/src/custom_messages /home/lucasb/open_mx/src/custom_messages /home/lucasb/open_mx/build/custom_messages /home/lucasb/open_mx/build/custom_messages /home/lucasb/open_mx/build/custom_messages/CMakeFiles/custom_messages__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/CMakeFiles/custom_messages__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_messages__rosidl_generator_c.dir/depend
 

@@ -1,1 +1,1 @@
-custom_messages
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/ament_cmake_python/custom_messages/custom_messages.egg-info/top_level.txt

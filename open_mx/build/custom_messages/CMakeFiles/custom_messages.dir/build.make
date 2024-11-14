@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lucasb/open_mx/src/custom_messages
+CMAKE_SOURCE_DIR = /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lucasb/open_mx/build/custom_messages
+CMAKE_BINARY_DIR = /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages
 
 # Utility rule file for custom_messages.
 
@@ -66,7 +66,7 @@ include CMakeFiles/custom_messages.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/custom_messages.dir/progress.make
 
-CMakeFiles/custom_messages: /home/lucasb/open_mx/src/custom_messages/srv/InvKin.srv
+CMakeFiles/custom_messages: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages/srv/InvKin.srv
 CMakeFiles/custom_messages: rosidl_cmake/srv/InvKin_Request.msg
 CMakeFiles/custom_messages: rosidl_cmake/srv/InvKin_Response.msg
 CMakeFiles/custom_messages: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
@@ -113,6 +113,6 @@ CMakeFiles/custom_messages.dir/clean:
 .PHONY : CMakeFiles/custom_messages.dir/clean
 
 CMakeFiles/custom_messages.dir/depend:
-	cd /home/lucasb/open_mx/build/custom_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lucasb/open_mx/src/custom_messages /home/lucasb/open_mx/src/custom_messages /home/lucasb/open_mx/build/custom_messages /home/lucasb/open_mx/build/custom_messages /home/lucasb/open_mx/build/custom_messages/CMakeFiles/custom_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/CMakeFiles/custom_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_messages.dir/depend
 

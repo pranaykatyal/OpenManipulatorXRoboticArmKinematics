@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lucasb/open_mx/src/custom_messages
+CMAKE_SOURCE_DIR = /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lucasb/open_mx/build/custom_messages
+CMAKE_BINARY_DIR = /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages
 
 # Utility rule file for custom_messages__cpp.
 
@@ -147,8 +147,8 @@ rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: /opt/ros/humble/share/std_
 rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lucasb/open_mx/build/custom_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/lucasb/open_mx/build/custom_messages/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__builder.hpp: rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__builder.hpp
@@ -176,6 +176,6 @@ CMakeFiles/custom_messages__cpp.dir/clean:
 .PHONY : CMakeFiles/custom_messages__cpp.dir/clean
 
 CMakeFiles/custom_messages__cpp.dir/depend:
-	cd /home/lucasb/open_mx/build/custom_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lucasb/open_mx/src/custom_messages /home/lucasb/open_mx/src/custom_messages /home/lucasb/open_mx/build/custom_messages /home/lucasb/open_mx/build/custom_messages /home/lucasb/open_mx/build/custom_messages/CMakeFiles/custom_messages__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/CMakeFiles/custom_messages__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_messages__cpp.dir/depend
 

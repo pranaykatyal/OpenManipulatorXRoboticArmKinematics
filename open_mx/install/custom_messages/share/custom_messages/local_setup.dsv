@@ -1,4 +1,1 @@
-source;share/custom_messages/environment/ament_prefix_path.sh
-source;share/custom_messages/environment/library_path.sh
-source;share/custom_messages/environment/path.sh
-source;share/custom_messages/environment/pythonpath.sh
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/ament_cmake_environment_hooks/local_setup.dsv

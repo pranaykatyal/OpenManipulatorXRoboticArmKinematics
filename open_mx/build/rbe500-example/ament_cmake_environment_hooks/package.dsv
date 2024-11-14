@@ -1,0 +1,4 @@
+source;share/rbe500-example/local_setup.bash
+source;share/rbe500-example/local_setup.dsv
+source;share/rbe500-example/local_setup.sh
+source;share/rbe500-example/local_setup.zsh

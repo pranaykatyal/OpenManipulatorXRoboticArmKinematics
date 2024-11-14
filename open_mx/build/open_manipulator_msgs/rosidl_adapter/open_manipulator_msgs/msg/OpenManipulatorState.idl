@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from open_manipulator_msgs/msg/OpenManipulatorState.msg
+// generated code does not contain a copyright notice
+
+
+module open_manipulator_msgs {
+  module msg {
+    module OpenManipulatorState_Constants {
+      const string IS_MOVING = "IS_MOVING";
+      const string STOPPED = "STOPPED";
+      const string ACTUATOR_ENABLED = "ACTUATOR_ENABLED";
+      const string ACTUATOR_DISABLED = "ACTUATOR_DISABLED";
+    };
+    @verbatim (language="comment", text=
+      "CONSTANTS")
+    struct OpenManipulatorState {
+      @verbatim (language="comment", text=
+        "Messages")
+      string open_manipulator_moving_state;
+
+      string open_manipulator_actuator_state;
+    };
+  };
+};

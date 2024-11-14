@@ -1,0 +1,56 @@
+[0.020s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/opt/ros/humble /usr/bin/cmake /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description
+[0.078s] -- The C compiler identification is GNU 11.4.0
+[0.123s] -- The CXX compiler identification is GNU 11.4.0
+[0.129s] -- Detecting C compiler ABI info
+[0.183s] -- Detecting C compiler ABI info - done
+[0.190s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.190s] -- Detecting C compile features
+[0.190s] -- Detecting C compile features - done
+[0.193s] -- Detecting CXX compiler ABI info
+[0.258s] -- Detecting CXX compiler ABI info - done
+[0.268s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.268s] -- Detecting CXX compile features
+[0.269s] -- Detecting CXX compile features - done
+[0.271s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.389s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.429s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.485s] -- Configuring done
+[0.486s] -- Generating done
+[0.487s] -- Build files have been written to: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_description
+[0.490s] Invoked command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/opt/ros/humble /usr/bin/cmake /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description
+[0.491s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/opt/ros/humble /usr/bin/cmake --build /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_description -- -j20 -l20
+[0.522s] Invoked command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/opt/ros/humble /usr/bin/cmake --build /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_description -- -j20 -l20
+[0.537s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/opt/ros/humble /usr/bin/cmake --install /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_description
+[0.546s] -- Install configuration: ""
+[0.546s] -- Execute custom install script
+[0.547s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/launch/.DS_Store
+[0.555s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/launch/open_manipulator_x_rviz.launch.py
+[0.561s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/meshes/chain_link1.stl
+[0.567s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/meshes/chain_link2.stl
+[0.572s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/meshes/chain_link3.stl
+[0.578s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/meshes/chain_link4.stl
+[0.583s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/meshes/chain_link5.stl
+[0.588s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/meshes/chain_link_grip_l.stl
+[0.594s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/meshes/chain_link_grip_r.stl
+[0.600s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/rviz/open_manipulator_x.rviz
+[0.606s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/urdf/materials.xacro
+[0.615s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/urdf/open_manipulator_x.gazebo.xacro
+[0.624s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/urdf/open_manipulator_x.transmission.xacro
+[0.634s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/urdf/open_manipulator_x.urdf.xacro
+[0.639s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/urdf/open_manipulator_x_robot.urdf.xacro
+[0.646s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_description
+[0.652s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_description
+[0.658s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/environment/ament_prefix_path.sh
+[0.663s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/environment/ament_prefix_path.dsv
+[0.672s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/environment/path.sh
+[0.677s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/environment/path.dsv
+[0.683s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/local_setup.bash
+[0.688s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/local_setup.sh
+[0.698s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/local_setup.zsh
+[0.706s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/local_setup.dsv
+[0.716s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/package.dsv
+[0.725s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/ament_index/resource_index/packages/open_manipulator_x_description
+[0.734s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/cmake/open_manipulator_x_descriptionConfig.cmake
+[0.742s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/cmake/open_manipulator_x_descriptionConfig-version.cmake
+[0.748s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description/share/open_manipulator_x_description/package.xml
+[0.756s] Invoked command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/opt/ros/humble /usr/bin/cmake --install /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_description

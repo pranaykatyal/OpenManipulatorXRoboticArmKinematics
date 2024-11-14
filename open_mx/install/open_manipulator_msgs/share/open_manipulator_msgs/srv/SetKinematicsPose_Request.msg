@@ -1,0 +1,1 @@
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_msgs/rosidl_cmake/srv/SetKinematicsPose_Request.msg

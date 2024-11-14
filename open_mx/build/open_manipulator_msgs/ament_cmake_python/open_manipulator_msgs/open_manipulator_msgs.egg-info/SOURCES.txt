@@ -1,0 +1,17 @@
+setup.py
+open_manipulator_msgs/__init__.py
+open_manipulator_msgs.egg-info/PKG-INFO
+open_manipulator_msgs.egg-info/SOURCES.txt
+open_manipulator_msgs.egg-info/dependency_links.txt
+open_manipulator_msgs.egg-info/top_level.txt
+open_manipulator_msgs/msg/__init__.py
+open_manipulator_msgs/msg/_joint_position.py
+open_manipulator_msgs/msg/_kinematics_pose.py
+open_manipulator_msgs/msg/_open_manipulator_state.py
+open_manipulator_msgs/srv/__init__.py
+open_manipulator_msgs/srv/_get_joint_position.py
+open_manipulator_msgs/srv/_get_kinematics_pose.py
+open_manipulator_msgs/srv/_set_actuator_state.py
+open_manipulator_msgs/srv/_set_drawing_trajectory.py
+open_manipulator_msgs/srv/_set_joint_position.py
+open_manipulator_msgs/srv/_set_kinematics_pose.py

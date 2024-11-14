@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lucasb/open_mx/src/custom_messages
+CMAKE_SOURCE_DIR = /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lucasb/open_mx/build/custom_messages
+CMAKE_BINARY_DIR = /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucasb/open_mx/build/custom_messages/CMakeFiles /home/lucasb/open_mx/build/custom_messages//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/CMakeFiles /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucasb/open_mx/build/custom_messages/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -315,17 +315,17 @@ custom_messages__rosidl_typesupport_cpp/fast:
 .PHONY : custom_messages__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_custom_messages
+# Target rules for targets named ament_cmake_python_symlink_custom_messages
 
 # Build rule for target.
-ament_cmake_python_copy_custom_messages: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_custom_messages
-.PHONY : ament_cmake_python_copy_custom_messages
+ament_cmake_python_symlink_custom_messages: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_custom_messages
+.PHONY : ament_cmake_python_symlink_custom_messages
 
 # fast build rule for target.
-ament_cmake_python_copy_custom_messages/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_custom_messages.dir/build.make CMakeFiles/ament_cmake_python_copy_custom_messages.dir/build
-.PHONY : ament_cmake_python_copy_custom_messages/fast
+ament_cmake_python_symlink_custom_messages/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_custom_messages.dir/build.make CMakeFiles/ament_cmake_python_symlink_custom_messages.dir/build
+.PHONY : ament_cmake_python_symlink_custom_messages/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_custom_messages_egg
@@ -683,7 +683,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_custom_messages_egg"
-	@echo "... ament_cmake_python_copy_custom_messages"
+	@echo "... ament_cmake_python_symlink_custom_messages"
 	@echo "... custom_messages"
 	@echo "... custom_messages__cpp"
 	@echo "... custom_messages__py"

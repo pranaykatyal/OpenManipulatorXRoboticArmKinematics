@@ -1,0 +1,6 @@
+source;share/rbe500_example_py/hook/pythonpath.ps1
+source;share/rbe500_example_py/hook/pythonpath.dsv
+source;share/rbe500_example_py/hook/pythonpath.sh
+source;share/rbe500_example_py/hook/ament_prefix_path.ps1
+source;share/rbe500_example_py/hook/ament_prefix_path.dsv
+source;share/rbe500_example_py/hook/ament_prefix_path.sh
