@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lucasb/open_mx/src/custom_messages
+CMAKE_SOURCE_DIR = /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lucasb/open_mx/build/custom_messages
+CMAKE_BINARY_DIR = /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages
 
 # Utility rule file for custom_messages_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/custom_messages_uninstall.dir/compiler_depend.make
 include CMakeFiles/custom_messages_uninstall.dir/progress.make
 
 CMakeFiles/custom_messages_uninstall:
-	/usr/bin/cmake -P /home/lucasb/open_mx/build/custom_messages/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 custom_messages_uninstall: CMakeFiles/custom_messages_uninstall
 custom_messages_uninstall: CMakeFiles/custom_messages_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/custom_messages_uninstall.dir/clean:
 .PHONY : CMakeFiles/custom_messages_uninstall.dir/clean
 
 CMakeFiles/custom_messages_uninstall.dir/depend:
-	cd /home/lucasb/open_mx/build/custom_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lucasb/open_mx/src/custom_messages /home/lucasb/open_mx/src/custom_messages /home/lucasb/open_mx/build/custom_messages /home/lucasb/open_mx/build/custom_messages /home/lucasb/open_mx/build/custom_messages/CMakeFiles/custom_messages_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/CMakeFiles/custom_messages_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_messages_uninstall.dir/depend
 

@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from open_manipulator_msgs/srv/SetDrawingTrajectory.srv
+// generated code does not contain a copyright notice
+
+
+module open_manipulator_msgs {
+  module srv {
+    struct SetDrawingTrajectory_Request {
+      string end_effector_name;
+
+      string drawing_trajectory_name;
+
+      sequence<double> param;
+
+      double path_time;
+    };
+    struct SetDrawingTrajectory_Response {
+      boolean is_planned;
+    };
+  };
+};

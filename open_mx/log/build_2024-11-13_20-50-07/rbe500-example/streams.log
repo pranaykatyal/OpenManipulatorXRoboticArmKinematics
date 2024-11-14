@@ -1,0 +1,71 @@
+[0.010s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500-example': AMENT_PREFIX_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/opt/ros/humble LD_LIBRARY_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/rbe500-example -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example
+[0.055s] -- The C compiler identification is GNU 11.4.0
+[0.111s] -- The CXX compiler identification is GNU 11.4.0
+[0.118s] -- Detecting C compiler ABI info
+[0.189s] -- Detecting C compiler ABI info - done
+[0.195s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.196s] -- Detecting C compile features
+[0.196s] -- Detecting C compile features - done
+[0.198s] -- Detecting CXX compiler ABI info
+[0.279s] -- Detecting CXX compiler ABI info - done
+[0.286s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.287s] -- Detecting CXX compile features
+[0.287s] -- Detecting CXX compile features - done
+[0.290s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.433s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.485s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.507s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.542s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.545s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.552s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.561s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.574s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.609s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.611s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.696s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.725s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.770s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.775s] -- Looking for pthread.h
+[0.846s] -- Looking for pthread.h - found
+[0.846s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.911s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.913s] -- Found Threads: TRUE  
+[0.955s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[0.994s] -- Found open_manipulator_msgs: 2.2.0 (/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake)
+[1.021s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.088s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.088s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/rbe500-example/include>;/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/rbe500-example/open_manipulator_msgs/srv
+[1.088s] -- Configured cppcheck exclude dirs and/or files: 
+[1.089s] -- Added test 'lint_cmake' to check CMake code style
+[1.089s] -- Added test 'uncrustify' to check C / C++ code style
+[1.089s] -- Configured uncrustify additional arguments: 
+[1.090s] -- Added test 'xmllint' to check XML markup files
+[1.091s] -- Configuring done
+[1.098s] -- Generating done
+[1.101s] -- Build files have been written to: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500-example
+[1.107s] Invoked command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500-example' returned '0': AMENT_PREFIX_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/opt/ros/humble LD_LIBRARY_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/rbe500-example -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example
+[1.109s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500-example': AMENT_PREFIX_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/opt/ros/humble LD_LIBRARY_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500-example -- -j20 -l20
+[1.154s] [ 50%] [32mBuilding CXX object CMakeFiles/basic_robot_control.dir/src/basic_robot_control.cpp.o[0m
+[4.200s] [100%] [32m[1mLinking CXX executable basic_robot_control[0m
+[4.354s] [100%] Built target basic_robot_control
+[4.365s] Invoked command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500-example' returned '0': AMENT_PREFIX_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/opt/ros/humble LD_LIBRARY_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500-example -- -j20 -l20
+[4.395s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500-example': AMENT_PREFIX_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/opt/ros/humble LD_LIBRARY_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500-example
+[4.402s] -- Install configuration: ""
+[4.402s] -- Execute custom install script
+[4.402s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/lib/rbe500-example/basic_robot_control
+[4.411s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/ament_index/resource_index/package_run_dependencies/rbe500-example
+[4.419s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/ament_index/resource_index/parent_prefix_path/rbe500-example
+[4.427s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/environment/ament_prefix_path.sh
+[4.436s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/environment/ament_prefix_path.dsv
+[4.445s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/environment/path.sh
+[4.452s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/environment/path.dsv
+[4.460s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/local_setup.bash
+[4.468s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/local_setup.sh
+[4.479s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/local_setup.zsh
+[4.488s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/local_setup.dsv
+[4.497s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/package.dsv
+[4.504s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/ament_index/resource_index/packages/rbe500-example
+[4.513s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/cmake/rbe500-exampleConfig.cmake
+[4.521s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/cmake/rbe500-exampleConfig-version.cmake
+[4.527s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/package.xml
+[4.539s] Invoked command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500-example' returned '0': AMENT_PREFIX_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/opt/ros/humble LD_LIBRARY_PATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500-example

@@ -1,0 +1,1 @@
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_manager.h

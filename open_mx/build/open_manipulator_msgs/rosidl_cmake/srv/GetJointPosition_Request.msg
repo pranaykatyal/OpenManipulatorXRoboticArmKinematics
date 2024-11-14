@@ -1,0 +1,1 @@
+string planning_group

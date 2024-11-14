@@ -1,0 +1,10 @@
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robotis_manipulator/CMakeFiles/uninstall.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robotis_manipulator/CMakeFiles/robotis_manipulator_uninstall.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robotis_manipulator/CMakeFiles/robotis_manipulator.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robotis_manipulator/CMakeFiles/test.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robotis_manipulator/CMakeFiles/edit_cache.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robotis_manipulator/CMakeFiles/rebuild_cache.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robotis_manipulator/CMakeFiles/list_install_components.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robotis_manipulator/CMakeFiles/install.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robotis_manipulator/CMakeFiles/install/local.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robotis_manipulator/CMakeFiles/install/strip.dir

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500-example/basic_robot_control" "TARGETS" "basic_robot_control" "DESTINATION" "lib/rbe500-example")

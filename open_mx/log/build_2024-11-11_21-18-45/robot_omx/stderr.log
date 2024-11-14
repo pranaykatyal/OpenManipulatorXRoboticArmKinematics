@@ -1,5 +1,0 @@
-  File "/home/lucasb/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/inv_kin_client.py", line 46
-    				 f'Joint 2: {joint_angles.q_2}\n'\ 
-    				                                   ^
-SyntaxError: unexpected character after line continuation character
-

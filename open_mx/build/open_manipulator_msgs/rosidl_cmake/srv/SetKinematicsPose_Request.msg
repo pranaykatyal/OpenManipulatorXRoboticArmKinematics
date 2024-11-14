@@ -1,0 +1,4 @@
+string planning_group
+string end_effector_name
+KinematicsPose kinematics_pose
+float64 path_time

@@ -1,0 +1,26 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating robot_omx.egg-info
+writing robot_omx.egg-info/PKG-INFO
+writing dependency_links to robot_omx.egg-info/dependency_links.txt
+writing entry points to robot_omx.egg-info/entry_points.txt
+writing requirements to robot_omx.egg-info/requires.txt
+writing top-level names to robot_omx.egg-info/top_level.txt
+writing manifest file 'robot_omx.egg-info/SOURCES.txt'
+reading manifest file 'robot_omx.egg-info/SOURCES.txt'
+writing manifest file 'robot_omx.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot-omx.egg-link (link to .)
+Installing inverse_client script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx
+Installing inverse_server script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx
+Installing joint_listener script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx
+
+Installed /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx
+running symlink_data
+creating /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/share/ament_index
+creating /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/share/ament_index/resource_index
+creating /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/share/ament_index/resource_index/packages
+symbolically linking /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx/resource/robot_omx -> /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/share/ament_index/resource_index/packages
+symbolically linking /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx/package.xml -> /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/share/robot_omx

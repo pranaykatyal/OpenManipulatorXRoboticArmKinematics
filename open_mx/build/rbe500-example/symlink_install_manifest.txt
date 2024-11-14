@@ -1,0 +1,16 @@
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/lib/rbe500-example/basic_robot_control
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/ament_index/resource_index/package_run_dependencies/rbe500-example
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/ament_index/resource_index/parent_prefix_path/rbe500-example
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/environment/ament_prefix_path.sh
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/environment/ament_prefix_path.dsv
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/environment/path.sh
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/environment/path.dsv
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/local_setup.bash
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/local_setup.sh
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/local_setup.zsh
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/local_setup.dsv
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/package.dsv
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/ament_index/resource_index/packages/rbe500-example
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/cmake/rbe500-exampleConfig.cmake
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/cmake/rbe500-exampleConfig-version.cmake
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/package.xml

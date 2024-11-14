@@ -1,0 +1,1 @@
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robotis_manipulator/ament_cmake_core/robotis_manipulatorConfig.cmake

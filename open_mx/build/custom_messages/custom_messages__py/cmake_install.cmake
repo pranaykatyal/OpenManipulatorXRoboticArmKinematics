@@ -1,8 +1,8 @@
-# Install script for directory: /home/lucasb/open_mx/build/custom_messages/custom_messages__py
+# Install script for directory: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/custom_messages__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lucasb/open_mx/install/custom_messages")
+  set(CMAKE_INSTALL_PREFIX "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

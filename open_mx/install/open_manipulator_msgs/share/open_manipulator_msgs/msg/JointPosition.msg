@@ -1,0 +1,1 @@
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator_msgs/msg/JointPosition.msg

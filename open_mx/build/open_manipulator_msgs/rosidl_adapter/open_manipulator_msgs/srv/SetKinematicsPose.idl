@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from open_manipulator_msgs/srv/SetKinematicsPose.srv
+// generated code does not contain a copyright notice
+
+#include "open_manipulator_msgs/msg/KinematicsPose.idl"
+
+module open_manipulator_msgs {
+  module srv {
+    struct SetKinematicsPose_Request {
+      string planning_group;
+
+      string end_effector_name;
+
+      open_manipulator_msgs::msg::KinematicsPose kinematics_pose;
+
+      double path_time;
+    };
+    struct SetKinematicsPose_Response {
+      boolean is_planned;
+    };
+  };
+};

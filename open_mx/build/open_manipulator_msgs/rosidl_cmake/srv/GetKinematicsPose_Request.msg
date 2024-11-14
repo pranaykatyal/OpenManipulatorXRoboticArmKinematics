@@ -1,0 +1,2 @@
+string planning_group
+string end_effector_name

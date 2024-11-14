@@ -1,0 +1,1 @@
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/cmake_modules/ament_cmake_environment_hooks/local_setup.sh

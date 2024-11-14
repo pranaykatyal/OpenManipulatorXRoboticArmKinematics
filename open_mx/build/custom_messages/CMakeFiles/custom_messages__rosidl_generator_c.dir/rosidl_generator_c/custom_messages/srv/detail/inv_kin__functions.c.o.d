@@ -1,7 +1,7 @@
 CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o: \
- /home/lucasb/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c \
+ /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c \
  /usr/include/stdc-predef.h \
- /home/lucasb/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.h \
+ /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -43,8 +43,8 @@ CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_mes
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /home/lucasb/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/msg/rosidl_generator_c__visibility_control.h \
- /home/lucasb/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_kin__struct.h \
+ /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/msg/rosidl_generator_c__visibility_control.h \
+ /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_kin__struct.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \

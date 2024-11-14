@@ -1,0 +1,10 @@
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_libs/CMakeFiles/uninstall.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_libs/CMakeFiles/open_manipulator_x_libs_uninstall.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_libs/CMakeFiles/open_manipulator_x_libs.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_libs/CMakeFiles/test.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_libs/CMakeFiles/edit_cache.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_libs/CMakeFiles/rebuild_cache.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_libs/CMakeFiles/list_install_components.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_libs/CMakeFiles/install.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_libs/CMakeFiles/install/local.dir
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_x_libs/CMakeFiles/install/strip.dir

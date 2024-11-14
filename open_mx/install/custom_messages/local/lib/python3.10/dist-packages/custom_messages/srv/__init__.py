@@ -1,1 +1,1 @@
-from custom_messages.srv._inv_kin import InvKin  # noqa: F401
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_py/custom_messages/srv/__init__.py

@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+rbe500_example_py/__init__.py
+rbe500_example_py/basic_robot_control.py
+rbe500_example_py.egg-info/PKG-INFO
+rbe500_example_py.egg-info/SOURCES.txt
+rbe500_example_py.egg-info/dependency_links.txt
+rbe500_example_py.egg-info/entry_points.txt
+rbe500_example_py.egg-info/requires.txt
+rbe500_example_py.egg-info/top_level.txt
+rbe500_example_py.egg-info/zip-safe
+resource/rbe500_example_py

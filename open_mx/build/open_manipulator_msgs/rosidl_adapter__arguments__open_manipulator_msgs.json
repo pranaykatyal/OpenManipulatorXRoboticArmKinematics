@@ -1,0 +1,14 @@
+{
+  "package_name": "open_manipulator_msgs",
+  "non_idl_tuples": [
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator_msgs:msg/JointPosition.msg",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator_msgs:msg/KinematicsPose.msg",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator_msgs:msg/OpenManipulatorState.msg",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator_msgs:srv/GetJointPosition.srv",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator_msgs:srv/GetKinematicsPose.srv",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator_msgs:srv/SetJointPosition.srv",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator_msgs:srv/SetKinematicsPose.srv",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator_msgs:srv/SetDrawingTrajectory.srv",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator_msgs:srv/SetActuatorState.srv"
+  ]
+}

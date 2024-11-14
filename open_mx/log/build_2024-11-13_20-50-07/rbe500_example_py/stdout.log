@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating rbe500_example_py.egg-info
+writing rbe500_example_py.egg-info/PKG-INFO
+writing dependency_links to rbe500_example_py.egg-info/dependency_links.txt
+writing entry points to rbe500_example_py.egg-info/entry_points.txt
+writing requirements to rbe500_example_py.egg-info/requires.txt
+writing top-level names to rbe500_example_py.egg-info/top_level.txt
+writing manifest file 'rbe500_example_py.egg-info/SOURCES.txt'
+reading manifest file 'rbe500_example_py.egg-info/SOURCES.txt'
+writing manifest file 'rbe500_example_py.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py/lib/python3.10/site-packages/rbe500-example-py.egg-link (link to .)
+Installing basic_robot_control script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py/lib/rbe500_example_py
+
+Installed /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500_example_py
+running symlink_data
+creating /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py/share/ament_index
+creating /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py/share/ament_index/resource_index
+creating /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py/share/ament_index/resource_index/packages
+symbolically linking /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500_example_py/resource/rbe500_example_py -> /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py/share/ament_index/resource_index/packages
+symbolically linking /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500_example_py/package.xml -> /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py/share/rbe500_example_py
