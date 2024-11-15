@@ -49,4 +49,4 @@ test_hom = [[  0.75,    -0.433,   -0.5,    207.0254],
  [ -0.5   ,  -0.866  ,  0.     ,138.3166],
  [  0.     ,  0.    ,   0.     ,  1.    ]]
 print(get_q_values(test_hom))
-print(get_q_values(zero_hom))
+#print(get_q_values(zero_hom))
