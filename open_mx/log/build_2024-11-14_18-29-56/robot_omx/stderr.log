@@ -1,0 +1,5 @@
+  File "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/kinematic_library.py", line 37
+    	[2*(y_quat*z_quat + x_quat*w_quat), 2*(x_quat**2 + z_quat**2) - 1, 2*(z_quat*w_quat - z_quat*w_quat - x_quat*y_quat],
+    	                                                                                                                   ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+
