@@ -38,7 +38,7 @@ class Robot:
         
         transform = np.eye(4)
         transform[:3,:3] = np.array([[2*(x_quat**2 + y_quat**2) - 1, 2*(y_quat*z_quat - x_quat*w_quat), 2*(y_quat*w_quat + x_quat*z_quat)],
-    	[2*(y_quat*z_quat + x_quat*w_quat), 2*(x_quat**2 + z_quat**2) - 1, 2*(z_quat*w_quat - z_quat*w_quat - x_quat*y_quat)],
+    	[2*(y_quat*z_quat + x_quat*w_quat), 2*(x_quat**2 + z_quat**2) - 1, 2*(z_quat*w_quat - x_quat*y_quat)],
     	[2*(y_quat*w_quat - x_quat*z_quat), 2*(z_quat*w_quat + x_quat*y_quat), 2*(x_quat**2 + w_quat**2) - 1]])
         transform[:3,3] = [x_pos, y_pos, z_pos]
     	
@@ -77,7 +77,7 @@ class Robot:
         return [theta1 / math.pi * 180, theta2 / math.pi * 180, theta3 / math.pi * 180, theta4 / math.pi * 180]
 
 
-def calculate_A_i(self):
+    def calculate_A_i(self):
         # Link Lengths
         l1 = 60.25
         l2 = 130.2306  # calculated from given lengths

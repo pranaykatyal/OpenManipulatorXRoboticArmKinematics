@@ -77,7 +77,7 @@ class Robot:
         return [theta1 / math.pi * 180, theta2 / math.pi * 180, theta3 / math.pi * 180, theta4 / math.pi * 180]
 
 
-def calculate_A_i(self):
+    def calculate_A_i(self):
         # Link Lengths
         l1 = 60.25
         l2 = 130.2306  # calculated from given lengths

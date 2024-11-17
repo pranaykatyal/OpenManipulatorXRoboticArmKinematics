@@ -24,11 +24,11 @@ To Interact with joint_listener:
 	ros2 topic pub --once joint_values std_msgs/msg/Float32MultiArray '{data: [0, 0, 0, 0]}'
 
 To send user poses to the inverse kinematics server through the CLIENT, use the following: 
-	ros2 run robot_omx inverse_client 1.0 1.0 1.0 1.0 1.0 1.0 1.0 
+	ros2 run robot_omx inverse_client 207.0254 119.5262 138.3166 0.612 -0.707 0.0 0.354 
 	# First three values are the position. Last three are the orienation in quaternions
 
 # To send user poses to the inverse kinematics server DIRECTLY, use the following: 
-	ros2 service call /inverse_server custom_messages/srv/InvKin "{pose: {position: {x: 1.0, y: 2.0, z: 0.5}, orientation: {x: 0.0, y: 0.0, z: 1.0, w: 1.0}}}"
+	ros2 service call /inverse_server custom_messages/srv/InvKin "{pose: {position: {x: 207.0254, y: 119.5262, z: 138.3166}, orientation: {x: 0.612, y: -0.707, z: 0.0, w: 0.354}}}"
 
 
 ################################################ PROVIDED PACKAGES FROM CANVAS ##########################################
