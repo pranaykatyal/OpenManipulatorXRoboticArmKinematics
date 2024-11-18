@@ -5,7 +5,7 @@ from math import cos, sin# Needed for trig functions
 import numpy as np # Needed for array functions
 
 
-class Robot:
+class Robot():
     def __init__(self):
         return
 
@@ -43,7 +43,6 @@ class Robot:
         transform[:3,3] = [x_pos, y_pos, z_pos]
     	
         #rotation = scipy.spatial.transform.Rotation.from_quat(quaternions) # Using a library to convert the quaternions into a 3x3
-        print(f'TEST: The rotation is {transform}')
 
         # Define constant values
         l0 = 36.076

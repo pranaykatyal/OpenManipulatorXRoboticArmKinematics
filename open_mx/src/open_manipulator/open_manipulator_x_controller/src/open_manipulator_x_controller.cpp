@@ -163,11 +163,14 @@ void OpenManipulatorXController::goal_joint_space_path_callback(
   const std::shared_ptr<open_manipulator_msgs::srv::SetJointPosition::Request> req,
   const std::shared_ptr<open_manipulator_msgs::srv::SetJointPosition::Response> res)
 {
+  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "goal_joint_space_path called.");
+
   std::vector <double> target_angle;
 
-  for (uint8_t i = 0; i < req->joint_position.joint_name.size(); i ++)
+  for (uint8_t i = 0; i < req->joint_position.joint_name.size(); i ++){
     target_angle.push_back(req->joint_position.position.at(i));
-
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Request joint position %f", req->joint_position.position.at(i));
+}
   open_manipulator_x_.makeJointTrajectory(target_angle, req->path_time);
 
   res->is_planned = true;

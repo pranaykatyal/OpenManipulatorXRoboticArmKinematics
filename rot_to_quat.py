@@ -35,9 +35,9 @@ def rot_to_quat(matrix):
 	return q
 
 
-test_hom2 = np.array([[  -0.,        1.,       -0.,     -111.6812],
- [  -0.,       -0.  ,     -1.,        0.    ],
- [  -1. ,      -0. ,       0. ,       3.2448],
+test_hom2 = np.array([[  1.,        0.,       0.,     281.4],
+ [  0.,       0.  ,     1.,        0.    ],
+ [  0. ,      -1. ,       0. ,       224.326],
  [   0.  ,      0.,        0.  ,      1.    ]])
 
 print(rot_to_quat(test_hom2))
