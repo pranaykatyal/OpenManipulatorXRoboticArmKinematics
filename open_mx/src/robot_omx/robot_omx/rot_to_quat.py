@@ -36,10 +36,10 @@ def rot_to_quat(matrix):
 
 		k = 0.5 / sqrt(1.0 + m22 - m00 - m11);
 		q = ( k * (m20 + m02), k * (m21 + m12), 0.25 / k, k * (m01 - m10) );
-	pose.orientation.x = q[0]
-	pose.orientation.y = q[1]
-	pose.orientation.z = q[2]
-	pose.orientation.w = q[3]
+	pose.orientation.y = q[0]
+	pose.orientation.x = q[1]
+	pose.orientation.w = q[2]
+	pose.orientation.z = q[3]
 
 	return pose
 
