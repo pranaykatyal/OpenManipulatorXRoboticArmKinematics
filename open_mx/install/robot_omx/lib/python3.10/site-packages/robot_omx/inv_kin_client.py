@@ -49,7 +49,9 @@ def main():
     				 f'Joint 1: {joint_angles.q_1}\n'
        				 f'Joint 2: {joint_angles.q_2}\n'
        				 f'Joint 3: {joint_angles.q_3}\n'
-       				 f'Joint 4: {joint_angles.q_4}\n')    				 
+       				 f'Joint 4: {joint_angles.q_4}\n')
+       				 
+
     rclpy.spin(inv_client)  # Running the node continously
     
     

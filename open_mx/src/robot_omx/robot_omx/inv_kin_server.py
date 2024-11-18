@@ -20,6 +20,8 @@ class Inv_Server(Node):
         # Initializing robot object that contains the needed methods, and calculating the inverse kinematics:
         robot = kinematic_library.Robot()
         (response.q_1, response.q_2, response.q_3, response.q_4) = robot.inverse_kinematics(pose)
+        
+        
     
         return response # The results of the inverse kinematics are sent back to the client
 
