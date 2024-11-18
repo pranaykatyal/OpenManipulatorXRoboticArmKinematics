@@ -67,7 +67,7 @@ class Robot():
         S = transform[2][3] - (l0 + l1)
         phi = math.atan2(s - S, R - r)
 
-        theta1 = math.atan2(transform[1][3], transform[0][3])
+        theta1 = math.atan2(-transform[1][3], -transform[0][3])
         theta3 = math.atan2(math.sqrt(1 - D ** 2), D)
         theta2 = math.atan2(r, s) + math.atan2(l2 + l3 * math.cos(theta3), l3 * math.sin(theta3))
 

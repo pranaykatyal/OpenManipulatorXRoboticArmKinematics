@@ -8,7 +8,10 @@ l3 = 124.0
 l4 = 133.4
 
 #Joint angles
-q1 = q2 = q3 = q4 = np.degrees(0)
+q1 = 180
+q2 = 0
+q3 = 45
+q4 = -45
 
 phi = np.rad2deg(arctan2(3,16)) # 10.62 degrees
 
