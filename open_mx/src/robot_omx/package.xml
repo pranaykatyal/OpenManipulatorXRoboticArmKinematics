@@ -17,6 +17,7 @@
   <exec_depend>numpy</exec_depend>
   <depend>custom_messages</depend>
   <depend>scipy</depend>
+  <depend>sensor_msgs</depend>
   
 
   <export>

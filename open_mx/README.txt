@@ -41,3 +41,20 @@ rbe500-example
 rbe500_example_py
 robotis_manipulator
 
+
+########################################### MOVING THE ROBOT ########################################################
+First, make sure you have connected to the robot:
+ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py
+
+To send the robot to the positions provided by the professor:
+ros2 service call /goal_joint_space_path open_manipulator_msgs/srv/SetJointPosition
+"{joint_position: {joint_name: ['joint1', 'joint2', 'joint3', 'joint4'], position: [1.0, -1.0, 0.5, 0.0],
+max_accelerations_scaling_factor: 0.5, max_velocity_scaling_factor: 0.5}}"
+
+
+
+################################## LISTENING TO ROBOT TOPICS###################################################
+We can view the joint values using: 
+ros2 topic echo /joint_states
+
+
