@@ -11,7 +11,7 @@ class Joint_Subscriber(Node):
     def __init__(self):
         # Creating a subscriber node that listens to the joint_values topic and calls "listener_callback"
         super().__init__('joint_subscriber')
-	self.publisher = self.create_publisher(Pose, 'EndAffectorPose', 10)
+        self.publisher = self.create_publisher(Pose, 'EndAffectorPose', 10)
         #self.subscription = self.create_subscription(Float32MultiArray, 'joint_values', self.listener_callback, 10) # Old Code
         self.subscription = self.create_subscription(JointState, 'joint_states', self.listener_callback, 10)
 

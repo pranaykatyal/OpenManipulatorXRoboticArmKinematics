@@ -3,7 +3,7 @@
 import math
 from math import cos, sin# Needed for trig functions
 import numpy as np # Needed for array functions
-from rot_to_quat import rot_to_quat
+from robot_omx import rot_to_quat
 
 class Robot():
     def __init__(self):
@@ -20,7 +20,7 @@ class Robot():
         # Performing Forward Kinematic Calculations by multiplying homgenous transformation matrices:
         (A1, A2, A3, A4) = self.calculate_A_i() #First Calculating Intermediate Homogenous Transformation Matrices
         transformation_matrix = np.matmul(A1, np.matmul(A2,np.matmul(A3, A4))) # A1*A2*A3*A4
-        quaternion = rot_to_quat(transformation_matrix)
+        quaternion = rot_to_quat.rot_to_quat(transformation_matrix)
         return quaternion
         
         
