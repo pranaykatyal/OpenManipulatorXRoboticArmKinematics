@@ -1,0 +1,24 @@
+[0.555s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/robot_omx': PYTHONPATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_omx build --build-base /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx/build install --record /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx/install.log --single-version-externally-managed install_data
+[0.710s] running egg_info
+[0.710s] writing ../../build/robot_omx/robot_omx.egg-info/PKG-INFO
+[0.710s] writing dependency_links to ../../build/robot_omx/robot_omx.egg-info/dependency_links.txt
+[0.710s] writing entry points to ../../build/robot_omx/robot_omx.egg-info/entry_points.txt
+[0.711s] writing requirements to ../../build/robot_omx/robot_omx.egg-info/requires.txt
+[0.711s] writing top-level names to ../../build/robot_omx/robot_omx.egg-info/top_level.txt
+[0.711s] reading manifest file '../../build/robot_omx/robot_omx.egg-info/SOURCES.txt'
+[0.712s] adding license file 'LICENSE'
+[0.712s] writing manifest file '../../build/robot_omx/robot_omx.egg-info/SOURCES.txt'
+[0.712s] running build
+[0.712s] running build_py
+[0.713s] running install
+[0.714s] running install_lib
+[0.715s] running install_data
+[0.716s] running install_egg_info
+[0.716s] removing '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx-0.0.0-py3.10.egg-info' (and everything under it)
+[0.716s] Copying ../../build/robot_omx/robot_omx.egg-info to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx-0.0.0-py3.10.egg-info
+[0.716s] running install_scripts
+[0.729s] Installing inverse_client script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx
+[0.729s] Installing inverse_server script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx
+[0.729s] Installing joint_listener script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx
+[0.729s] writing list of installed files to '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx/install.log'
+[0.745s] Invoked command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/robot_omx' returned '0': PYTHONPATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_omx build --build-base /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx/build install --record /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx/install.log --single-version-externally-managed install_data

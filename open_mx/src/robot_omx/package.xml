@@ -16,6 +16,8 @@
   <exec_depend>math</exec_depend>
   <exec_depend>numpy</exec_depend>
   <depend>custom_messages</depend>
+  <depend>scipy</depend>
+  
 
   <export>
     <build_type>ament_python</build_type>

@@ -48,6 +48,8 @@ test_hom1 = [[  0.75,    -0.433,   -0.5,    207.0254],
  [ -0.5   ,  -0.866  ,  0.     ,138.3166],
  [  0.     ,  0.    ,   0.     ,  1.    ]]
 
+
+
 # q values 180 0 45 45
 test_hom2 = [[  -0.,        1.,       -0.,     -111.6812],
  [  -0.,       -0.  ,     -1.,        0.    ],
@@ -56,3 +58,4 @@ test_hom2 = [[  -0.,        1.,       -0.,     -111.6812],
 print(get_q_values(test_hom2))
 print(get_q_values(test_hom1))
 print(get_q_values(zero_hom))
+
