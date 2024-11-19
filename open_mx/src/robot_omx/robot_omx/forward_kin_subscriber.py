@@ -18,11 +18,13 @@ class Joint_Subscriber(Node):
     def listener_callback(self, msg):
         # Extracting the joint positions from the joint_states topic:
         joint_positions = msg.position
+        
         self.get_logger().info(f'The joints received are: {joint_positions}')
         print(type(msg.position))
-        robot = kinematic_library.Robot() # Creates an object that has the functions needed for the pose calculation
+        
         # pose = robot.forward_kinematics(msg.data) # Old Code
-        pose = robot.forward_kinematics(joint_positions) # Using the object functions to calculate the pose
+        matrix = kinematic_library.get_forward_kinematics(joint_positions[0], joint_positions[1], joint_positions[2], joint_positions[3])
+        pose = kinematic_library.rot2pose(matrix)
         self.get_logger().info(f'The End Effector Pose is \n{pose}') # Posting the result to the terminal
         self.publisher.publish(pose)
 
