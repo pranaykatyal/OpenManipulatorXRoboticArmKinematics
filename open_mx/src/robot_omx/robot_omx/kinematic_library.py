@@ -11,7 +11,7 @@ d2 = 24
 l2 = 130.2306 # calculated from given lengths
 l3 = 124.0
 l4 = 133.4
-phi = np.rad2deg(arctan2(3,16)) # 10.62 degrees
+phi = arctan2(3,16) # 10.62 degrees
 
 #----------Forward Kinematics------------
 def get_transformation_mat(dh_table, reference, target):
@@ -25,8 +25,8 @@ def get_transformation_mat(dh_table, reference, target):
                 # Extract DH params in order of a, d, alpha, theta
                 a = params[0]
                 d = params[1]
-                alpha = np.deg2rad(params[2])
-                theta = np.deg2rad(params[3])
+                alpha = params[2]
+                theta = params[3]
 
                 # Form the homogenous matrix
                 this_mat = np.array([[cos(theta), -sin(theta)*cos(alpha), sin(theta)*sin(alpha), a*cos(theta)],
@@ -44,9 +44,9 @@ def get_transformation_mat(dh_table, reference, target):
 
 def get_forward_kinematics(q1, q2, q3, q4):
         # DH Parameters       a   d  alpha theta
-        DH_table = np.array([[0, l1, 90, q1],
-                     [l2, 0, 0, 90 + phi + q2],
-                     [l3, 0, 0, 90 - phi + q3],
+        DH_table = np.array([[0, l1, math.pi/2, q1],
+                     [l2, 0, 0, math.pi/2 + phi + q2],
+                     [l3, 0, 0, math.pi/2 - phi + q3],
                      [l4, 0 , 0 ,q4]])
         return get_transformation_mat(DH_table, 0, 3)
 
@@ -86,7 +86,7 @@ def get_q_values(transform):
 	theta2 = -math.pi/2 + theta2 - psi
 	theta3 = theta3 -(math.pi/2 - psi)
 	theta4 = phi - theta2 - theta3
-	return [theta1/math.pi*180, theta2/math.pi*180, theta3/math.pi*180, theta4/math.pi*180]
+	return [theta1, theta2, theta3, theta4]
 
 #--------------Quaternion Conversions-------------
 def pose2rot(pose):
@@ -139,7 +139,7 @@ test_hom1 = [[  -0.8529,   -0.1504,    0.5,    -220.7481],
  [   0.1736 ,  -0.9848 ,   0.    ,  228.1813],
  [   0.      ,  0.      ,  0.     ,   1.    ]]
 
-# q values 180 0 45 45
+# q values 180 0 45 -45
 test_hom2 = np.array([[  1.,       0.  ,     0.,     245.0812],
  [ -0.   ,    0.  ,     1.,      -0.    ],
  [  0.    ,  -1. ,      0. ,    136.6448],
@@ -148,7 +148,3 @@ test_hom2 = np.array([[  1.,       0.  ,     0.,     245.0812],
 print(get_q_values(test_hom2))
 print(get_q_values(test_hom1))
 print(get_q_values(zero_hom))'''
-
-def main():
-    robot = Robot()
-    robot.forward_kinematics([0.0, 0.0, 0.0, 0.0])
