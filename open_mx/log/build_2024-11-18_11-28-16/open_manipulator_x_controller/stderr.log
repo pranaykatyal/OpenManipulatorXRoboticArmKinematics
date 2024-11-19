@@ -1,0 +1,4 @@
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:[m[K In member function ‘[01m[Kvoid open_manipulator_x_controller::OpenManipulatorXController::init_publisher()[m[K’:
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:103:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kname[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  103 |   for (auto const & [01;35m[Kname[m[K:tools_name)
+      |                     [01;35m[K^~~~[m[K

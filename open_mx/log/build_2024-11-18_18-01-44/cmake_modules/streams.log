@@ -1,0 +1,32 @@
+[0.021s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/cmake_modules': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py:/opt/ros/humble /usr/bin/cmake --build /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/cmake_modules -- -j20 -l20
+[0.214s] Invoked command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/cmake_modules' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py:/opt/ros/humble /usr/bin/cmake --build /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/cmake_modules -- -j20 -l20
+[0.245s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/cmake_modules': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py:/opt/ros/humble /usr/bin/cmake --install /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/cmake_modules
+[0.254s] -- Install configuration: ""
+[0.255s] -- Execute custom install script
+[0.256s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/Modules/FindGSL.cmake
+[0.256s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/Modules/FindGflags.cmake
+[0.256s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/Modules/FindNUMPY.cmake
+[0.256s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/Modules/FindPoco.cmake
+[0.256s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/Modules/FindTBB.cmake
+[0.256s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/Modules/FindTinyXML.cmake
+[0.256s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/Modules/FindTinyXML2.cmake
+[0.256s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/Modules/FindUUID.cmake
+[0.256s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/Modules/FindXenomai.cmake
+[0.256s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/ament_index/resource_index/package_run_dependencies/cmake_modules
+[0.256s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/ament_index/resource_index/parent_prefix_path/cmake_modules
+[0.256s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/environment/ament_prefix_path.sh
+[0.257s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/environment/ament_prefix_path.dsv
+[0.257s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/environment/path.sh
+[0.257s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/environment/path.dsv
+[0.257s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/local_setup.bash
+[0.257s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/local_setup.sh
+[0.257s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/local_setup.zsh
+[0.257s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/local_setup.dsv
+[0.257s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/package.dsv
+[0.266s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/ament_index/resource_index/packages/cmake_modules
+[0.266s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/cmake_modules-extras.cmake
+[0.266s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.266s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/cmake_modulesConfig.cmake
+[0.267s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/cmake/cmake_modulesConfig-version.cmake
+[0.267s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules/share/cmake_modules/package.xml
+[0.291s] Invoked command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/cmake_modules' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py:/opt/ros/humble /usr/bin/cmake --install /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/cmake_modules
