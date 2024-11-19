@@ -32,8 +32,9 @@ class Robot():
         pose.orientation.y = quaternian[1]
         pose.orientation.z = quaternian[2]
         pose.orientation.w = quaternian[3]
-        
+
         return pose
+
         
         
     def inverse_kinematics(self, pose):
@@ -82,10 +83,10 @@ class Robot():
         np.set_printoptions(precision=4, suppress=True)
 
         # Extracting to save space in below equations:
-        q1 = self.q1
-        q2 = self.q2
-        q3 = self.q3
-        q4 = self.q4
+        q1 = np.rad2deg(self.q1)
+        q2 = np.rad2deg(self.q2)
+        q3 = np.rad2deg(self.q3)
+        q4 = np.rad2deg(self.q4)
         
         # Equations below were worked out on paper:
         A_1 = np.array([[cos(np.deg2rad(q1)), -sin(np.deg2rad(q1)) * cos(np.pi / 2),
