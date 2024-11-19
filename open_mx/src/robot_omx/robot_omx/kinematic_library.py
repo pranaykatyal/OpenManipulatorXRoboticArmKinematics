@@ -70,6 +70,7 @@ def get_q_values(transform):
 	z3 = o03[2]
 
 
+<<<<<<< HEAD
 	r = math.sqrt(x3**2+y3**2)
 	s = z3 - (l0+l1)
 	D = (r**2 + s**2 - l2**2 - l3**2)/(2*l2*l3)
@@ -81,6 +82,65 @@ def get_q_values(transform):
 	theta1 = math.atan2(-transform[1][3], -transform[0][3])
 	theta3 = math.atan2(math.sqrt(1-D**2), D)
 	theta2 = math.atan2(r,s) + math.atan2(l2 +l3*math.cos(theta3),l3*math.sin(theta3))
+=======
+    def forward_kinematics(self, joint_parameters):
+        # Initializing joint parameters:
+        self.q1 = joint_parameters[0]
+        self.q2 = joint_parameters[1]
+        self.q3 = joint_parameters[2]
+        self.q4 = joint_parameters[3]
+        
+        # Performing Forward Kinematic Calculations by multiplying homgenous transformation matrices:
+        (A1, A2, A3, A4) = self.calculate_A_i() #First Calculating Intermediate Homogenous Transformation Matrices
+        transformation_matrix = np.matmul(A1, np.matmul(A2,np.matmul(A3, A4))) # A1*A2*A3*A4
+        quaternian = Rotation.from_matrix(transformation_matrix[:3, :3]).as_quat()
+        pos = transformation_matrix[:3, 3]
+        pose = Pose()
+        pose.position.x = pos[0]
+        pose.position.y = pos[1]
+        pose.position.z = pos[2]
+        pose.orientation.x = quaternian[0]
+        pose.orientation.y = quaternian[1]
+        pose.orientation.z = quaternian[2]
+        pose.orientation.w = quaternian[3]
+
+        return pose
+
+        
+        
+    def inverse_kinematics(self, pose):
+        self.desired_pose = pose
+
+        # Converting pose into a Homogonous transformation matrix:
+        x_pos = pose.position.x
+        y_pos = pose.position.y
+        z_pos = pose.position.z
+        x_quat = pose.orientation.x # Extracting the quaternions
+        y_quat = pose.orientation.y
+        z_quat = pose.orientation.z
+        w_quat = pose.orientation.w
+        quaternions = [x_quat, y_quat, z_quat, w_quat]
+        #print(f'The quaternions are {quaternions}')
+        
+        transform = np.eye(4)
+        x = x_quat
+        y = y_quat
+        z = z_quat
+        w = w_quat
+
+        transform[:3,:3] = np.array([[2 * (w * w) + 2 * (x * x) - 1, (2 * x * y - 2 * w * z), (2 * x * z + 2 * w * y)],
+                      [(2 * x * y + 2 * w * z), (2 * w * w + 2 * y * y - 1), (2 * y * z - 2 * w * x)],
+                      [(2 * x * z - 2 * w * y), (2 * y * z + 2 * w * x), (2 * w * w + 2 * z * z - 1)]])
+        transform[:3,3] = [x_pos, y_pos, z_pos]
+
+        (theta_1, theta_2, theta_3, theta_4) = inverse_kinematics.get_q_values(transform)
+
+
+
+        print (f'\n\nThe theta values are {theta_1}, {theta_2}, {theta_3}, {theta_4}')
+
+        return [theta_1 * np.pi / 180, theta_2 * np.pi / 180, theta_3 * np.pi / 180, theta_4 * np.pi / 180]
+>>>>>>> 881e805e53bd03fe53e2e507978eb79200393e30
 
 
 	theta2 = -math.pi/2 + theta2 - psi
@@ -149,3 +209,6 @@ print(get_q_values(test_hom2))
 print(get_q_values(test_hom1))
 print(get_q_values(zero_hom))'''
 
+def main():
+    robot = Robot()
+    robot.forward_kinematics([0.0, 0.0, 0.0, 0.0])

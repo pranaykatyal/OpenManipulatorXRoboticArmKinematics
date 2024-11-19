@@ -23,7 +23,7 @@ class Joint_Subscriber(Node):
         robot = kinematic_library.Robot() # Creates an object that has the functions needed for the pose calculation
         # pose = robot.forward_kinematics(msg.data) # Old Code
         pose = robot.forward_kinematics(joint_positions) # Using the object functions to calculate the pose
-        self.get_logger().info(f'The End Effector Pose is \n{pose}') # Posting the result to the terminal
+        #self.get_logger().info(f'The End Effector Pose is \n{pose}') # Posting the result to the terminal
         self.publisher.publish(pose)
 
 def main():
