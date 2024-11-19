@@ -3,7 +3,7 @@
 import math
 from math import cos, sin# Needed for trig functions
 import numpy as np # Needed for array functions
-from robot_omx import rot_to_quat
+from robot_omx import rot_to_quat, inverse_kinematics
 
 class Robot():
     def __init__(self):
@@ -36,45 +36,60 @@ class Robot():
         z_quat = pose.orientation.z
         w_quat = pose.orientation.w
         quaternions = [x_quat, y_quat, z_quat, w_quat]
+        print(f'The quaternions are {quaternions}')
         
         transform = np.eye(4)
-        transform[:3,:3] = np.array([[2*(x_quat**2 + y_quat**2) - 1, 2*(y_quat*z_quat - x_quat*w_quat), 2*(y_quat*w_quat + x_quat*z_quat)],
-    	[2*(y_quat*z_quat + x_quat*w_quat), 2*(x_quat**2 + z_quat**2) - 1, 2*(z_quat*w_quat - x_quat*y_quat)],
-    	[2*(y_quat*w_quat - x_quat*z_quat), 2*(z_quat*w_quat + x_quat*y_quat), 2*(x_quat**2 + w_quat**2) - 1]])
+        x = x_quat
+        y = y_quat
+        z = z_quat
+        w = w_quat
+
+        transform[:3,:3] = np.array([[2 * (w * w) + 2 * (x * x) - 1, (2 * x * y - 2 * w * z), (2 * x * z + 2 * w * y)],
+                      [(2 * x * y + 2 * w * z), (2 * w * w + 2 * y * y - 1), (2 * y * z - 2 * w * x)],
+                      [(2 * x * z - 2 * w * y), (2 * y * z + 2 * w * x), (2 * w * w + 2 * z * z - 1)]])
         transform[:3,3] = [x_pos, y_pos, z_pos]
-    	
+        print(f'The transform is {transform}')
+
+        (theta_1, theta_2, theta_3, theta_4) = inverse_kinematics.get_q_values(transform)
         #rotation = scipy.spatial.transform.Rotation.from_quat(quaternions) # Using a library to convert the quaternions into a 3x3
 
-        # Define constant values
-        l0 = 36.076
-        l1 = 96.326 - l0
-        l2 = 130.23056
-        l3 = 124
-        l4 = 133.4
-        psi = math.atan2(24, 128)
+        # # Define constant values
+        # l0 = 36.076
+        # l1 = 96.326 - l0
+        # l2 = 130.23056
+        # l3 = 124
+        # l4 = 133.4
+        # psi = math.atan2(24, 128)
+        #
+        # o43 = [-l4, 0, 0, 1]
+        #
+        # o03 = np.matmul(transform, o43)
+        # x3 = o03[0]
+        # y3 = o03[1]
+        # z3 = o03[2]
+        #
+        # r = math.sqrt(x3 ** 2 + y3 ** 2)
+        # s = z3 - (l0 + l1)
+        # D = (r ** 2 + s ** 2 - l2 ** 2 - l3 ** 2) / (2 * l2 * l3)
+        # R = math.sqrt(transform[0][3] ** 2 + transform[1][3] ** 2)
+        # S = transform[2][3] - (l0 + l1)
+        # phi = math.atan2(s - S, R - r)
+        #
+        # theta1 = math.atan2(transform[1][3], transform[0][3])
+        # theta3 = math.atan2(math.sqrt(1 - D ** 2), D)
+        # theta2 = math.atan2(r, s) + math.atan2(l2 + l3 * math.cos(theta3), l3 * math.sin(theta3))
+        #
+        # theta2 = -math.pi / 2 + theta2 - psi
+        # theta3 = theta3 - (math.pi / 2 - psi)
+        # theta4 = phi - theta2 - theta3
 
-        o43 = [-l4, 0, 0, 1]
 
-        o03 = np.matmul(transform, o43)
-        x3 = o03[0]
-        y3 = o03[1]
-        z3 = o03[2]
+        print (f'The theta values are {theta1}, {theta2}, {theta3}, {theta4}')
 
-        r = math.sqrt(x3 ** 2 + y3 ** 2)
-        s = z3 - (l0 + l1)
-        D = (r ** 2 + s ** 2 - l2 ** 2 - l3 ** 2) / (2 * l2 * l3)
-        R = math.sqrt(transform[0][3] ** 2 + transform[1][3] ** 2)
-        S = transform[2][3] - (l0 + l1)
-        phi = math.atan2(s - S, R - r)
+        #return [0.0, 45.0, 0.0, 45.0]
+        return [theta_1, theta_2, theta_3, theta_4]
+        #return [theta1 / math.pi * 180, theta2 / math.pi * 180, theta3 / math.pi * 180, theta4 / math.pi * 180]
 
-        theta1 = math.atan2(-transform[1][3], -transform[0][3])
-        theta3 = math.atan2(math.sqrt(1 - D ** 2), D)
-        theta2 = math.atan2(r, s) + math.atan2(l2 + l3 * math.cos(theta3), l3 * math.sin(theta3))
-
-        theta2 = -math.pi / 2 + theta2 - psi
-        theta3 = theta3 - (math.pi / 2 - psi)
-        theta4 = phi - theta2 - theta3
-        return [theta1 / math.pi * 180, theta2 / math.pi * 180, theta3 / math.pi * 180, theta4 / math.pi * 180]
 
 
     def calculate_A_i(self):
