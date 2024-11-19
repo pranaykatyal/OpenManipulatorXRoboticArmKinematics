@@ -4,6 +4,8 @@ import math
 from math import cos, sin# Needed for trig functions
 import numpy as np # Needed for array functions
 from robot_omx import rot_to_quat, inverse_kinematics
+from scipy.spatial.transform import Rotation
+from geometry_msgs.msg import Pose
 
 class Robot():
     def __init__(self):
@@ -20,7 +22,17 @@ class Robot():
         # Performing Forward Kinematic Calculations by multiplying homgenous transformation matrices:
         (A1, A2, A3, A4) = self.calculate_A_i() #First Calculating Intermediate Homogenous Transformation Matrices
         transformation_matrix = np.matmul(A1, np.matmul(A2,np.matmul(A3, A4))) # A1*A2*A3*A4
-        quaternion = rot_to_quat.rot_to_quat(transformation_matrix)
+        quaternian = Rotation.from_matrix(transformation_matrix[:3, :3]).as_quat()
+        pos = transformation_matrix[:3, 3]
+        pose = Pose()
+        pose.position.x = pos[0]
+        pose.position.y = pos[1]
+        pose.position.z = pos[2]
+        pose.orientation.x = quaternian[0]
+        pose.orientation.y = quaternian[1]
+        pose.orientation.z = quaternian[2]
+        pose.orientation.w = quaternian[3]
+        
         return quaternion
         
         
