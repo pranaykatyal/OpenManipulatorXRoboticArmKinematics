@@ -120,3 +120,6 @@ class Robot():
         return A_1, A_2, A_3, A_4
 
 
+def main():
+    robot = Robot()
+    robot.forward_kinematics([0.0, 0.0, 0.0, 0.0])

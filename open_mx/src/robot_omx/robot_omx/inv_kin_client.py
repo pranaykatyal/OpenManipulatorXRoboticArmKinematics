@@ -16,27 +16,14 @@ class Inv_Client(Node):
         # Creating a client that sends a desired pose to inverse_server
         super().__init__('inv_client')
         self.cli = self.create_client(InvKin, 'inverse_server') #(Type, name)
-        self.goal_joint_space = self.create_client(SetJointPosition, 'goal_joint_space_path')
         while not self.cli.wait_for_service(timeout_sec=1.0): # Every second it checks to see if the server is available
         	self.get_logger().info('The serviice is not available yet. Will try again every second')
         self.req = InvKin.Request() # Creating a request object that is filled in the request method below
-        self.goal_joint_space_req = SetJointPosition.Request()
+        # self.goal_joint_space_req = SetJointPosition.Request()
 
     def inverse_client_request(self, desired_pose):
         self.req.pose = desired_pose                   
         return self.cli.call_async(self.req) # Sending the request to the server
-
-    def send_goal_joint_space(self, desired_joint_angles, path_time): # Source: Python example file from canvas
-        self.goal_joint_space_req.joint_position.joint_name = ['joint1', 'joint2', 'joint3', 'joint4', 'gripper']
-        self.goal_joint_space_req.joint_position.position = [desired_joint_angles.q_1, desired_joint_angles.q_2, desired_joint_angles.q_3, desired_joint_angles.q_4, 0.0]
-        self.goal_joint_space_req.path_time = path_time
-
-        try:
-            self.goal_joint_space.call_async(self.goal_joint_space_req)
-        except Exception as e:
-            self.get_logger().info('Sending Goal Joint failed %r' % (e,))
-
-        return 1
 
 
 def main():
@@ -63,12 +50,6 @@ def main():
        				 f'Joint 2: {joint_angles.q_2}\n'
        				 f'Joint 3: {joint_angles.q_3}\n'
        				 f'Joint 4: {joint_angles.q_4}\n')
-
-    # Calling method to send command to move robot:
-    default_path_time = 0.5
-    move_robot_output = inv_client.send_goal_joint_space(joint_angles, default_path_time)
-    #rclpy.spin_until_future_complete(inv_client, move_robot_output) # Ensures program waits for a result prior to printing to the terminal.
-
 
     rclpy.spin(inv_client)  # Running the node continously
 

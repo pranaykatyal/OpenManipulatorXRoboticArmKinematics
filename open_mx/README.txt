@@ -28,7 +28,7 @@ To send user poses to the inverse kinematics server through the CLIENT, use the 
 	# First three values are the position. Last three are the orienation in quaternions
 
 # To send user poses to the inverse kinematics server DIRECTLY, use the following: 
-	ros2 service call /inverse_server custom_messages/srv/InvKin "{pose: {position: {x: 207.0254, y: 119.5262, z: 138.3166}, orientation: {x: 0.612, y: -0.707, z: 0.0, w: 0.354}}}"
+	ros2 service call /inverse_server custom_messages/srv/InvKin "{pose: {position: {x: -281.4, y: 0.0, z: 224.326}, orientation: {x: 0.0, y: 0,7071, z: -0.7071, w: 0.0}}}"
 
 
 ################################################ PROVIDED PACKAGES FROM CANVAS ##########################################
