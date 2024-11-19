@@ -26,7 +26,7 @@ def get_q_values(transform):
 	phi = math.atan2(s-S, R-r)
 
 
-	theta1 = math.atan2(transform[1][3], transform[0][3])
+	theta1 = math.atan2(-transform[1][3], -transform[0][3])
 	theta3 = math.atan2(math.sqrt(1-D**2), D)
 	theta2 = math.atan2(r,s) + math.atan2(l2 +l3*math.cos(theta3),l3*math.sin(theta3))
 
@@ -37,24 +37,23 @@ def get_q_values(transform):
 	return [theta1/math.pi*180, theta2/math.pi*180, theta3/math.pi*180, theta4/math.pi*180]
 
 # q values = 0 0 0 0
-zero_hom = [[  1.,     -0.,      0.,   281.4 ],
- [   0.,     -0.,     1.,      0.  ],
+zero_hom = [[  -1.,     -0.,      0.,   -281.4 ],
+ [   0.,     -0.,     -1.,      0.  ],
  [   0.,     -1.,      0.,    224.326],
  [   0.,      0.,      0.,      1.  ]]
 
-# q values = 30 -10 20 20
-test_hom1 = [[  0.75,    -0.433,   -0.5,    207.0254],
- [  0.433,   -0.25    , 0.866  ,119.5262],
- [ -0.5   ,  -0.866  ,  0.     ,138.3166],
- [  0.     ,  0.    ,   0.     ,  1.    ]]
-
-
+# q values = 30 -10 20 -20
+test_hom1 = [[  -0.8529,   -0.1504,    0.5,    -220.7481],
+ [  -0.4924,   -0.0868,   -0.866,  -127.449 ],
+ [   0.1736 ,  -0.9848 ,   0.    ,  228.1813],
+ [   0.      ,  0.      ,  0.     ,   1.    ]]
 
 # q values 180 0 45 45
-test_hom2 = [[  -0.,        1.,       -0.,     -111.6812],
- [  -0.,       -0.  ,     -1.,        0.    ],
- [  -1. ,      -0. ,       0. ,       3.2448],
- [   0.  ,      0.,        0.  ,      1.    ]]
+test_hom2 = np.array([[  1.,       0.  ,     0.,     245.0812],
+ [ -0.   ,    0.  ,     1.,      -0.    ],
+ [  0.    ,  -1. ,      0. ,    136.6448],
+ [  0.     ,  0.,       0.  ,     1.    ]])
+
 print(get_q_values(test_hom2))
 print(get_q_values(test_hom1))
 print(get_q_values(zero_hom))

@@ -2,7 +2,7 @@ import numpy as np
 from math import sqrt
 from geometry_msgs.msg import Pose
 def rot_to_quat(matrix):
-	rot = matrix[:3,:3]
+	rot = np.array(matrix)[:3,:3]
 	pose = Pose()
 	pose.position.x = matrix[0][3]
 	pose.position.y = matrix[1][3]
@@ -45,22 +45,24 @@ def rot_to_quat(matrix):
 
 
 
-
-zero_hom = [[  1.,     -0.,      0.,   281.4 ],
- [   0.,     -0.,     1.,      0.  ],
+# q values = 0 0 0 0
+zero_hom = [[  -1.,     -0.,      0.,   -281.4 ],
+ [   0.,     -0.,     -1.,      0.  ],
  [   0.,     -1.,      0.,    224.326],
  [   0.,      0.,      0.,      1.  ]]
 
-# q values = 30 -10 20 20
-test_hom1 = [[  0.75,    -0.433,   -0.5,    207.0254],
- [  0.433,   -0.25    , 0.866  ,119.5262],
- [ -0.5   ,  -0.866  ,  0.     ,138.3166],
- [  0.     ,  0.    ,   0.     ,  1.    ]]
+# q values = 30 -10 20 -20
+test_hom1 = [[  -0.8529,   -0.1504,    0.5,    -220.7481],
+ [  -0.4924,   -0.0868,   -0.866,  -127.449 ],
+ [   0.1736 ,  -0.9848 ,   0.    ,  228.1813],
+ [   0.      ,  0.      ,  0.     ,   1.    ]]
 
 # q values 180 0 45 45
-test_hom2 = [[  -0.,        1.,       -0.,     -111.6812],
- [  -0.,       -0.  ,     -1.,        0.    ],
- [  -1. ,      -0. ,       0. ,       3.2448],
- [   0.  ,      0.,        0.  ,      1.    ]]
+test_hom2 = np.array([[  1.,       0.  ,     0.,     245.0812],
+ [ -0.   ,    0.  ,     1.,      -0.    ],
+ [  0.    ,  -1. ,      0. ,    136.6448],
+ [  0.     ,  0.,       0.  ,     1.    ]])
 
-#print(rot_to_quat(zero_hom))
+print(rot_to_quat(zero_hom))
+print(rot_to_quat(test_hom1))
+print(rot_to_quat(test_hom2))
