@@ -20,9 +20,9 @@ class Inv_Server(Node):
     def listener_callback(self, request, response):
         pose = request.pose # Getting the desired pose from the client
         self.get_logger().info(f'\n\nThe incoming pose is \n{pose}') # Posting the received request to the terminal
-
+        matrix = kinematic_library.pose2rot(pose)
         # Initializing robot object that contains the needed methods, and calculating the inverse kinematics:
-        (response.q_1, response.q_2, response.q_3, response.q_4) = kinematic_library.inverse_kinematics(pose)
+        (response.q_1, response.q_2, response.q_3, response.q_4) = kinematic_library.inverse_kinematics(matrix)
 
         # Calling method to send command to move robot:
         default_path_time = 0.5
