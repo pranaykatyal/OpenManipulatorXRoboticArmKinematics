@@ -1,4 +1,3 @@
-/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/Test_python_rot_to_quat.py
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/__init__.py
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/kinematic_library.py
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/inverse_kinematics.py
@@ -6,7 +5,6 @@
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/inv_kin_server.py
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/rot_to_quat.py
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/forward_kin_subscriber.py
-/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/__pycache__/Test_python_rot_to_quat.cpython-310.pyc
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/__pycache__/__init__.cpython-310.pyc
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/__pycache__/kinematic_library.cpython-310.pyc
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/__pycache__/inverse_kinematics.cpython-310.pyc

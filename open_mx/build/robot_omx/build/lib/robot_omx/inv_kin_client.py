@@ -51,14 +51,14 @@ def main():
     user_pose.orientation.w = float(sys.argv[7])
     
     
-    print(f'the pose request I got was {user_pose}')
+    #print(f'\n\nthe pose request I got was {user_pose}')
     
     rclpy.init()
     inv_client = Inv_Client() # initializing the client object
     server_output = inv_client.inverse_client_request(user_pose)
     rclpy.spin_until_future_complete(inv_client, server_output) # Ensures program waits for a result prior to printing to the terminal.
     joint_angles = server_output.result() # Posting result
-    inv_client.get_logger().info(f'Inverse Kinematic Results from server:\n'
+    inv_client.get_logger().info(f'\n\nInverse Kinematic Results from server:\n'
     				 f'Joint 1: {joint_angles.q_1}\n'
        				 f'Joint 2: {joint_angles.q_2}\n'
        				 f'Joint 3: {joint_angles.q_3}\n'

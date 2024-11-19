@@ -3,7 +3,9 @@
 import math
 from math import cos, sin# Needed for trig functions
 import numpy as np # Needed for array functions
-from robot_omx import rot_to_quat, inverse_kinematics
+from robot_omx import inverse_kinematics
+from scipy.spatial.transform import Rotation
+from geometry_msgs.msg import Pose
 
 class Robot():
     def __init__(self):
@@ -20,8 +22,18 @@ class Robot():
         # Performing Forward Kinematic Calculations by multiplying homgenous transformation matrices:
         (A1, A2, A3, A4) = self.calculate_A_i() #First Calculating Intermediate Homogenous Transformation Matrices
         transformation_matrix = np.matmul(A1, np.matmul(A2,np.matmul(A3, A4))) # A1*A2*A3*A4
-        quaternion = rot_to_quat.rot_to_quat(transformation_matrix)
-        return quaternion
+        quaternian = Rotation.from_matrix(transformation_matrix[:3, :3]).as_quat()
+        pos = transformation_matrix[:3, 3]
+        pose = Pose()
+        pose.position.x = pos[0]
+        pose.position.y = pos[1]
+        pose.position.z = pos[2]
+        pose.orientation.x = quaternian[0]
+        pose.orientation.y = quaternian[1]
+        pose.orientation.z = quaternian[2]
+        pose.orientation.w = quaternian[3]
+        
+        return pose
         
         
     def inverse_kinematics(self, pose):
@@ -36,7 +48,7 @@ class Robot():
         z_quat = pose.orientation.z
         w_quat = pose.orientation.w
         quaternions = [x_quat, y_quat, z_quat, w_quat]
-        print(f'The quaternions are {quaternions}')
+        #print(f'The quaternions are {quaternions}')
         
         transform = np.eye(4)
         x = x_quat
@@ -48,47 +60,15 @@ class Robot():
                       [(2 * x * y + 2 * w * z), (2 * w * w + 2 * y * y - 1), (2 * y * z - 2 * w * x)],
                       [(2 * x * z - 2 * w * y), (2 * y * z + 2 * w * x), (2 * w * w + 2 * z * z - 1)]])
         transform[:3,3] = [x_pos, y_pos, z_pos]
-        print(f'The transform is {transform}')
 
         (theta_1, theta_2, theta_3, theta_4) = inverse_kinematics.get_q_values(transform)
-        #rotation = scipy.spatial.transform.Rotation.from_quat(quaternions) # Using a library to convert the quaternions into a 3x3
-
-        # # Define constant values
-        # l0 = 36.076
-        # l1 = 96.326 - l0
-        # l2 = 130.23056
-        # l3 = 124
-        # l4 = 133.4
-        # psi = math.atan2(24, 128)
-        #
-        # o43 = [-l4, 0, 0, 1]
-        #
-        # o03 = np.matmul(transform, o43)
-        # x3 = o03[0]
-        # y3 = o03[1]
-        # z3 = o03[2]
-        #
-        # r = math.sqrt(x3 ** 2 + y3 ** 2)
-        # s = z3 - (l0 + l1)
-        # D = (r ** 2 + s ** 2 - l2 ** 2 - l3 ** 2) / (2 * l2 * l3)
-        # R = math.sqrt(transform[0][3] ** 2 + transform[1][3] ** 2)
-        # S = transform[2][3] - (l0 + l1)
-        # phi = math.atan2(s - S, R - r)
-        #
-        # theta1 = math.atan2(transform[1][3], transform[0][3])
-        # theta3 = math.atan2(math.sqrt(1 - D ** 2), D)
-        # theta2 = math.atan2(r, s) + math.atan2(l2 + l3 * math.cos(theta3), l3 * math.sin(theta3))
-        #
-        # theta2 = -math.pi / 2 + theta2 - psi
-        # theta3 = theta3 - (math.pi / 2 - psi)
-        # theta4 = phi - theta2 - theta3
 
 
-        print (f'The theta values are {theta1}, {theta2}, {theta3}, {theta4}')
 
-        #return [0.0, 45.0, 0.0, 45.0]
-        return [theta_1, theta_2, theta_3, theta_4]
-        #return [theta1 / math.pi * 180, theta2 / math.pi * 180, theta3 / math.pi * 180, theta4 / math.pi * 180]
+        print (f'\n\nThe theta values are {theta_1}, {theta_2}, {theta_3}, {theta_4}')
+
+        return [theta_1 * np.pi / 180, theta_2 * np.pi / 180, theta_3 * np.pi / 180, theta_4 * np.pi / 180]
+
 
 
     def calculate_A_i(self):

@@ -15,7 +15,7 @@ class Inv_Server(Node):
 
     def listener_callback(self, request, response):
         pose = request.pose # Getting the desired pose from the client
-        self.get_logger().info(f'The incoming pose is \n{pose}') # Posting the received request to the terminal
+        self.get_logger().info(f'\n\nThe incoming pose is \n{pose}') # Posting the received request to the terminal
 
         # Initializing robot object that contains the needed methods, and calculating the inverse kinematics:
         robot = kinematic_library.Robot()
