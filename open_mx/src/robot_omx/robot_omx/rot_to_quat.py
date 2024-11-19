@@ -62,6 +62,25 @@ test_hom2 = np.array([[  1.,       0.  ,     0.,     245.0812],
  [  0.    ,  -1. ,      0. ,    136.6448],
  [  0.     ,  0.,       0.  ,     1.    ]])
 
-print(rot_to_quat(zero_hom))
-print(rot_to_quat(test_hom1))
-print(rot_to_quat(test_hom2))
+def quat_to_rot(pose):
+        # Converting pose into a Homogonous transformation matrix:
+        x_pos = pose.position.x
+        y_pos = pose.position.y
+        z_pos = pose.position.z
+        x_quat = pose.orientation.x # Extracting the quaternions
+        y_quat = pose.orientation.y
+        z_quat = pose.orientation.z
+        w_quat = pose.orientation.w
+        quaternions = [x_quat, y_quat, z_quat, w_quat]
+
+        transform = np.eye(4)
+        transform[:3,:3] = np.array([[2*(x_quat**2 + y_quat**2) - 1, 2*(y_quat*z_quat - x_quat*w_quat), 2*(y_quat*w_quat + x_quat*z_quat)],
+        [2*(y_quat*z_quat + x_quat*w_quat), 2*(x_quat**2 + z_quat**2) - 1, 2*(z_quat*w_quat - x_quat*y_quat)],
+        [2*(y_quat*w_quat - x_quat*z_quat), 2*(z_quat*w_quat + x_quat*y_quat), 2*(x_quat**2 + w_quat**2) - 1]])
+        
+        return transform
+
+
+print(quat_to_rot(rot_to_quat(zero_hom)))
+print(quat_to_rot(rot_to_quat(test_hom1)))
+print(quat_to_rot(rot_to_quat(test_hom2)))

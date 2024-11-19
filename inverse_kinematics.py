@@ -37,7 +37,7 @@ def get_q_values(transform):
 	return [theta1/math.pi*180, theta2/math.pi*180, theta3/math.pi*180, theta4/math.pi*180]
 
 # q values = 0 0 0 0
-zero_hom = [[  -1.,     -0.,      0.,   -281.4 ],
+'''zero_hom = [[  -1.,     -0.,      0.,   -281.4 ],
  [   0.,     -0.,     -1.,      0.  ],
  [   0.,     -1.,      0.,    224.326],
  [   0.,      0.,      0.,      1.  ]]
@@ -56,5 +56,5 @@ test_hom2 = np.array([[  1.,       0.  ,     0.,     245.0812],
 
 print(get_q_values(test_hom2))
 print(get_q_values(test_hom1))
-print(get_q_values(zero_hom))
+print(get_q_values(zero_hom))'''
 
