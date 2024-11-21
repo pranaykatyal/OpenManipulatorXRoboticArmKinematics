@@ -148,3 +148,10 @@ test_hom2 = np.array([[  1.,       0.  ,     0.,     245.0812],
 print(get_q_values(test_hom2))
 print(get_q_values(test_hom1))
 print(get_q_values(zero_hom))'''
+
+#pose = rot2pose(get_forward_kinematics(np.deg2rad(-45), np.deg2rad(0), np.deg2rad(-30), np.deg2rad(45)))
+#print(pose)
+#print([pose.position.x, pose.position.y, pose.position.z, pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w])
+#print(get_q_values(get_forward_kinematics(np.deg2rad(-45), np.deg2rad(0), np.deg2rad(-30), np.deg2rad(45))))
+
+print(get_forward_kinematics(0.52,0,0,math.pi/2))
