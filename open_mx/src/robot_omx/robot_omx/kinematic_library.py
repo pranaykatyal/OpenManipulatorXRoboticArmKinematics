@@ -2,7 +2,7 @@ import numpy as np
 import math
 from numpy import sin, cos, arctan2
 from scipy.spatial.transform import Rotation
-from geometry_msgs.msg import Pose
+from geometry_msgs.msg import Pose, Twist
 
 #Link Lengths
 l1 = 96.326
@@ -169,7 +169,13 @@ def calc_twist(q1, q2, q3, q4, q_1_dot, q_2_dot, q_3_dot, q_4_dot):
     joint_velocities = [q_1_dot, q_2_dot, q_3_dot, q_4_dot]
     linear_velocities = j_v.dot(joint_velocities)
     angular_velocities = j_w.dot(joint_velocities)
-    twist = np.array([linear_velocities, angular_velocities])
+    twist = Twist()
+    twist.linear.x = linear_velocities[0]
+    twist.linear.y = linear_velocities[1]
+    twist.linear.z = linear_velocities[2]
+    twist.angular.x = angular_velocities[0]
+    twist.angular.y = angular_velocities[1]
+    twist.angular.z = angular_velocities[2]
 
     return twist
 

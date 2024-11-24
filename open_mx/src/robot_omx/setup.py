@@ -23,7 +23,8 @@ setup(
         'joint_listener = robot_omx.forward_kin_subscriber:main',
         'inverse_server = robot_omx.inv_kin_server:main',
         'inverse_client = robot_omx.inv_kin_client:main',
-        'robot = robot_omx.robot_node:main'
+        'robot = robot_omx.robot_node:main',
+        'velocity_server = robot_omx.velocity_server:main'
         ],
     },
 )

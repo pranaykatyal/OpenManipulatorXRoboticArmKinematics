@@ -7,7 +7,7 @@ from custom_messages.srv import Velocity #This is a custom .srv file. Request: J
 class Velocity_Server(Node):
     def __init__(self):
         super().__init__('velocity_server') # Creating a server node for calculating end effector velocities
-        self.srv = self.create_service(Velocity, 'inverse_server', self.velocity_callback) # (Type, name, callback function)
+        self.srv = self.create_service(Velocity, 'velocity_server', self.velocity_callback) # (Type, name, callback function)
 
     def velocity_callback(self, request, response):
         # Extracting joint angles and velocities from request:

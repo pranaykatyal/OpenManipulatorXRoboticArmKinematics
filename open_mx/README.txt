@@ -30,7 +30,8 @@ To send user poses to the inverse kinematics server through the CLIENT, use the 
 # To send user poses to the inverse kinematics server DIRECTLY, use the following: 
 	ros2 service call /inverse_server custom_messages/srv/InvKin "{pose: {position: {x: -281.4, y: 0.0, z: 224.326}, orientation: {x: 0.0, y: 0,7071, z: -0.7071, w: 0.0}}}"
 
-
+# To send user poses to the velocity server DIRECTLY, use the following: 
+	ros2 service call /velocity_server custom_messages/srv/Velocity "{q_1: 0.0, q_2: 0.0, q_3: 0.0, q_4: 0.0, q_1_dot: 0.0, q_2_dot: 0.0, q_3_dot: 0.0, q_4_dot: 0.0}"
 ################################################ PROVIDED PACKAGES FROM CANVAS ##########################################
 DynamixelSDK
 dynamixel_workbench
