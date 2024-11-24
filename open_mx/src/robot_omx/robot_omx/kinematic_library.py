@@ -1,8 +1,8 @@
 import numpy as np
 import math
 from numpy import sin, cos, arctan2
-from scipy.spatial.transform import Rotation 
-from geometry_msgs.msg import Pose 
+from scipy.spatial.transform import Rotation
+from geometry_msgs.msg import Pose
 
 #Link Lengths
 l1 = 96.326
@@ -127,6 +127,52 @@ def rot2pose(rot):
 
     return pose
 
+#-----------Velocity Kinematics---------------
+def calc_twist(q1, q2, q3, q4, q_1_dot, q_2_dot, q_3_dot, q_4_dot):
+    # DH Parameters       a   d  alpha theta
+    DH_table = np.array([[0, l1, math.pi / 2, q1],
+                         [l2, 0, 0, math.pi / 2 + phi + q2],
+                         [l3, 0, 0, math.pi / 2 - phi + q3],
+                         [l4, 0, 0, q4]])
+
+    # First finding relevant transformation matrices:
+    H_1_0 = get_transformation_mat(DH_table, 0, 0)
+    H_2_0 = get_transformation_mat(DH_table, 0, 1)
+    H_3_0 = get_transformation_mat(DH_table, 0, 2)
+    H_4_0 = get_transformation_mat(DH_table, 0, 3)
+
+    # Calculating intermediate variables by extracting data from the transformation matrices above:
+    z_0 = [0, 0, 1]  # by definitions
+    z_1 = H_1_0[0:3, 2]
+    z_2 = H_2_0[0:3, 2]
+    z_3 = H_3_0[0:3, 2]
+    o_1 = H_1_0[0:3, 3]
+    o_2 = H_2_0[0:3, 3]
+    o_3 = H_3_0[0:3, 3]
+    o_4 = H_4_0[0:3, 3]
+
+    # Calculating elements of jacobain matrix
+    j_v_1 = np.cross(z_0, o_4)
+    j_v_2 = np.cross(z_1, o_4 - o_1)
+    j_v_3 = np.cross(z_2, o_4 - o_2)
+    j_v_4 = np.cross(z_3, o_4 - o_3)
+    j_w_1 = z_0
+    j_w_2 = z_1
+    j_w_3 = z_2
+    j_w_4 = z_3
+
+    # Combingin above elements to form jacobian matrix:
+    j_v = np.column_stack((j_v_1, j_v_2, j_v_3, j_v_4))
+    j_w = np.column_stack((j_w_1, j_w_2, j_w_3, j_w_4))
+
+    # Calculating twist from jacobians:
+    joint_velocities = [q_1_dot, q_2_dot, q_3_dot, q_4_dot]
+    linear_velocities = j_v.dot(joint_velocities)
+    angular_velocities = j_w.dot(joint_velocities)
+    twist = np.array([linear_velocities, angular_velocities])
+
+    return twist
+
 # q values = 0 0 0 0
 '''zero_hom = [[  -1.,     -0.,      0.,   -281.4 ],
  [   0.,     -0.,     -1.,      0.  ],
@@ -155,3 +201,4 @@ print(get_q_values(zero_hom))'''
 #print(get_q_values(get_forward_kinematics(np.deg2rad(-45), np.deg2rad(0), np.deg2rad(-30), np.deg2rad(45))))
 
 print(get_forward_kinematics(0.52,0,0,math.pi/2))
+print(calc_twist(0.52,0,0,math.pi/2, 2, 3, 4, 5))

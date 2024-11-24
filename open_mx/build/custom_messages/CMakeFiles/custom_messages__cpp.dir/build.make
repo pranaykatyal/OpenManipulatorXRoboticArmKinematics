@@ -70,6 +70,10 @@ CMakeFiles/custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/inv_ki
 CMakeFiles/custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__builder.hpp
 CMakeFiles/custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__struct.hpp
 CMakeFiles/custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__traits.hpp
+CMakeFiles/custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/velocity.hpp
+CMakeFiles/custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/detail/velocity__builder.hpp
+CMakeFiles/custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/detail/velocity__struct.hpp
+CMakeFiles/custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/detail/velocity__traits.hpp
 
 rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -87,6 +91,7 @@ rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: /opt/ros/humble/share/rosi
 rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: rosidl_adapter/custom_messages/srv/InvKin.idl
+rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: rosidl_adapter/custom_messages/srv/Velocity.idl
 rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -159,11 +164,27 @@ rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__struct.hpp: rosidl_gene
 rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__traits.hpp: rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__traits.hpp
 
+rosidl_generator_cpp/custom_messages/srv/velocity.hpp: rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_messages/srv/velocity.hpp
+
+rosidl_generator_cpp/custom_messages/srv/detail/velocity__builder.hpp: rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_messages/srv/detail/velocity__builder.hpp
+
+rosidl_generator_cpp/custom_messages/srv/detail/velocity__struct.hpp: rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_messages/srv/detail/velocity__struct.hpp
+
+rosidl_generator_cpp/custom_messages/srv/detail/velocity__traits.hpp: rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_messages/srv/detail/velocity__traits.hpp
+
 custom_messages__cpp: CMakeFiles/custom_messages__cpp
 custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__builder.hpp
 custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__struct.hpp
 custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__traits.hpp
+custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/detail/velocity__builder.hpp
+custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/detail/velocity__struct.hpp
+custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/detail/velocity__traits.hpp
 custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp
+custom_messages__cpp: rosidl_generator_cpp/custom_messages/srv/velocity.hpp
 custom_messages__cpp: CMakeFiles/custom_messages__cpp.dir/build.make
 .PHONY : custom_messages__cpp
 

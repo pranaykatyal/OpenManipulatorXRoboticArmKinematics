@@ -1,6 +1,7 @@
 {
   "package_name": "custom_messages",
   "non_idl_tuples": [
-    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages:srv/InvKin.srv"
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages:srv/InvKin.srv",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages:srv/Velocity.srv"
   ]
 }

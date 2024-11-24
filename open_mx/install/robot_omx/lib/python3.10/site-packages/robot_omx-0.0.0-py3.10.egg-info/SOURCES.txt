@@ -16,7 +16,9 @@ robot_omx/inv_kin_client.py
 robot_omx/inv_kin_server.py
 robot_omx/inverse_kinematics.py
 robot_omx/kinematic_library.py
+robot_omx/robot_node.py
 robot_omx/rot_to_quat.py
+robot_omx/velocity_server.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

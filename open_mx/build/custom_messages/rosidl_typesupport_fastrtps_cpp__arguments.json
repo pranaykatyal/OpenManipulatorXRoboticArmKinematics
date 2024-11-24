@@ -3,7 +3,8 @@
   "output_dir": "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_typesupport_fastrtps_cpp/custom_messages",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource",
   "idl_tuples": [
-    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_adapter/custom_messages:srv/InvKin.idl"
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_adapter/custom_messages:srv/InvKin.idl",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_adapter/custom_messages:srv/Velocity.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -77,6 +78,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
     "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_adapter/custom_messages/srv/InvKin.idl",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_adapter/custom_messages/srv/Velocity.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

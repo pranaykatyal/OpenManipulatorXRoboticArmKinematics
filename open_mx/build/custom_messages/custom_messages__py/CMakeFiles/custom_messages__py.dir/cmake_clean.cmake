@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/custom_messages/srv/__init__.py"
   "../rosidl_generator_py/custom_messages/srv/_inv_kin.py"
   "../rosidl_generator_py/custom_messages/srv/_inv_kin_s.c"
+  "../rosidl_generator_py/custom_messages/srv/_velocity.py"
+  "../rosidl_generator_py/custom_messages/srv/_velocity_s.c"
   "CMakeFiles/custom_messages__py"
 )
 

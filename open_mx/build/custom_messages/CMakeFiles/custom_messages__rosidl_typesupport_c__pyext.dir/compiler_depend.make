@@ -248,8 +248,19 @@ CMakeFiles/custom_messages__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
-  rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.h
+  rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.h \
+  rosidl_generator_c/custom_messages/srv/detail/velocity__type_support.h \
+  rosidl_generator_c/custom_messages/srv/detail/velocity__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
+  rosidl_generator_c/custom_messages/srv/detail/velocity__functions.h
 
+
+rosidl_generator_c/custom_messages/srv/detail/velocity__functions.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h:
+
+rosidl_generator_c/custom_messages/srv/detail/velocity__struct.h:
 
 rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.h:
 
@@ -565,6 +576,8 @@ rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_c.c
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
+rosidl_generator_c/custom_messages/srv/detail/velocity__type_support.h:
+
 /usr/include/python3.10/tupleobject.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
@@ -678,6 +691,8 @@ rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_c.c
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.h:
 
 /usr/include/python3.10/cpython/dictobject.h:
 

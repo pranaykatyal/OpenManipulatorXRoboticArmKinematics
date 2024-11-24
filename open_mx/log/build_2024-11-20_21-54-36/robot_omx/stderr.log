@@ -1,0 +1,5 @@
+  File "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/robot_node.py", line 22
+    while !within_tolerance(curr_pose, pose, 2):
+          ^
+SyntaxError: invalid syntax
+

@@ -1,9 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages/srv/inv_kin__type_support.cpp.o"
   "CMakeFiles/custom_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages/srv/inv_kin__type_support.cpp.o.d"
+  "CMakeFiles/custom_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages/srv/velocity__type_support.cpp.o"
+  "CMakeFiles/custom_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages/srv/velocity__type_support.cpp.o.d"
   "libcustom_messages__rosidl_typesupport_c.pdb"
   "libcustom_messages__rosidl_typesupport_c.so"
   "rosidl_typesupport_c/custom_messages/srv/inv_kin__type_support.cpp"
+  "rosidl_typesupport_c/custom_messages/srv/velocity__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

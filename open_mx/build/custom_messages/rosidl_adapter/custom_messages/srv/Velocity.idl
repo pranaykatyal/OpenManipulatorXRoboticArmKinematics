@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_messages/srv/Velocity.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Twist.idl"
+
+module custom_messages {
+  module srv {
+    struct Velocity_Request {
+      float q_1;
+
+      float q_2;
+
+      float q_3;
+
+      float q_4;
+
+      float q_1_dot;
+
+      float q_2_dot;
+
+      float q_3_dot;
+
+      float q_4_dot;
+    };
+    struct Velocity_Response {
+      geometry_msgs::msg::Twist twist;
+    };
+  };
+};
