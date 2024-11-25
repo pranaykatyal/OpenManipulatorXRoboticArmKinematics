@@ -3,11 +3,12 @@ from robot_omx import kinematic_library
 from rclpy.node import Node
 from geometry_msgs.msg import Pose 
 from custom_messages.srv import InvKin
+from sensor_msgs.msg import JointState # We will need to test this in person
 
 
 class Robot(Node):
     def __init__(self):
-        super().__init__('Gripper Robot')
+        super().__init__('Gripper_Robot')
 
         self.subscription = self.create_subscription(JointState, 'EndAffectorPose', self.listener_callback, 10)
         self.cli = self.create_client(InvKin, 'inverse_server')
@@ -29,7 +30,7 @@ class Robot(Node):
         req.pose = des_pose
 
         self.cli.call_async(req) # Sending the request to the server
-        while !self.within_tolerance(self.curr_pose, des_pose, 2):
+        while self.within_tolerance(self.curr_pose, des_pose, 2):
             rclpy.spin_once(self)
 
     def within_tolerance(pose1, pose2, tolerance):
@@ -40,8 +41,8 @@ class Robot(Node):
             res = res and (round(pose1_list[i], tolerance) == round(pose2_list, tolerance))
         return res
 
-        def listener_callback(self, msg):
-            self.curr_pose = msg
+    def listener_callback(self, msg):
+        self.curr_pose = msg
 
 def main():
     rclpy.init()
