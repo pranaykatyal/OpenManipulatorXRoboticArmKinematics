@@ -4,7 +4,7 @@ from numpy import sin, cos, arctan2
 from scipy.spatial.transform import Rotation
 from geometry_msgs.msg import Pose, Twist
 
-#Link Lengths
+#Constants
 l1 = 96.326
 d1 = 128
 d2 = 24
@@ -12,6 +12,15 @@ l2 = 130.2306 # calculated from given lengths
 l3 = 124.0
 l4 = 133.4
 phi = arctan2(3,16) # 10.62 degrees
+
+#-------------Properties--------------------
+def get_dh_table(q1, q2, q3, q4):
+    return np.array([[0, l1, math.pi/2, q1],
+             [l2, 0, 0, math.pi/2 + phi + q2],
+             [l3, 0, 0, math.pi/2 - phi + q3],
+             [l4, 0 , 0 ,q4]])
+
+
 
 #----------Forward Kinematics------------
 def get_transformation_mat(dh_table, reference, target):
@@ -44,11 +53,7 @@ def get_transformation_mat(dh_table, reference, target):
 
 def get_forward_kinematics(q1, q2, q3, q4):
         # DH Parameters       a   d  alpha theta
-        DH_table = np.array([[0, l1, math.pi/2, q1],
-                     [l2, 0, 0, math.pi/2 + phi + q2],
-                     [l3, 0, 0, math.pi/2 - phi + q3],
-                     [l4, 0 , 0 ,q4]])
-        return get_transformation_mat(DH_table, 0, 3)
+        return get_transformation_mat(get_dh_table(q1,q2,q3,q4), 0, 3)
 
 #print(get_forward_kinematics(0,0,0,0))
 
@@ -128,12 +133,7 @@ def rot2pose(rot):
     return pose
 
 #-----------Velocity Kinematics---------------
-def calc_twist(q1, q2, q3, q4, q_1_dot, q_2_dot, q_3_dot, q_4_dot):
-    # DH Parameters       a   d  alpha theta
-    DH_table = np.array([[0, l1, math.pi / 2, q1],
-                         [l2, 0, 0, math.pi / 2 + phi + q2],
-                         [l3, 0, 0, math.pi / 2 - phi + q3],
-                         [l4, 0, 0, q4]])
+def get_jacobian(DH_table):
 
     # First finding relevant transformation matrices:
     H_1_0 = get_transformation_mat(DH_table, 0, 0)
@@ -165,20 +165,41 @@ def calc_twist(q1, q2, q3, q4, q_1_dot, q_2_dot, q_3_dot, q_4_dot):
     j_v = np.column_stack((j_v_1, j_v_2, j_v_3, j_v_4))
     j_w = np.column_stack((j_w_1, j_w_2, j_w_3, j_w_4))
 
+    return np.concatenate((j_v, j_w))
+
+#print(get_jacobian(get_dh_table(math.pi/2, math.pi/6, -math.pi/3, math.pi/4)))
+
+def calc_twist(q1, q2, q3, q4, q_1_dot, q_2_dot, q_3_dot, q_4_dot):
+
+    jacobian = get_jacobian(get_dh_table(q1, q2, q3, q4))
+
     # Calculating twist from jacobians:
     joint_velocities = [q_1_dot, q_2_dot, q_3_dot, q_4_dot]
-    linear_velocities = j_v.dot(joint_velocities)
-    angular_velocities = j_w.dot(joint_velocities)
+    calculated_twist = np.matmul(jacobian, joint_velocities)
+
+
     twist = Twist()
-    twist.linear.x = linear_velocities[0]
-    twist.linear.y = linear_velocities[1]
-    twist.linear.z = linear_velocities[2]
-    twist.angular.x = angular_velocities[0]
-    twist.angular.y = angular_velocities[1]
-    twist.angular.z = angular_velocities[2]
+    twist.linear.x = calculated_twist[0]
+    twist.linear.y = calculated_twist[1]
+    twist.linear.z = calculated_twist[2]
+    twist.angular.x = calculated_twist[0]
+    twist.angular.y = calculated_twist[1]
+    twist.angular.z = calculated_twist[2]
 
     return twist
 
+#print(calc_twist(0.52,0,0,math.pi/2, 2, 3, 4, 5))
+
+def calc_joint_velocities(twist):
+	twist_vec = [
+		twist.linear.x,
+		twist.linear.y,
+		twist.linear.z,
+		twist.angular.x,
+		twist.angular.y,
+		twist.angular.z
+	]
+	
 # q values = 0 0 0 0
 '''zero_hom = [[  -1.,     -0.,      0.,   -281.4 ],
  [   0.,     -0.,     -1.,      0.  ],
@@ -206,5 +227,5 @@ print(get_q_values(zero_hom))'''
 #print([pose.position.x, pose.position.y, pose.position.z, pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w])
 #print(get_q_values(get_forward_kinematics(np.deg2rad(-45), np.deg2rad(0), np.deg2rad(-30), np.deg2rad(45))))
 
-print(get_forward_kinematics(0.52,0,0,math.pi/2))
-print(calc_twist(0.52,0,0,math.pi/2, 2, 3, 4, 5))
+#print(get_forward_kinematics(0.52,0,0,math.pi/2))
+
