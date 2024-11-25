@@ -15,6 +15,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__builder.hpp" "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp"
   "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__struct.hpp" "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp"
   "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/detail/inv_kin__traits.hpp" "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp"
+  "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/detail/velocity__builder.hpp" "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp"
+  "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/detail/velocity__struct.hpp" "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp"
+  "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/detail/velocity__traits.hpp" "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp"
+  "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/velocity.hpp" "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_cpp/custom_messages/srv/inv_kin.hpp"
   )
 
 

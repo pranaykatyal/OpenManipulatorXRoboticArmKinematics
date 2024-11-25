@@ -70,8 +70,10 @@ custom_messages__py/CMakeFiles/custom_messages__py: rosidl_generator_py/custom_m
 custom_messages__py/CMakeFiles/custom_messages__py: rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_introspection_c.c
 custom_messages__py/CMakeFiles/custom_messages__py: rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_c.c
 custom_messages__py/CMakeFiles/custom_messages__py: rosidl_generator_py/custom_messages/srv/_inv_kin.py
+custom_messages__py/CMakeFiles/custom_messages__py: rosidl_generator_py/custom_messages/srv/_velocity.py
 custom_messages__py/CMakeFiles/custom_messages__py: rosidl_generator_py/custom_messages/srv/__init__.py
 custom_messages__py/CMakeFiles/custom_messages__py: rosidl_generator_py/custom_messages/srv/_inv_kin_s.c
+custom_messages__py/CMakeFiles/custom_messages__py: rosidl_generator_py/custom_messages/srv/_velocity_s.c
 
 rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -87,6 +89,7 @@ rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fas
 rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_messages/srv/InvKin.idl
+rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_messages/srv/Velocity.idl
 rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -159,11 +162,17 @@ rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_c.c
 rosidl_generator_py/custom_messages/srv/_inv_kin.py: rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_messages/srv/_inv_kin.py
 
+rosidl_generator_py/custom_messages/srv/_velocity.py: rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_messages/srv/_velocity.py
+
 rosidl_generator_py/custom_messages/srv/__init__.py: rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_messages/srv/__init__.py
 
 rosidl_generator_py/custom_messages/srv/_inv_kin_s.c: rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_messages/srv/_inv_kin_s.c
+
+rosidl_generator_py/custom_messages/srv/_velocity_s.c: rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_messages/srv/_velocity_s.c
 
 custom_messages__py: custom_messages__py/CMakeFiles/custom_messages__py
 custom_messages__py: rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_c.c
@@ -172,6 +181,8 @@ custom_messages__py: rosidl_generator_py/custom_messages/_custom_messages_s.ep.r
 custom_messages__py: rosidl_generator_py/custom_messages/srv/__init__.py
 custom_messages__py: rosidl_generator_py/custom_messages/srv/_inv_kin.py
 custom_messages__py: rosidl_generator_py/custom_messages/srv/_inv_kin_s.c
+custom_messages__py: rosidl_generator_py/custom_messages/srv/_velocity.py
+custom_messages__py: rosidl_generator_py/custom_messages/srv/_velocity_s.c
 custom_messages__py: custom_messages__py/CMakeFiles/custom_messages__py.dir/build.make
 .PHONY : custom_messages__py
 

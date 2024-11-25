@@ -69,6 +69,9 @@ include CMakeFiles/custom_messages.dir/progress.make
 CMakeFiles/custom_messages: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages/srv/InvKin.srv
 CMakeFiles/custom_messages: rosidl_cmake/srv/InvKin_Request.msg
 CMakeFiles/custom_messages: rosidl_cmake/srv/InvKin_Response.msg
+CMakeFiles/custom_messages: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages/srv/Velocity.srv
+CMakeFiles/custom_messages: rosidl_cmake/srv/Velocity_Request.msg
+CMakeFiles/custom_messages: rosidl_cmake/srv/Velocity_Response.msg
 CMakeFiles/custom_messages: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/custom_messages: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/custom_messages: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl

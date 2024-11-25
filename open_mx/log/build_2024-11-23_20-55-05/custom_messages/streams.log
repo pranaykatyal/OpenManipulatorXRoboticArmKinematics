@@ -1,0 +1,222 @@
+[0.026s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py:/opt/ros/humble /usr/bin/cmake --build /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages -- -j20 -l20
+[0.046s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.155s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.165s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.188s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.191s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.196s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.206s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.216s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.243s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.500s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.820s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.940s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.959s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.978s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.978s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.978s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.007s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.017s] -- Added test 'lint_cmake' to check CMake code style
+[1.017s] -- Added test 'xmllint' to check XML markup files
+[1.019s] -- Configuring done
+[1.042s] -- Generating done
+[1.043s] -- Build files have been written to: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages
+[1.066s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.075s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.078s] [  5%] Built target ament_cmake_python_symlink_custom_messages
+[1.219s] running egg_info
+[1.220s] writing custom_messages.egg-info/PKG-INFO
+[1.220s] writing dependency_links to custom_messages.egg-info/dependency_links.txt
+[1.220s] writing top-level names to custom_messages.egg-info/top_level.txt
+[1.221s] reading manifest file 'custom_messages.egg-info/SOURCES.txt'
+[1.221s] writing manifest file 'custom_messages.egg-info/SOURCES.txt'
+[1.241s] [  5%] Built target ament_cmake_python_build_custom_messages_egg
+[1.293s] [  5%] Built target custom_messages__cpp
+[1.294s] [35m[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_generator_c[0m
+[1.302s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.304s] [ 10%] [32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/velocity__functions.c.o[0m
+[1.305s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.305s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.307s] [ 17%] [32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_c.dir/rosidl_generator_c/custom_messages/srv/detail/inv_kin__functions.c.o[0m
+[1.354s] [ 20%] [32m[1mLinking C shared library libcustom_messages__rosidl_generator_c.so[0m
+[1.386s] [ 20%] Built target custom_messages__rosidl_generator_c
+[1.398s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.398s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.398s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.474s] [35m[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_cpp[0m
+[1.484s] [ 30%] [32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_messages/srv/inv_kin__type_support.cpp.o[0m
+[1.488s] [ 33%] [32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_messages/srv/velocity__type_support.cpp.o[0m
+[1.498s] [35m[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_introspection_cpp[0m
+[1.510s] [ 35%] [32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_messages/srv/detail/velocity__type_support.cpp.o[0m
+[1.513s] [ 38%] [32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_messages/srv/detail/inv_kin__type_support.cpp.o[0m
+[1.516s] [35m[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_fastrtps_cpp[0m
+[1.528s] [ 41%] [32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_messages/srv/detail/dds_fastrtps/inv_kin__type_support.cpp.o[0m
+[1.529s] [ 43%] [32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_messages/srv/detail/dds_fastrtps/velocity__type_support.cpp.o[0m
+[1.566s] [35m[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_c[0m
+[1.578s] [ 46%] [32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages/srv/velocity__type_support.cpp.o[0m
+[1.579s] [ 48%] [32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages/srv/inv_kin__type_support.cpp.o[0m
+[1.593s] [35m[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_introspection_c[0m
+[1.601s] [ 51%] [32mBuilding C object CMakeFiles/custom_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_messages/srv/detail/inv_kin__type_support.c.o[0m
+[1.602s] [ 53%] [32mBuilding C object CMakeFiles/custom_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_messages/srv/detail/velocity__type_support.c.o[0m
+[1.602s] [35m[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_fastrtps_c[0m
+[1.611s] [ 56%] [32m[1mLinking CXX shared library libcustom_messages__rosidl_typesupport_c.so[0m
+[1.613s] [ 58%] [32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_messages/srv/detail/velocity__type_support_c.cpp.o[0m
+[1.616s] [ 61%] [32mBuilding CXX object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_messages/srv/detail/inv_kin__type_support_c.cpp.o[0m
+[1.627s] [ 64%] [32m[1mLinking C shared library libcustom_messages__rosidl_typesupport_introspection_c.so[0m
+[1.645s] [ 64%] Built target custom_messages__rosidl_typesupport_c
+[1.653s] [ 64%] Built target custom_messages__rosidl_typesupport_introspection_c
+[1.760s] [ 66%] [32m[1mLinking CXX shared library libcustom_messages__rosidl_typesupport_introspection_cpp.so[0m
+[1.806s] [ 69%] [32m[1mLinking CXX shared library libcustom_messages__rosidl_typesupport_cpp.so[0m
+[1.812s] [ 69%] Built target custom_messages__rosidl_typesupport_introspection_cpp
+[1.824s] [ 71%] [32m[1mLinking CXX shared library libcustom_messages__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.836s] [ 74%] [32m[1mLinking CXX shared library libcustom_messages__rosidl_typesupport_fastrtps_c.so[0m
+[1.843s] [ 74%] Built target custom_messages__rosidl_typesupport_cpp
+[1.883s] [ 74%] Built target custom_messages__rosidl_typesupport_fastrtps_cpp
+[1.893s] [ 74%] Built target custom_messages__rosidl_typesupport_fastrtps_c
+[1.917s] [ 74%] Built target custom_messages
+[1.944s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.276s] [ 76%] Built target custom_messages__py
+[2.288s] [35m[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_generator_py[0m
+[2.300s] [ 79%] [32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_py.dir/rosidl_generator_py/custom_messages/srv/_inv_kin_s.c.o[0m
+[2.300s] [ 82%] [32mBuilding C object CMakeFiles/custom_messages__rosidl_generator_py.dir/rosidl_generator_py/custom_messages/srv/_velocity_s.c.o[0m
+[2.383s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/custom_messages/libcustom_messages__rosidl_generator_py.so[0m
+[2.425s] [ 84%] Built target custom_messages__rosidl_generator_py
+[2.436s] [35m[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_introspection_c__pyext[0m
+[2.437s] [35m[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_c__pyext[0m
+[2.437s] [35m[1mConsolidate compiler generated dependencies of target custom_messages__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.447s] [ 87%] [32mBuilding C object CMakeFiles/custom_messages__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.449s] [ 89%] [32mBuilding C object CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.451s] [ 92%] [32mBuilding C object CMakeFiles/custom_messages__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_messages/_custom_messages_s.ep.rosidl_typesupport_c.c.o[0m
+[2.525s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/custom_messages/custom_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.525s] [100%] [32m[1mLinking C shared library rosidl_generator_py/custom_messages/custom_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.525s] [100%] [32m[1mLinking C shared library rosidl_generator_py/custom_messages/custom_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.554s] [100%] Built target custom_messages__rosidl_typesupport_fastrtps_c__pyext
+[2.555s] [100%] Built target custom_messages__rosidl_typesupport_introspection_c__pyext
+[2.555s] [100%] Built target custom_messages__rosidl_typesupport_c__pyext
+[2.569s] Invoked command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py:/opt/ros/humble /usr/bin/cmake --build /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages -- -j20 -l20
+[2.662s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py:/opt/ros/humble /usr/bin/cmake --install /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages
+[2.670s] -- Install configuration: ""
+[2.670s] -- Execute custom install script
+[2.670s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/ament_index/resource_index/rosidl_interfaces/custom_messages
+[2.670s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/msg/rosidl_generator_c__visibility_control.h
+[2.670s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/inv_kin__functions.h
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/inv_kin__struct.h
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/inv_kin__type_support.h
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/velocity__functions.h
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/velocity__struct.h
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/velocity__type_support.h
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/inv_kin.h
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/velocity.h
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/environment/library_path.sh
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/environment/library_path.dsv
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/inv_kin__rosidl_typesupport_fastrtps_c.h
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/velocity__rosidl_typesupport_fastrtps_c.h
+[2.671s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/inv_kin__builder.hpp
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/inv_kin__struct.hpp
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/inv_kin__traits.hpp
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/velocity__builder.hpp
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/velocity__struct.hpp
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/velocity__traits.hpp
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/inv_kin.hpp
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/velocity.hpp
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/inv_kin__rosidl_typesupport_fastrtps_cpp.hpp
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/inv_kin__rosidl_typesupport_introspection_c.h
+[2.672s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/velocity__rosidl_typesupport_introspection_c.h
+[2.673s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/inv_kin__rosidl_typesupport_introspection_cpp.hpp
+[2.673s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/include/custom_messages/custom_messages/srv/detail/velocity__rosidl_typesupport_introspection_cpp.hpp
+[2.673s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/environment/pythonpath.sh
+[2.673s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/environment/pythonpath.dsv
+[2.673s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages-0.0.0-py3.10.egg-info/PKG-INFO
+[2.673s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.673s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.673s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages-0.0.0-py3.10.egg-info/top_level.txt
+[2.673s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/__init__.py
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/_custom_messages_s.ep.rosidl_typesupport_c.c
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/_custom_messages_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/_custom_messages_s.ep.rosidl_typesupport_introspection_c.c
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/libcustom_messages__rosidl_generator_py.so
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/srv/__init__.py
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/srv/_inv_kin.py
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/srv/_inv_kin_s.c
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/srv/_velocity.py
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/srv/_velocity_s.c
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.674s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/custom_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.675s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/srv/InvKin.idl
+[2.675s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/srv/Velocity.idl
+[2.675s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/srv/InvKin.srv
+[2.675s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/srv/InvKin_Request.msg
+[2.675s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/srv/InvKin_Response.msg
+[2.675s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/srv/Velocity.srv
+[2.675s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/srv/Velocity_Request.msg
+[2.675s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/srv/Velocity_Response.msg
+[2.675s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/ament_index/resource_index/package_run_dependencies/custom_messages
+[2.675s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/ament_index/resource_index/parent_prefix_path/custom_messages
+[2.676s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/environment/ament_prefix_path.sh
+[2.676s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/environment/ament_prefix_path.dsv
+[2.676s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/environment/path.sh
+[2.676s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/environment/path.dsv
+[2.676s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/local_setup.bash
+[2.676s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/local_setup.sh
+[2.676s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/local_setup.zsh
+[2.676s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/local_setup.dsv
+[2.676s] -- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/package.dsv
+[2.682s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/ament_index/resource_index/packages/custom_messages
+[2.682s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/rosidl_cmake-extras.cmake
+[2.682s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.682s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.682s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/ament_cmake_export_libraries-extras.cmake
+[2.682s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/ament_cmake_export_targets-extras.cmake
+[2.682s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.682s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.683s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/custom_messagesConfig.cmake
+[2.683s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/custom_messagesConfig-version.cmake
+[2.683s] -- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/package.xml
+[2.683s] -- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_generator_c.so
+[2.683s] -- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_generator_c.so" to ""
+[2.683s] -- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_fastrtps_c.so
+[2.683s] -- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_fastrtps_c.so" to ""
+[2.684s] -- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_fastrtps_cpp.so
+[2.684s] -- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.684s] -- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_introspection_c.so
+[2.684s] -- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_introspection_c.so" to ""
+[2.684s] -- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_c.so
+[2.685s] -- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_c.so" to ""
+[2.685s] -- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_introspection_cpp.so
+[2.685s] -- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_introspection_cpp.so" to ""
+[2.685s] -- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_cpp.so
+[2.685s] -- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_typesupport_cpp.so" to ""
+[2.721s] Listing '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages'...
+[2.721s] Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/__init__.py'...
+[2.721s] Listing '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/srv'...
+[2.721s] Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/srv/__init__.py'...
+[2.721s] Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/srv/_inv_kin.py'...
+[2.721s] Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/local/lib/python3.10/dist-packages/custom_messages/srv/_velocity.py'...
+[2.724s] -- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_generator_py.so
+[2.724s] -- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/lib/libcustom_messages__rosidl_generator_py.so" to ""
+[2.724s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_generator_cExport.cmake
+[2.724s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_generator_cExport-noconfig.cmake
+[2.724s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_typesupport_fastrtps_cExport.cmake
+[2.724s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.724s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_generator_cppExport.cmake
+[2.724s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.724s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.724s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_introspection_cExport.cmake
+[2.725s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.725s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_cExport.cmake
+[2.725s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_cExport-noconfig.cmake
+[2.725s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_introspection_cppExport.cmake
+[2.725s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.725s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_cppExport.cmake
+[2.725s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/custom_messages__rosidl_typesupport_cppExport-noconfig.cmake
+[2.725s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_generator_pyExport.cmake
+[2.725s] -- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/custom_messages/share/custom_messages/cmake/export_custom_messages__rosidl_generator_pyExport-noconfig.cmake
+[2.727s] Invoked command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py:/opt/ros/humble /usr/bin/cmake --install /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages

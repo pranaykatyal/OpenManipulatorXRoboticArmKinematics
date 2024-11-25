@@ -1,7 +1,8 @@
 import numpy as np
-from math import sqrt
+from math import sqrt, cos, sin 
 from geometry_msgs.msg import Pose
 from scipy.spatial.transform import Rotation
+
 def rot_to_quat(matrix):
 	rot = np.array(matrix)[:3,:3]
 	pose = Pose()
@@ -102,7 +103,54 @@ def quat_to_rot(pose):
         
         return transform
 
+def calculate_A_i(q1, q2, q3, q4):
+        # Link Lengths
+        l1 = 96.326
+        l2 = 130.2306  # calculated from given lengths
+        l3 = 124.0
+        l4 = 133.4
 
+        phi = np.rad2deg(np.arctan2(3, 16))  # 10.62 degrees
+        np.set_printoptions(precision=4, suppress=True)
+
+        # Extracting to save space in below equations:
+        q1 = np.rad2deg(q1)
+        q2 = np.rad2deg(q2)
+        q3 = np.rad2deg(q3)
+        q4 = np.rad2deg(q4)
+        
+        # Equations below were worked out on paper:
+        A_1 = np.array([[cos(np.deg2rad(q1)), -sin(np.deg2rad(q1)) * cos(np.pi / 2),
+                        sin(np.deg2rad(q1)) * sin(np.pi / 2), 0 * cos(np.deg2rad(q1))],
+                       [sin(np.deg2rad(q1)), cos(np.deg2rad(q1)) * cos(np.pi / 2),
+                        -cos(np.deg2rad(q1)) * sin(np.pi / 2), 0 * sin(np.deg2rad(q1))],
+                       [0, sin(np.pi / 2), cos(np.pi / 2), l1],
+                       [0, 0, 0, 1]])
+
+        A_2 = np.array([[cos(np.deg2rad(90 + phi + q2)), -sin(np.deg2rad(90 + phi + q2)) * cos(0),
+                        sin(np.deg2rad(90 + phi + q2)) * sin(0), l2 * cos(np.deg2rad(90 + phi + q2))],
+                       [sin(np.deg2rad(90 + phi + q2)), cos(np.deg2rad(90 + phi + q2)) * cos(0),
+                        -cos(np.deg2rad(90 + phi + q2)) * sin(0), l2 * sin(np.deg2rad(90 + phi + q2))],
+                       [0, sin(0), cos(0), 0],
+                       [0, 0, 0, 1]])
+
+        A_3 = np.array([[cos(np.deg2rad(90 - phi + q3)), -sin(np.deg2rad(90 - phi + q3)) * cos(0),
+                        sin(np.deg2rad(90 - phi + q3)) * sin(0), l3 * cos(np.deg2rad(90 - phi + q3))],
+                       [sin(np.deg2rad(90 - phi + q3)), cos(np.deg2rad(90 - phi + q3)) * cos(0),
+                        -cos(np.deg2rad(90 - phi + q3)) * sin(0), l3 * sin(np.deg2rad(90 - phi + q3))],
+                       [0, sin(0), cos(0), 0],
+                       [0, 0, 0, 1]])
+
+        A_4 = np.array([[cos(np.deg2rad(q4)), -sin(np.deg2rad(q4)) * cos(0), sin(np.deg2rad(q4)) * sin(0),
+                        l4 * cos(np.deg2rad(q4))],
+                       [sin(np.deg2rad(q4)), cos(np.deg2rad(q4)) * cos(0), -cos(np.deg2rad(q4)) * sin(0),
+                        l4 * sin(np.deg2rad(q4))],
+                       [0, sin(0), cos(0), 0],
+                       [0, 0, 0, 1]])
+                        
+        return A_1, A_2, A_3, A_4
+
+print(calculate_A_i(0,0,0,0))
 print(Rotation.from_matrix(zero_hom[:3, :3]).as_quat())
 print(Rotation.from_matrix(test_hom1[:3, :3]).as_quat())
 print(Rotation.from_matrix(test_hom2[:3, :3]).as_quat())

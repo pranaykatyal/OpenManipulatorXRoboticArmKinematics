@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_messages__rosidl_generator_py.dir/rosidl_generator_py/custom_messages/srv/_inv_kin_s.c.o"
   "CMakeFiles/custom_messages__rosidl_generator_py.dir/rosidl_generator_py/custom_messages/srv/_inv_kin_s.c.o.d"
+  "CMakeFiles/custom_messages__rosidl_generator_py.dir/rosidl_generator_py/custom_messages/srv/_velocity_s.c.o"
+  "CMakeFiles/custom_messages__rosidl_generator_py.dir/rosidl_generator_py/custom_messages/srv/_velocity_s.c.o.d"
   "rosidl_generator_py/custom_messages/libcustom_messages__rosidl_generator_py.pdb"
   "rosidl_generator_py/custom_messages/libcustom_messages__rosidl_generator_py.so"
 )
