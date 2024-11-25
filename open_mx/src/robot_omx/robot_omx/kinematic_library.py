@@ -190,16 +190,30 @@ def calc_twist(q1, q2, q3, q4, q_1_dot, q_2_dot, q_3_dot, q_4_dot):
 
 #print(calc_twist(0.52,0,0,math.pi/2, 2, 3, 4, 5))
 
-def calc_joint_velocities(twist):
-	twist_vec = [
-		twist.linear.x,
-		twist.linear.y,
-		twist.linear.z,
-		twist.angular.x,
-		twist.angular.y,
-		twist.angular.z
-	]
+def calc_joint_velocities(q1, q2, q3, q4, twist):
+
+    #Calculate jacobian from given q values
+    j = get_jacobian(get_dh_table(q1, q2, q3, q4))
+
+    #Calculate the pseudo inverse jacobian
+    pinv = np.linalg.pinv(j)
+
+    #Extract the twist into vector form
+    twist_vec = [
+        twist.linear.x,
+        twist.linear.y,
+        twist.linear.z,
+        twist.angular.x,
+        twist.angular.y,
+        twist.angular.z
+    ]
+
+    #Calculate q velocities
+    q_dots = np.matmul(pinv, twist_vec)
+
+    return q_dots
 	
+print(calc_joint_velocities(0.52,0,0,math.pi/2, calc_twist(0.52,0,0,math.pi/2, 2, 3, 4, 5)))
 # q values = 0 0 0 0
 '''zero_hom = [[  -1.,     -0.,      0.,   -281.4 ],
  [   0.,     -0.,     -1.,      0.  ],
