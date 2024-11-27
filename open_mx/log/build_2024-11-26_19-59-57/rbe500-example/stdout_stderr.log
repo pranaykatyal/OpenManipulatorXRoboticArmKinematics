@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/basic_robot_control.dir/src/basic_robot_control.cpp.o[0m
+[100%] [32m[1mLinking CXX executable basic_robot_control[0m
+[100%] Built target basic_robot_control
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/lib/rbe500-example/basic_robot_control
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/ament_index/resource_index/package_run_dependencies/rbe500-example
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/ament_index/resource_index/parent_prefix_path/rbe500-example
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/environment/path.sh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/environment/path.dsv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/local_setup.bash
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/local_setup.sh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/local_setup.zsh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/local_setup.dsv
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/package.dsv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/ament_index/resource_index/packages/rbe500-example
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/cmake/rbe500-exampleConfig.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/cmake/rbe500-exampleConfig-version.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500-example/share/rbe500-example/package.xml

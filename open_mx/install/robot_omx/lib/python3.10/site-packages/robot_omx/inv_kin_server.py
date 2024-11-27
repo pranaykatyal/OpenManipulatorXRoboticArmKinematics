@@ -25,7 +25,7 @@ class Inv_Server(Node):
         (response.q_1, response.q_2, response.q_3, response.q_4) = kinematic_library.get_q_values(matrix)
 
         # Calling method to send command to move robot:
-        default_path_time = 0.5
+        default_path_time = 5.0
         self.send_goal_joint_space(response, default_path_time)
 
         return response # The results of the inverse kinematics are sent back to the client

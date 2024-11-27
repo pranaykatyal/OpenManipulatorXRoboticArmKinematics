@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/robot_omx/robot_omx.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_omx/robot_omx.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_omx/robot_omx.egg-info/entry_points.txt
+writing requirements to ../../build/robot_omx/robot_omx.egg-info/requires.txt
+writing top-level names to ../../build/robot_omx/robot_omx.egg-info/top_level.txt
+reading manifest file '../../build/robot_omx/robot_omx.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/robot_omx/robot_omx.egg-info/SOURCES.txt'
+running build
+running build_py
+copying robot_omx/inv_kin_server.py -> /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx/build/lib/robot_omx
+running install
+running install_lib
+copying /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx/build/lib/robot_omx/inv_kin_server.py -> /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx
+byte-compiling /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/inv_kin_server.py to inv_kin_server.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/robot_omx/robot_omx.egg-info to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx-0.0.0-py3.10.egg-info
+running install_scripts
+Installing inverse_client script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx
+Installing inverse_server script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx
+Installing joint_listener script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx
+Installing robot script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx
+Installing velocity_server script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx
+writing list of installed files to '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/robot_omx/install.log'

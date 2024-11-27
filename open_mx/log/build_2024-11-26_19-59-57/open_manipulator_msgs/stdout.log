@@ -1,0 +1,368 @@
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  2%] Built target ament_cmake_python_symlink_open_manipulator_msgs
+running egg_info
+writing open_manipulator_msgs.egg-info/PKG-INFO
+writing dependency_links to open_manipulator_msgs.egg-info/dependency_links.txt
+writing top-level names to open_manipulator_msgs.egg-info/top_level.txt
+reading manifest file 'open_manipulator_msgs.egg-info/SOURCES.txt'
+writing manifest file 'open_manipulator_msgs.egg-info/SOURCES.txt'
+[  2%] Built target ament_cmake_python_build_open_manipulator_msgs_egg
+[  2%] Built target open_manipulator_msgs__cpp
+[  3%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  5%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/open_manipulator_msgs/msg/detail/joint_position__type_support.cpp.o[0m
+[  6%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/open_manipulator_msgs/msg/detail/kinematics_pose__type_support.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/open_manipulator_msgs/msg/detail/open_manipulator_state__type_support.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/open_manipulator_msgs/srv/detail/get_kinematics_pose__type_support.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/open_manipulator_msgs/srv/detail/set_drawing_trajectory__type_support.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/open_manipulator_msgs/srv/detail/set_joint_position__type_support.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/open_manipulator_msgs/srv/detail/get_joint_position__type_support.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/open_manipulator_msgs/srv/detail/set_actuator_state__type_support.cpp.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/open_manipulator_msgs/msg/detail/joint_position__functions.c.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/open_manipulator_msgs/srv/detail/set_kinematics_pose__type_support.cpp.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/open_manipulator_msgs/srv/detail/set_joint_position__functions.c.o[0m
+[ 16%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/open_manipulator_msgs/srv/detail/get_kinematics_pose__functions.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/open_manipulator_msgs/msg/detail/kinematics_pose__functions.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/open_manipulator_msgs/srv/detail/get_joint_position__functions.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/open_manipulator_msgs/srv/detail/set_kinematics_pose__functions.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/open_manipulator_msgs/msg/detail/open_manipulator_state__functions.c.o[0m
+[ 22%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/open_manipulator_msgs/srv/detail/set_drawing_trajectory__functions.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/open_manipulator_msgs/srv/detail/set_actuator_state__functions.c.o[0m
+[ 24%] [32m[1mLinking C shared library libopen_manipulator_msgs__rosidl_generator_c.so[0m
+[ 24%] Built target open_manipulator_msgs__rosidl_generator_c
+[ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 26%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 27%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/open_manipulator_msgs/msg/detail/kinematics_pose__type_support.c.o[0m
+[ 28%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/open_manipulator_msgs/msg/detail/open_manipulator_state__type_support.c.o[0m
+[ 29%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/open_manipulator_msgs/srv/detail/get_joint_position__type_support.c.o[0m
+[ 30%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/open_manipulator_msgs/msg/detail/joint_position__type_support.c.o[0m
+[ 31%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/open_manipulator_msgs/srv/detail/set_joint_position__type_support.c.o[0m
+[ 32%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/open_manipulator_msgs/srv/detail/set_kinematics_pose__type_support.c.o[0m
+[ 33%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/open_manipulator_msgs/srv/detail/get_kinematics_pose__type_support.c.o[0m
+[ 34%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/open_manipulator_msgs/srv/detail/set_actuator_state__type_support.c.o[0m
+[ 35%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/open_manipulator_msgs/srv/detail/set_drawing_trajectory__type_support.c.o[0m
+[ 36%] [32m[1mLinking C shared library libopen_manipulator_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 37%] Built target open_manipulator_msgs__rosidl_typesupport_introspection_c
+[ 40%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/open_manipulator_msgs/msg/open_manipulator_state__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/open_manipulator_msgs/msg/joint_position__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/open_manipulator_msgs/srv/get_joint_position__type_support.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/open_manipulator_msgs/srv/set_joint_position__type_support.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/open_manipulator_msgs/msg/kinematics_pose__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/open_manipulator_msgs/srv/set_actuator_state__type_support.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/open_manipulator_msgs/srv/get_kinematics_pose__type_support.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/open_manipulator_msgs/srv/set_drawing_trajectory__type_support.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/open_manipulator_msgs/srv/set_kinematics_pose__type_support.cpp.o[0m
+[ 48%] [32m[1mLinking CXX shared library libopen_manipulator_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/open_manipulator_msgs/msg/detail/dds_fastrtps/joint_position__type_support.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/open_manipulator_msgs/msg/detail/dds_fastrtps/kinematics_pose__type_support.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/open_manipulator_msgs/msg/detail/dds_fastrtps/open_manipulator_state__type_support.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/open_manipulator_msgs/srv/detail/dds_fastrtps/get_kinematics_pose__type_support.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/open_manipulator_msgs/srv/detail/dds_fastrtps/get_joint_position__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/open_manipulator_msgs/srv/detail/dds_fastrtps/set_joint_position__type_support.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/open_manipulator_msgs/srv/detail/dds_fastrtps/set_kinematics_pose__type_support.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/open_manipulator_msgs/srv/detail/dds_fastrtps/set_drawing_trajectory__type_support.cpp.o[0m
+[ 57%] Built target open_manipulator_msgs__rosidl_typesupport_introspection_cpp
+[ 58%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/open_manipulator_msgs/srv/detail/dds_fastrtps/set_actuator_state__type_support.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/open_manipulator_msgs/msg/open_manipulator_state__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/open_manipulator_msgs/msg/joint_position__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/open_manipulator_msgs/msg/kinematics_pose__type_support.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/open_manipulator_msgs/srv/get_kinematics_pose__type_support.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/open_manipulator_msgs/srv/set_joint_position__type_support.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/open_manipulator_msgs/srv/get_joint_position__type_support.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/open_manipulator_msgs/srv/set_kinematics_pose__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/open_manipulator_msgs/srv/set_drawing_trajectory__type_support.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/open_manipulator_msgs/srv/set_actuator_state__type_support.cpp.o[0m
+[ 69%] [32m[1mLinking CXX shared library libopen_manipulator_msgs__rosidl_typesupport_cpp.so[0m
+[ 70%] [32m[1mLinking CXX shared library libopen_manipulator_msgs__rosidl_typesupport_c.so[0m
+[ 70%] Built target open_manipulator_msgs__rosidl_typesupport_cpp
+[ 70%] Built target open_manipulator_msgs__rosidl_typesupport_c
+[ 71%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/open_manipulator_msgs/msg/detail/kinematics_pose__type_support_c.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/open_manipulator_msgs/msg/detail/open_manipulator_state__type_support_c.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/open_manipulator_msgs/msg/detail/joint_position__type_support_c.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/open_manipulator_msgs/srv/detail/get_joint_position__type_support_c.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/open_manipulator_msgs/srv/detail/set_joint_position__type_support_c.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/open_manipulator_msgs/srv/detail/get_kinematics_pose__type_support_c.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/open_manipulator_msgs/srv/detail/set_kinematics_pose__type_support_c.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/open_manipulator_msgs/srv/detail/set_drawing_trajectory__type_support_c.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/open_manipulator_msgs/srv/detail/set_actuator_state__type_support_c.cpp.o[0m
+[ 81%] [32m[1mLinking CXX shared library libopen_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 81%] Built target open_manipulator_msgs__rosidl_typesupport_fastrtps_cpp
+[ 82%] [32m[1mLinking CXX shared library libopen_manipulator_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 82%] Built target open_manipulator_msgs__rosidl_typesupport_fastrtps_c
+[ 82%] Built target open_manipulator_msgs
+[ 83%] Built target open_manipulator_msgs__py
+[ 84%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/open_manipulator_msgs/srv/_get_kinematics_pose_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/open_manipulator_msgs/msg/_joint_position_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/open_manipulator_msgs/srv/_get_joint_position_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/open_manipulator_msgs/msg/_kinematics_pose_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/open_manipulator_msgs/srv/_set_kinematics_pose_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/open_manipulator_msgs/msg/_open_manipulator_state_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/open_manipulator_msgs/srv/_set_joint_position_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/open_manipulator_msgs/srv/_set_drawing_trajectory_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/open_manipulator_msgs/srv/_set_actuator_state_s.c.o[0m
+[ 93%] [32m[1mLinking C shared library rosidl_generator_py/open_manipulator_msgs/libopen_manipulator_msgs__rosidl_generator_py.so[0m
+[ 93%] Built target open_manipulator_msgs__rosidl_generator_py
+[ 94%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/open_manipulator_msgs/_open_manipulator_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/open_manipulator_msgs/_open_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/open_manipulator_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/open_manipulator_msgs/_open_manipulator_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/open_manipulator_msgs/open_manipulator_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 98%] [32m[1mLinking C shared library rosidl_generator_py/open_manipulator_msgs/open_manipulator_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/open_manipulator_msgs/open_manipulator_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target open_manipulator_msgs__rosidl_typesupport_c__pyext
+[100%] Built target open_manipulator_msgs__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target open_manipulator_msgs__rosidl_typesupport_introspection_c__pyext
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/ament_index/resource_index/rosidl_interfaces/open_manipulator_msgs
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/joint_position__functions.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/joint_position__struct.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/joint_position__type_support.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/kinematics_pose__functions.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/kinematics_pose__struct.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/kinematics_pose__type_support.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/open_manipulator_state__functions.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/open_manipulator_state__struct.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/open_manipulator_state__type_support.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/joint_position.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/kinematics_pose.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/open_manipulator_state.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_joint_position__functions.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_joint_position__struct.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_joint_position__type_support.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_kinematics_pose__functions.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_kinematics_pose__struct.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_kinematics_pose__type_support.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_actuator_state__functions.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_actuator_state__struct.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_actuator_state__type_support.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_drawing_trajectory__functions.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_drawing_trajectory__struct.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_drawing_trajectory__type_support.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_joint_position__functions.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_joint_position__struct.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_joint_position__type_support.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_kinematics_pose__functions.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_kinematics_pose__struct.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_kinematics_pose__type_support.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/get_joint_position.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/get_kinematics_pose.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/set_actuator_state.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/set_drawing_trajectory.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/set_joint_position.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/set_kinematics_pose.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/environment/library_path.sh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/environment/library_path.dsv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/joint_position__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/kinematics_pose__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/open_manipulator_state__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_joint_position__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_kinematics_pose__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_actuator_state__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_drawing_trajectory__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_joint_position__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_kinematics_pose__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/joint_position__builder.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/joint_position__struct.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/joint_position__traits.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/kinematics_pose__builder.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/kinematics_pose__struct.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/kinematics_pose__traits.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/open_manipulator_state__builder.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/open_manipulator_state__struct.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/open_manipulator_state__traits.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/joint_position.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/kinematics_pose.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/open_manipulator_state.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_joint_position__builder.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_joint_position__struct.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_joint_position__traits.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_kinematics_pose__builder.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_kinematics_pose__struct.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_kinematics_pose__traits.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_actuator_state__builder.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_actuator_state__struct.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_actuator_state__traits.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_drawing_trajectory__builder.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_drawing_trajectory__struct.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_drawing_trajectory__traits.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_joint_position__builder.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_joint_position__struct.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_joint_position__traits.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_kinematics_pose__builder.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_kinematics_pose__struct.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_kinematics_pose__traits.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/get_joint_position.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/get_kinematics_pose.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/set_actuator_state.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/set_drawing_trajectory.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/set_joint_position.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/set_kinematics_pose.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/joint_position__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/kinematics_pose__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/open_manipulator_state__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_joint_position__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_kinematics_pose__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_actuator_state__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_drawing_trajectory__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_joint_position__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_kinematics_pose__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/joint_position__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/kinematics_pose__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/open_manipulator_state__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_joint_position__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_kinematics_pose__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_actuator_state__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_drawing_trajectory__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_joint_position__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_kinematics_pose__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/joint_position__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/kinematics_pose__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/msg/detail/open_manipulator_state__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_joint_position__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/get_kinematics_pose__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_actuator_state__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_drawing_trajectory__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_joint_position__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/include/open_manipulator_msgs/open_manipulator_msgs/srv/detail/set_kinematics_pose__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/environment/pythonpath.sh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs-2.2.0-py3.10.egg-info/PKG-INFO
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs-2.2.0-py3.10.egg-info/SOURCES.txt
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs-2.2.0-py3.10.egg-info/dependency_links.txt
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs-2.2.0-py3.10.egg-info/top_level.txt
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/__init__.py
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/_open_manipulator_msgs_s.ep.rosidl_typesupport_c.c
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/_open_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/_open_manipulator_msgs_s.ep.rosidl_typesupport_introspection_c.c
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/libopen_manipulator_msgs__rosidl_generator_py.so
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/msg/__init__.py
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/msg/_joint_position.py
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/msg/_joint_position_s.c
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/msg/_kinematics_pose.py
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/msg/_kinematics_pose_s.c
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/msg/_open_manipulator_state.py
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/msg/_open_manipulator_state_s.c
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/open_manipulator_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/open_manipulator_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/open_manipulator_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/__init__.py
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_get_joint_position.py
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_get_joint_position_s.c
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_get_kinematics_pose.py
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_get_kinematics_pose_s.c
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_set_actuator_state.py
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_set_actuator_state_s.c
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_set_drawing_trajectory.py
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_set_drawing_trajectory_s.c
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_set_joint_position.py
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_set_joint_position_s.c
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_set_kinematics_pose.py
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_set_kinematics_pose_s.c
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/open_manipulator_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/open_manipulator_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/open_manipulator_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/msg/JointPosition.idl
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/msg/KinematicsPose.idl
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/msg/OpenManipulatorState.idl
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/GetJointPosition.idl
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/GetKinematicsPose.idl
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetJointPosition.idl
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetKinematicsPose.idl
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetDrawingTrajectory.idl
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetActuatorState.idl
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/msg/JointPosition.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/msg/KinematicsPose.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/msg/OpenManipulatorState.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/GetJointPosition.srv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/GetJointPosition_Request.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/GetJointPosition_Response.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/GetKinematicsPose.srv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/GetKinematicsPose_Request.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/GetKinematicsPose_Response.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetJointPosition.srv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetJointPosition_Request.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetJointPosition_Response.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetKinematicsPose.srv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetKinematicsPose_Request.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetKinematicsPose_Response.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetDrawingTrajectory.srv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetDrawingTrajectory_Request.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetDrawingTrajectory_Response.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetActuatorState.srv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetActuatorState_Request.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/srv/SetActuatorState_Response.msg
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/ament_index/resource_index/package_run_dependencies/open_manipulator_msgs
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/ament_index/resource_index/parent_prefix_path/open_manipulator_msgs
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/environment/path.sh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/environment/path.dsv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/local_setup.bash
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/local_setup.sh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/local_setup.zsh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/local_setup.dsv
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/package.dsv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/ament_index/resource_index/packages/open_manipulator_msgs
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/rosidl_cmake-extras.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/open_manipulator_msgsConfig.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/open_manipulator_msgsConfig-version.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/package.xml
+-- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_generator_c.so
+-- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_generator_c.so" to ""
+-- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_c.so
+-- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_c.so" to ""
+-- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_typesupport_cpp.so" to ""
+Listing '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs'...
+Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/__init__.py'...
+Listing '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/msg'...
+Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/msg/__init__.py'...
+Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/msg/_joint_position.py'...
+Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/msg/_kinematics_pose.py'...
+Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/msg/_open_manipulator_state.py'...
+Listing '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv'...
+Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/__init__.py'...
+Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_get_joint_position.py'...
+Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_get_kinematics_pose.py'...
+Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_set_actuator_state.py'...
+Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_set_drawing_trajectory.py'...
+Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_set_joint_position.py'...
+Compiling '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/local/lib/python3.10/dist-packages/open_manipulator_msgs/srv/_set_kinematics_pose.py'...
+-- Installing: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_generator_py.so
+-- Set runtime path of "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/lib/libopen_manipulator_msgs__rosidl_generator_py.so" to ""
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/export_open_manipulator_msgs__rosidl_generator_cExport.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/export_open_manipulator_msgs__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/export_open_manipulator_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/export_open_manipulator_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/export_open_manipulator_msgs__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/export_open_manipulator_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/export_open_manipulator_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/open_manipulator_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/open_manipulator_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/open_manipulator_msgs__rosidl_typesupport_cExport.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/open_manipulator_msgs__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/open_manipulator_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/open_manipulator_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/open_manipulator_msgs__rosidl_typesupport_cppExport.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/open_manipulator_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/export_open_manipulator_msgs__rosidl_generator_pyExport.cmake
+-- Up-to-date: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake/export_open_manipulator_msgs__rosidl_generator_pyExport-noconfig.cmake

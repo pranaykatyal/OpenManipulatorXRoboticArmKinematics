@@ -5,8 +5,6 @@ from geometry_msgs.msg import Pose
 from custom_messages.srv import InvKin
 from sensor_msgs.msg import JointState # We will need to test this in person
 
-
-
 class Robot(Node):
     def __init__(self):
         super().__init__('Gripper_Robot')
@@ -44,6 +42,7 @@ class Robot(Node):
 
     def listener_callback(self, msg):
             self.curr_pose = msg
+
 
 def main():
     rclpy.init()

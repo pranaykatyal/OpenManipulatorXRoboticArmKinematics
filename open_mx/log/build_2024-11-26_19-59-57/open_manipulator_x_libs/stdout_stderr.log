@@ -1,0 +1,88 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_libs.dir/src/open_manipulator_x.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_libs.dir/src/custom_trajectory.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_libs.dir/src/dynamixel.cpp.o[0m
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:[m[K In member function ‘[01m[Kbool dynamixel::JointDynamixel::write_goal_position(std::vector<unsigned char>, std::vector<double>)[m[K’:
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:268:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kid_array[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  268 |   uint8_t [01;35m[Kid_array[m[K[actuator_id.size()];
+      |           [01;35m[K^~~~~~~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:269:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kgoal_position[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  269 |   int32_t [01;35m[Kgoal_position[m[K[actuator_id.size()];
+      |           [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/custom_trajectory.cpp:[m[K In member function ‘[01m[Kvirtual void custom_trajectory::Line::setOption(const void*)[m[K’:
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/custom_trajectory.cpp:93:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   93 | void Line::setOption([01;35m[Kconst void *arg[m[K) {}
+      |                      [01;35m[K~~~~~~~~~~~~^~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:[m[K In member function ‘[01m[Kstd::vector<robotis_manipulator::_Point> dynamixel::JointDynamixel::receive_all_dynamixel_value(std::vector<unsigned char>)[m[K’:
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:293:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kid_array[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  293 |   uint8_t [01;35m[Kid_array[m[K[actuator_id.size()];
+      |           [01;35m[K^~~~~~~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:297:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kget_current[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  297 |   int32_t [01;35m[Kget_current[m[K[actuator_id.size()];
+      |           [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:298:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  298 |   int32_t [01;35m[Kget_velocity[m[K[actuator_id.size()];
+      |           [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:299:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kget_position[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  299 |   int32_t [01;35m[Kget_position[m[K[actuator_id.size()];
+      |           [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/custom_trajectory.cpp:[m[K In member function ‘[01m[Kvirtual void custom_trajectory::Circle::setOption(const void*)[m[K’:
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/custom_trajectory.cpp:167:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  167 | void Circle::setOption([01;35m[Kconst void *arg[m[K){}
+      |                        [01;35m[K~~~~~~~~~~~~^~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:[m[K In member function ‘[01m[Kbool dynamixel::JointDynamixelProfileControl::write_goal_profiling_control_value(std::vector<unsigned char>, std::vector<robotis_manipulator::_Point>)[m[K’:
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:604:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kid_array[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  604 |   uint8_t [01;35m[Kid_array[m[K[actuator_id.size()];
+      |           [01;35m[K^~~~~~~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:605:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kgoal_value[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  605 |   int32_t [01;35m[Kgoal_value[m[K[actuator_id.size()];
+      |           [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/custom_trajectory.cpp:[m[K In member function ‘[01m[Kvirtual void custom_trajectory::Rhombus::setOption(const void*)[m[K’:
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/custom_trajectory.cpp:260:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  260 | void Rhombus::setOption([01;35m[Kconst void *arg[m[K){}
+      |                         [01;35m[K~~~~~~~~~~~~^~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/custom_trajectory.cpp:[m[K In member function ‘[01m[Kvirtual void custom_trajectory::Heart::setOption(const void*)[m[K’:
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/custom_trajectory.cpp:334:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  334 | void Heart::setOption([01;35m[Kconst void *arg[m[K){}
+      |                       [01;35m[K~~~~~~~~~~~~^~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:[m[K In member function ‘[01m[Kstd::vector<robotis_manipulator::_Point> dynamixel::JointDynamixelProfileControl::receive_all_dynamixel_value(std::vector<unsigned char>)[m[K’:
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:641:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kid_array[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  641 |   uint8_t [01;35m[Kid_array[m[K[actuator_id.size()];
+      |           [01;35m[K^~~~~~~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:645:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kget_current[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  645 |   int32_t [01;35m[Kget_current[m[K[actuator_id.size()];
+      |           [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:646:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  646 |   int32_t [01;35m[Kget_velocity[m[K[actuator_id.size()];
+      |           [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/open_manipulator/open_manipulator_x_libs/src/dynamixel.cpp:647:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kget_position[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  647 |   int32_t [01;35m[Kget_position[m[K[actuator_id.size()];
+      |           [01;35m[K^~~~~~~~~~~~[m[K
+[ 80%] [32m[1mLinking CXX shared library libopen_manipulator_x_libs.so[0m
+[100%] Built target open_manipulator_x_libs
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/lib/libopen_manipulator_x_libs.so
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/include//open_manipulator_x_libs/custom_trajectory.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/include//open_manipulator_x_libs/dynamixel.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/include//open_manipulator_x_libs/kinematics.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/include//open_manipulator_x_libs/open_manipulator_x.hpp
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/library_path.sh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/library_path.dsv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_libs
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_libs
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/path.sh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/path.dsv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/local_setup.bash
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/local_setup.sh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/local_setup.zsh
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/local_setup.dsv
+-- Symlinking: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/package.dsv
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/ament_index/resource_index/packages/open_manipulator_x_libs
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/open_manipulator_x_libsConfig.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/open_manipulator_x_libsConfig-version.cmake
+-- Up-to-date symlink: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_libs/share/open_manipulator_x_libs/package.xml
