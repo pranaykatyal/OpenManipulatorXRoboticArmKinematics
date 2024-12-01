@@ -46,14 +46,14 @@ def get_transformation_mat(dh_table, reference, target):
 
 	# Multiply through the desired range
         trans_mat = hom_matrices[reference]
-        for i in range(reference+1, target+1):
+        for i in range(reference+1, target):
                 trans_mat = np.matmul(trans_mat, hom_matrices[i])
 
         return trans_mat
 
 def get_forward_kinematics(q1, q2, q3, q4):
         # DH Parameters       a   d  alpha theta
-        return get_transformation_mat(get_dh_table(q1,q2,q3,q4), 0, 3)
+        return get_transformation_mat(get_dh_table(q1,q2,q3,q4), 0, 4)
 
 #print(get_forward_kinematics(0,0,0,0))
 
@@ -133,13 +133,14 @@ def rot2pose(rot):
     return pose
 
 #-----------Velocity Kinematics---------------
-def get_jacobian(DH_table):
+def get_jacobian(q1, q2, q3, q4):
 
+    DH_table = get_dh_table(q1, q2, q3, q4)
     # First finding relevant transformation matrices:
-    H_1_0 = get_transformation_mat(DH_table, 0, 0)
-    H_2_0 = get_transformation_mat(DH_table, 0, 1)
-    H_3_0 = get_transformation_mat(DH_table, 0, 2)
-    H_4_0 = get_transformation_mat(DH_table, 0, 3)
+    H_1_0 = get_transformation_mat(DH_table, 0, 1)
+    H_2_0 = get_transformation_mat(DH_table, 0, 2)
+    H_3_0 = get_transformation_mat(DH_table, 0, 3)
+    H_4_0 = get_transformation_mat(DH_table, 0, 4)
 
     # Calculating intermediate variables by extracting data from the transformation matrices above:
     z_0 = [0, 0, 1]  # by definitions
@@ -171,7 +172,7 @@ def get_jacobian(DH_table):
 
 def calc_twist(q1, q2, q3, q4, q_1_dot, q_2_dot, q_3_dot, q_4_dot):
 
-    jacobian = get_jacobian(get_dh_table(q1, q2, q3, q4))
+    jacobian = get_jacobian(q1, q2, q3, q4)
 
     # Calculating twist from jacobians:
     joint_velocities = [q_1_dot, q_2_dot, q_3_dot, q_4_dot]
@@ -182,18 +183,17 @@ def calc_twist(q1, q2, q3, q4, q_1_dot, q_2_dot, q_3_dot, q_4_dot):
     twist.linear.x = calculated_twist[0]
     twist.linear.y = calculated_twist[1]
     twist.linear.z = calculated_twist[2]
-    twist.angular.x = calculated_twist[0]
-    twist.angular.y = calculated_twist[1]
-    twist.angular.z = calculated_twist[2]
+    twist.angular.x = calculated_twist[3]
+    twist.angular.y = calculated_twist[4]
+    twist.angular.z = calculated_twist[5]
 
     return twist
 
-#print(calc_twist(0.52,0,0,math.pi/2, 2, 3, 4, 5))
 
 def calc_joint_velocities(q1, q2, q3, q4, twist):
 
     #Calculate jacobian from given q values
-    j = get_jacobian(get_dh_table(q1, q2, q3, q4))
+    j = get_jacobian(q1, q2, q3, q4)
 
     #Calculate the pseudo inverse jacobian
     pinv = np.linalg.pinv(j)
@@ -213,7 +213,7 @@ def calc_joint_velocities(q1, q2, q3, q4, twist):
 
     return q_dots
 	
-print(calc_joint_velocities(0.52,0,0,math.pi/2, calc_twist(0.52,0,0,math.pi/2, 2, 3, 4, 5)))
+#print(calc_joint_velocities(0.52,0,0,math.pi/2, calc_twist(0.52,0,0,math.pi/2, 2, 3, 4, 5)))
 # q values = 0 0 0 0
 '''zero_hom = [[  -1.,     -0.,      0.,   -281.4 ],
  [   0.,     -0.,     -1.,      0.  ],
