@@ -364,6 +364,9 @@ ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinema
 # install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_adapter/custom_messages/srv/Velocity.idl" "DESTINATION" "share/custom_messages/srv")
 ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_adapter/custom_messages/srv/Velocity.idl" "DESTINATION" "share/custom_messages/srv")
 
+# install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_adapter/custom_messages/srv/InvVel.idl" "DESTINATION" "share/custom_messages/srv")
+ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_adapter/custom_messages/srv/InvVel.idl" "DESTINATION" "share/custom_messages/srv")
+
 # install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages/srv/InvKin.srv" "DESTINATION" "share/custom_messages/srv")
 ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages/srv/InvKin.srv" "DESTINATION" "share/custom_messages/srv")
 
@@ -381,6 +384,15 @@ ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinema
 
 # install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_cmake/srv/Velocity_Response.msg" "DESTINATION" "share/custom_messages/srv")
 ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_cmake/srv/Velocity_Response.msg" "DESTINATION" "share/custom_messages/srv")
+
+# install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages/srv/InvVel.srv" "DESTINATION" "share/custom_messages/srv")
+ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages/srv/InvVel.srv" "DESTINATION" "share/custom_messages/srv")
+
+# install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_cmake/srv/InvVel_Request.msg" "DESTINATION" "share/custom_messages/srv")
+ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_cmake/srv/InvVel_Request.msg" "DESTINATION" "share/custom_messages/srv")
+
+# install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_cmake/srv/InvVel_Response.msg" "DESTINATION" "share/custom_messages/srv")
+ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_cmake/srv/InvVel_Response.msg" "DESTINATION" "share/custom_messages/srv")
 
 # install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/custom_messages" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/custom_messages" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/custom_messages" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

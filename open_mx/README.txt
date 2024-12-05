@@ -32,6 +32,10 @@ To send user poses to the inverse kinematics server through the CLIENT, use the 
 
 # To send user poses to the velocity server DIRECTLY, use the following: 
 	ros2 service call /velocity_server custom_messages/srv/Velocity "{q_1: 0.0, q_2: 0.0, q_3: 0.0, q_4: 0.0, q_1_dot: 0.0, q_2_dot: 0.0, q_3_dot: 0.0, q_4_dot: 0.0}"
+	
+# To send user poses to the inverse_velocity_server DIRECTLY, use the following: 
+	ros2 service call /inverse_velocity_server custom_messages/srv/Velocity "{q_1: 0.0, q_2: 0.0, q_3: 0.0, q_4: 0.0, q_1_dot: 0.0, q_2_dot: 0.0, q_3_dot: 0.0, q_4_dot: 0.0}"
+		
 ################################################ PROVIDED PACKAGES FROM CANVAS ##########################################
 DynamixelSDK
 dynamixel_workbench

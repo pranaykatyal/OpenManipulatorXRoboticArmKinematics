@@ -12,6 +12,7 @@ setup.py
 resource/robot_omx
 robot_omx/__init__.py
 robot_omx/forward_kin_subscriber.py
+robot_omx/gripper_server.py
 robot_omx/inv_kin_client.py
 robot_omx/inv_kin_server.py
 robot_omx/inverse_kinematics.py

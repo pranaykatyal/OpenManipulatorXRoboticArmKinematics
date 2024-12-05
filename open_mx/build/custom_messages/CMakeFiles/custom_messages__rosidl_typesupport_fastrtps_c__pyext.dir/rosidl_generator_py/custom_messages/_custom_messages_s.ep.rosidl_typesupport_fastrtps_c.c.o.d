@@ -212,4 +212,7 @@ CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_gene
  /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/velocity__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
- /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/velocity__functions.h
+ /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/velocity__functions.h \
+ /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_vel__type_support.h \
+ /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_vel__struct.h \
+ /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages/rosidl_generator_c/custom_messages/srv/detail/inv_vel__functions.h

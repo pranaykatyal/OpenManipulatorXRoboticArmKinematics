@@ -25,8 +25,15 @@ class Inv_Server(Node):
         (response.q_1, response.q_2, response.q_3, response.q_4) = kinematic_library.get_q_values(matrix)
 
         # Calling method to send command to move robot:
-        default_path_time = 5.0
+        default_path_time = 1.0
         self.send_goal_joint_space(response, default_path_time)
+
+        # Moving Gripper:
+        #homeresponse = response.q_1
+        #self.send_goal_joint_space_gripper_closed(response, default_path_time)
+
+        # Move back to home:
+        # self.send_goal_joint_space(())
 
         return response # The results of the inverse kinematics are sent back to the client
 
@@ -42,6 +49,20 @@ class Inv_Server(Node):
             self.get_logger().info('Sending Goal Joint failed %r' % (e,))
 
         return 1
+
+    def send_goal_joint_space_gripper_closed(self, desired_joint_angles, path_time): # Source: Python example file from canvas
+        self.goal_joint_space_req.joint_position.joint_name = ['joint1', 'joint2', 'joint3', 'joint4', 'gripper']
+        self.goal_joint_space_req.joint_position.position = [desired_joint_angles.q_1, desired_joint_angles.q_2, desired_joint_angles.q_3, desired_joint_angles.q_4, -1.0]
+        self.goal_joint_space_req.path_time = path_time
+        print('\n\n\nGripper closed was called\n\n\n\n')
+        try:
+            self.goal_joint_space.call_async(self.goal_joint_space_req)
+        except Exception as e:
+            self.get_logger().info('Sending Goal Joint failed %r' % (e,))
+
+        return 1
+
+
 
 def main():
     rclpy.init()

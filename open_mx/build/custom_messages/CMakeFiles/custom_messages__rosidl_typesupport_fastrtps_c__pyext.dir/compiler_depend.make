@@ -253,8 +253,15 @@ CMakeFiles/custom_messages__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_gene
   rosidl_generator_c/custom_messages/srv/detail/velocity__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
-  rosidl_generator_c/custom_messages/srv/detail/velocity__functions.h
+  rosidl_generator_c/custom_messages/srv/detail/velocity__functions.h \
+  rosidl_generator_c/custom_messages/srv/detail/inv_vel__type_support.h \
+  rosidl_generator_c/custom_messages/srv/detail/inv_vel__struct.h \
+  rosidl_generator_c/custom_messages/srv/detail/inv_vel__functions.h
 
+
+rosidl_generator_c/custom_messages/srv/detail/inv_vel__functions.h:
+
+rosidl_generator_c/custom_messages/srv/detail/inv_vel__type_support.h:
 
 rosidl_generator_c/custom_messages/srv/detail/velocity__functions.h:
 
@@ -331,6 +338,8 @@ rosidl_generator_c/custom_messages/srv/detail/inv_kin__type_support.h:
 /usr/include/python3.10/cpython/picklebufobject.h:
 
 /usr/include/python3.10/pyframe.h:
+
+rosidl_generator_c/custom_messages/srv/detail/inv_vel__struct.h:
 
 /usr/include/python3.10/cpython/code.h:
 

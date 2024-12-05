@@ -4,6 +4,7 @@ from rclpy.node import Node
 from geometry_msgs.msg import Pose 
 from custom_messages.srv import InvKin, InvVel
 from sensor_msgs.msg import JointState # We will need to test this in person
+from open_manipulator_msgs.srv import SetJointPosition, SetKinematicsPose
 import time
 
 class Robot(Node):
