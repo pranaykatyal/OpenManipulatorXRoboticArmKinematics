@@ -35,11 +35,11 @@ class Robot(Node):
         while(self.update_position(q_dot_vec, interval) == 1):
             rclpy.spin_once(self)
             time.sleep(interval)
-            
+
+        return 0
 
 
     def update_position(self, velocities, interval):
-        
         req = InvVel.Request()
         new_joint_values = []
         for q in range(len(self.joint_values)):
