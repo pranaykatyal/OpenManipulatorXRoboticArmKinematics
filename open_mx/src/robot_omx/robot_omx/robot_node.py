@@ -21,7 +21,14 @@ class Robot(Node):
         	self.get_logger().info('The inverse kinematics service is not available yet. Will try again every second')
         while not self.inv_vel_client.wait_for_service(timeout_sec=1.0): # Every second it checks to see if the server is available
         	self.get_logger().info('The inverse velocity service is not available yet. Will try again every second')
+        while not self.goal_joint_space.wait_for_service(timeout_sec=1.0): # Every second it checks to see if the server is available
+        	self.get_logger().info('The joint setting service is not available yet. Will try again every second')
 
+    def move_to_pose(self, pose):
+        req = InvKin.Request()
+
+        req.pose = pose 
+        self.inv_vel_client.call_async(req)
 
     def listener_callback(self, msg):
         self.joint_values = msg.position        
