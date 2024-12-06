@@ -12,6 +12,8 @@ class Robot(Node):
         super().__init__('Gripper_Robot')
 
         self.subscription = self.create_subscription(JointState, 'joint_states', self.listener_callback, 10)
+        self.pose_sub = self.create_subscription(Pose, 'EndAffectorPose', self.pose_callback, 10)
+
         self.cli = self.create_client(InvKin, 'inverse_server')
         self.inv_vel_client = self.create_client(InvVel, 'inverse_velocity_server')
         self.goal_joint_space = self.create_client(SetJointPosition, 'goal_joint_space_path')
@@ -45,10 +47,12 @@ class Robot(Node):
     def set_velocity(self, twist):
         print(f'The twist received is {twist}\n\n')
     
-
+        print("Time, X, Y, Z")
         rclpy.spin_once(self)
         joint_values = self.joint_values
         print(f'The joint velocities are {joint_velocities}')
+        time = 0
+
         while(True):
             req = InvVel.Request()
             req.twist = twist
@@ -60,6 +64,8 @@ class Robot(Node):
 
             joint_values = self.update_position(q_dot_vec, interval, joint_values)
             rclpy.spin_once(self)
+            time+=interval
+            print(str(time)+",", str(self.curr_pose.x)+",", str(self.curr_pose.y)+",", str(self.curr_pose.z)+",")
 
         return 0
 
@@ -85,6 +91,9 @@ class Robot(Node):
         except Exception as e:
             self.get_logger().info('Sending Goal Joint failed %r' % (e,))
         return new_joint_values
+
+    def pose_callback(self, msg):
+        self.curr_pose = msg
 
 
 
