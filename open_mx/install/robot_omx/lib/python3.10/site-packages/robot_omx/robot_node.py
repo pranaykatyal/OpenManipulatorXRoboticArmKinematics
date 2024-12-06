@@ -44,6 +44,7 @@ class Robot(Node):
     
     def set_velocity(self, twist, interval):
         print(f'The twist received is {twist}\n\n')
+
         req = InvVel.Request()
         req.twist = twist
         response = self.inv_vel_client.call_async(req)
@@ -75,7 +76,7 @@ class Robot(Node):
         req.joint_position.joint_name = ['joint1', 'joint2', 'joint3', 'joint4', 'gripper']
         new_joint_values.append(0.0)
         req.joint_position.position = new_joint_values
-        req.path_time = 0.01
+        req.path_time = 0.1
 
         # make the request and return failure if it fails
         try:
@@ -98,7 +99,7 @@ def main():
     input_twist = Twist()
 
     input_twist.linear.y = 100.0
-    # input_twist.linear.z = 500.0
+    input_twist.linear.z = 50.0
     # input_twist.angular.z = 10.0
 
     rob.set_velocity(input_twist, 0.1)
