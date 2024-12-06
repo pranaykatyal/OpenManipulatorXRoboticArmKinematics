@@ -49,32 +49,32 @@ class Robot(Node):
         print(f'The twist received is {twist}\n\n')
         i = 0
         interval = 0.1
-        file = csv.writer("positions.csv")
+        with open('positions.csv', 'w', newline='') as csvfile:
+            file = csv.writer(csvfile)
+            file.writerow(["Time", "X", "Y", "Z"])
 
-        file.writerow(["Time", "X", "Y", "Z"])
-        rclpy.spin_once(self)
-        joint_values = self.joint_values
-        print(f'The joint velocities are {joint_velocities}')
-        time_elapsed = 0
-
-        rclpy.spin_once(self)
-        while(i < 100000):
-
-            req = InvVel.Request()
-            req.twist = twist
-            response = self.inv_vel_client.call_async(req)
-            rclpy.spin_until_future_complete(self, response)  # Ensures program waits for a result prior to printing to the terminal.
-            joint_velocities = response.result()  # Posting result
-            time.sleep(interval)
-
-            q_dot_vec = [joint_velocities.q_1_dot, joint_velocities.q_2_dot, joint_velocities.q_3_dot, joint_velocities.q_4_dot]
-
-            joint_values = self.update_position(q_dot_vec, interval, joint_values)
             rclpy.spin_once(self)
+            joint_values = self.joint_values
+            time_elapsed = 0
 
-            i = i + 1
-            time_elapsed+=interval
-            file.writerow([time, self.curr_pose.x, self.curr_pose.y, self.curr_pose.z])
+            while(i < 100000):
+
+                req = InvVel.Request()
+                req.twist = twist
+                response = self.inv_vel_client.call_async(req)
+                rclpy.spin_until_future_complete(self, response)  # Ensures program waits for a result prior to printing to the terminal.
+                joint_velocities = response.result()  # Posting result
+                time.sleep(interval)
+
+                q_dot_vec = [joint_velocities.q_1_dot, joint_velocities.q_2_dot, joint_velocities.q_3_dot, joint_velocities.q_4_dot]
+
+                joint_values = self.update_position(q_dot_vec, interval, joint_values)
+                rclpy.spin_once(self)
+
+                i = i + 1
+                time_elapsed+=interval
+                print(f'The x position is {self.curr_pose.position.x}\n')
+                file.writerow([time_elapsed, self.curr_pose.position.x, self.curr_pose.position.y, self.curr_pose.position.z])
         return 0
 
 
@@ -103,6 +103,7 @@ class Robot(Node):
 
     def pose_callback(self, msg):
         self.curr_pose = msg
+        print(f'The msg {msg}\n')
 
 
 

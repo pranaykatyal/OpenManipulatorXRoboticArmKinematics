@@ -18,6 +18,7 @@
   <depend>custom_messages</depend>
   <depend>scipy</depend>
   <depend>sensor_msgs</depend>
+  <depend>csv</depend>
   
 
   <export>

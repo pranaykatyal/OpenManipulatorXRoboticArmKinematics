@@ -6,12 +6,15 @@ from custom_messages.srv import InvKin, InvVel
 from sensor_msgs.msg import JointState # We will need to test this in person
 from open_manipulator_msgs.srv import SetJointPosition, SetKinematicsPose
 import time
+import csv
 
 class Robot(Node):
     def __init__(self):
         super().__init__('Gripper_Robot')
 
         self.subscription = self.create_subscription(JointState, 'joint_states', self.listener_callback, 10)
+        self.pose_sub = self.create_subscription(Pose, 'EndAffectorPose', self.pose_callback, 10)
+
         self.cli = self.create_client(InvKin, 'inverse_server')
         self.inv_vel_client = self.create_client(InvVel, 'inverse_velocity_server')
         self.goal_joint_space = self.create_client(SetJointPosition, 'goal_joint_space_path')
@@ -46,24 +49,32 @@ class Robot(Node):
         print(f'The twist received is {twist}\n\n')
         i = 0
         interval = 0.1
+        with open('positions.csv', 'w', newline='') as csvfile:
+            file = csv.writer(csvfile)
+            file.writerow(["Time", "X", "Y", "Z"])
 
-
-        rclpy.spin_once(self)
-        joint_values = self.joint_values
-        while(i < 100000):
-            req = InvVel.Request()
-            req.twist = twist
-            response = self.inv_vel_client.call_async(req)
-            rclpy.spin_until_future_complete(self, response)  # Ensures program waits for a result prior to printing to the terminal.
-            joint_velocities = response.result()  # Posting result
-            time.sleep(interval)
-
-            q_dot_vec = [joint_velocities.q_1_dot, joint_velocities.q_2_dot, joint_velocities.q_3_dot, joint_velocities.q_4_dot]
-
-            joint_values = self.update_position(q_dot_vec, interval, joint_values)
             rclpy.spin_once(self)
-            i = i + 1
+            joint_values = self.joint_values
+            time_elapsed = 0
 
+            while(i < 100000):
+
+                req = InvVel.Request()
+                req.twist = twist
+                response = self.inv_vel_client.call_async(req)
+                rclpy.spin_until_future_complete(self, response)  # Ensures program waits for a result prior to printing to the terminal.
+                joint_velocities = response.result()  # Posting result
+                time.sleep(interval)
+
+                q_dot_vec = [joint_velocities.q_1_dot, joint_velocities.q_2_dot, joint_velocities.q_3_dot, joint_velocities.q_4_dot]
+
+                joint_values = self.update_position(q_dot_vec, interval, joint_values)
+                rclpy.spin_once(self)
+
+                i = i + 1
+                time_elapsed+=interval
+                print(f'The x position is {self.curr_pose.position.x}\n')
+                file.writerow([time_elapsed, self.curr_pose.position.x, self.curr_pose.position.y, self.curr_pose.position.z])
         return 0
 
 
@@ -89,6 +100,10 @@ class Robot(Node):
         except Exception as e:
             self.get_logger().info('Sending Goal Joint failed %r' % (e,))
         return new_joint_values
+
+    def pose_callback(self, msg):
+        self.curr_pose = msg
+        print(f'The msg {msg}\n')
 
 
 
