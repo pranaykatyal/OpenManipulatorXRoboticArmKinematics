@@ -34,13 +34,9 @@ class Velocity_Server(Node):
         return response # The results of the velocity kinematics are returned
     
     def inv_vel_callback(self, request, response):
-        q1 = request.q_1
-        q2 = request.q_2
-        q3 = request.q_3
-        q4 = request.q_4
         twist = request.twist 
 
-        q_dot_values = kinematic_library.calc_joint_velocities(q1, q2, q3, q4, twist)
+        q_dot_values = kinematic_library.calc_joint_velocities(self.q1, self.q2, self.q3, self.q4, twist)
 
         response.q_1_dot = q_dot_values[0]
         response.q_2_dot = q_dot_values[1]
