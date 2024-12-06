@@ -26,6 +26,7 @@ class Robot(Node):
     def move_to_pose(self, pose):
         req = InvKin.Request()
 
+
         req.pose = pose 
         self.inv_vel_client.call_async(req)
 
@@ -40,9 +41,9 @@ class Robot(Node):
         q_dot_vec = [response.q_1_dot, response.q_2_dot, response.q_3_dot, response.q_4_dot]
         rclpy.spin_once(self)
         while(self.update_position(q_dot_vec, interval) == 1):
-            rclpy.spin_once(self)
+            
             time.sleep(interval)
-
+            rclpy.spin_once(self)
         return 0
 
 
