@@ -94,11 +94,10 @@ def main():
     rclpy.init()
     rob = Robot()
 
-    rob.move_to_pose([-281.4, 0.0, 224.326, 0.0, 0.707, -0.707, 0.0])
+    # rob.move_to_pose([-150.4, 0.0, 100.326, 0.0, 0.707, -0.707, 0.0])
     time.sleep(3)
     input_twist = Twist()
-
-    input_twist.linear.y = 100.0
+    # input_twist.linear.y = 100.0
     input_twist.linear.z = 50.0
     # input_twist.angular.z = 10.0
 

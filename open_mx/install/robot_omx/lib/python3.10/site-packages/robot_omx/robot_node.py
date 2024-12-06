@@ -54,22 +54,23 @@ class Robot(Node):
 
         q_dot_vec = [joint_velocities.q_1_dot, joint_velocities.q_2_dot, joint_velocities.q_3_dot, joint_velocities.q_4_dot]
         rclpy.spin_once(self)
-
+        joint_values = self.joint_values
         print(f'The joint velocities are {joint_velocities}')
-        while(self.update_position(q_dot_vec, interval) == 1):
+        while(True):
+            joint_values = self.update_position(q_dot_vec, interval, joint_values)
             time.sleep(interval)
             rclpy.spin_once(self)
 
         return 0
 
 
-    def update_position(self, velocities, interval):
+    def update_position(self, velocities, interval, initial_joint_values):
         req = SetJointPosition.Request()
         new_joint_values = []
 
 
         for i in range(len(velocities)):
-            new_joint_values.append(self.joint_values[i] + velocities[i]*interval)
+            new_joint_values.append(initial_joint_values[i] + velocities[i]*interval)
 
         print(f'The joint angles are now: {new_joint_values}\n')
         # Set request variable including joint names, joint values, and path time
@@ -83,8 +84,7 @@ class Robot(Node):
             self.goal_joint_space.call_async(req)
         except Exception as e:
             self.get_logger().info('Sending Goal Joint failed %r' % (e,))
-            return -1
-        return 1
+        return new_joint_values
 
 
 
@@ -94,11 +94,11 @@ def main():
     rclpy.init()
     rob = Robot()
 
-    rob.move_to_pose([-281.4, 0.0, 224.326, 0.0, 0.707, -0.707, 0.0])
+    # rob.move_to_pose([-150.4, 0.0, 100.326, 0.0, 0.707, -0.707, 0.0])
     time.sleep(3)
     input_twist = Twist()
-
-    input_twist.linear.y = 100.0
+    print(f'the twist is {input_twist}')
+    # input_twist.linear.y = 100.0
     input_twist.linear.z = 50.0
     # input_twist.angular.z = 10.0
 
