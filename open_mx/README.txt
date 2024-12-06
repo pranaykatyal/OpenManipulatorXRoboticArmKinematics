@@ -1,7 +1,6 @@
 ################################################ USER CREATED PACKAGES ###############################################
 PACKAGE #1: custom_messages:
-Purpose - Defines interface .msg and .srv files that are used to transfer information. Currently, it is only used to
-define InvKin.srv, which specifies data types sent between the inverse kinematic server and client
+Purpose - Defines interface .msg and .srv files that are used to transfer information.
 
 --------------------------------------------------------------------------------------------------------------------
 PACKAGE #2: robot_omx
@@ -11,13 +10,16 @@ Files:
 	forward_kin_subscriber.py - Creates a subscriber that listens for a "joint_values" topic and then calculates the resulting pose.
 	inv_kin_client.py - Creates a client that sends desired poses to a server.
 	inv_kin_server.py - Receives desired poses from the client, and calculates inverse kinematics. It returns the needed joint angles to the client.
-	
+	velocity_server.py - Creates two services to calculate forward and inverse velocity kinematics.
+	robot_node.py - Central file used for velocity control.
 
 HOW TO USE:
 Commands to launch the nodes: 
 	ros2 run robot_omx joint_listener
         ros2 run robot_omx inverse_server
         ros2 run robot_omx inverse_client
+        ros2 run robot_omx velocity_server
+        ros2 run robot_omx robot
 
 To Interact with joint_listener:
 	Publish to it using the following statement:
@@ -35,7 +37,10 @@ To send user poses to the inverse kinematics server through the CLIENT, use the 
 	
 # To send user poses to the inverse_velocity_server DIRECTLY, use the following: 
 	ros2 service call /inverse_velocity_server custom_messages/srv/Velocity "{q_1: 0.0, q_2: 0.0, q_3: 0.0, q_4: 0.0, q_1_dot: 0.0, q_2_dot: 0.0, q_3_dot: 0.0, q_4_dot: 0.0}"
-		
+	
+	
+# To run the velocity control, call the robot node:
+	ros2 run robot_omx robot
 ################################################ PROVIDED PACKAGES FROM CANVAS ##########################################
 DynamixelSDK
 dynamixel_workbench
@@ -50,12 +55,6 @@ robotis_manipulator
 ########################################### MOVING THE ROBOT ########################################################
 First, make sure you have connected to the robot:
 ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py
-
-To send the robot to the positions provided by the professor:
-ros2 service call /goal_joint_space_path open_manipulator_msgs/srv/SetJointPosition
-"{joint_position: {joint_name: ['joint1', 'joint2', 'joint3', 'joint4'], position: [1.0, -1.0, 0.5, 0.0],
-max_accelerations_scaling_factor: 0.5, max_velocity_scaling_factor: 0.5}}"
-
 
 
 ################################## LISTENING TO ROBOT TOPICS###################################################
