@@ -6,6 +6,7 @@ from custom_messages.srv import InvKin, InvVel
 from sensor_msgs.msg import JointState # We will need to test this in person
 from open_manipulator_msgs.srv import SetJointPosition, SetKinematicsPose
 import time
+import csv
 
 class Robot(Node):
     def __init__(self):
@@ -46,14 +47,17 @@ class Robot(Node):
     
     def set_velocity(self, twist):
         print(f'The twist received is {twist}\n\n')
+        file = csv.writer("positions.csv")
     
-        print("Time, X, Y, Z")
+        file.writerow(["Time", "X", "Y", "Z"])
         rclpy.spin_once(self)
         joint_values = self.joint_values
         print(f'The joint velocities are {joint_velocities}')
         time = 0
+        
 
         while(True):
+
             req = InvVel.Request()
             req.twist = twist
             response = self.inv_vel_client.call_async(req)
@@ -65,7 +69,7 @@ class Robot(Node):
             joint_values = self.update_position(q_dot_vec, interval, joint_values)
             rclpy.spin_once(self)
             time+=interval
-            print(str(time)+",", str(self.curr_pose.x)+",", str(self.curr_pose.y)+",", str(self.curr_pose.z)+",")
+            file.writerow([time, self.curr_pose.x, self.curr_pose.y, self.curr_pose.z])
 
         return 0
 
