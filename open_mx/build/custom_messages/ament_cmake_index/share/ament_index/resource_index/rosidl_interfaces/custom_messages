@@ -2,6 +2,10 @@ srv/InvKin.idl
 srv/InvKin.srv
 srv/InvKin_Request.msg
 srv/InvKin_Response.msg
+srv/InvVel.idl
+srv/InvVel.srv
+srv/InvVel_Request.msg
+srv/InvVel_Response.msg
 srv/Velocity.idl
 srv/Velocity.srv
 srv/Velocity_Request.msg
