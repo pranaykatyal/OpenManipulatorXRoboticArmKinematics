@@ -42,24 +42,27 @@ class Robot(Node):
     def listener_callback(self, msg):
         self.joint_values = msg.position        
     
-    def set_velocity(self, twist, interval):
+    def set_velocity(self, twist):
         print(f'The twist received is {twist}\n\n')
+        i = 0
+        interval = 0.1
 
-        req = InvVel.Request()
-        req.twist = twist
-        response = self.inv_vel_client.call_async(req)
-        rclpy.spin_until_future_complete(self,
-                                         response)  # Ensures program waits for a result prior to printing to the terminal.
-        joint_velocities = response.result()  # Posting result
 
-        q_dot_vec = [joint_velocities.q_1_dot, joint_velocities.q_2_dot, joint_velocities.q_3_dot, joint_velocities.q_4_dot]
         rclpy.spin_once(self)
         joint_values = self.joint_values
-        print(f'The joint velocities are {joint_velocities}')
-        while(True):
-            joint_values = self.update_position(q_dot_vec, interval, joint_values)
+        while(i < 100000):
+            req = InvVel.Request()
+            req.twist = twist
+            response = self.inv_vel_client.call_async(req)
+            rclpy.spin_until_future_complete(self, response)  # Ensures program waits for a result prior to printing to the terminal.
+            joint_velocities = response.result()  # Posting result
             time.sleep(interval)
+
+            q_dot_vec = [joint_velocities.q_1_dot, joint_velocities.q_2_dot, joint_velocities.q_3_dot, joint_velocities.q_4_dot]
+
+            joint_values = self.update_position(q_dot_vec, interval, joint_values)
             rclpy.spin_once(self)
+            i = i + 1
 
         return 0
 
@@ -77,7 +80,8 @@ class Robot(Node):
         req.joint_position.joint_name = ['joint1', 'joint2', 'joint3', 'joint4', 'gripper']
         new_joint_values.append(0.0)
         req.joint_position.position = new_joint_values
-        req.path_time = 0.1
+        req.path_time = interval
+
 
         # make the request and return failure if it fails
         try:
@@ -94,12 +98,11 @@ def main():
     rclpy.init()
     rob = Robot()
 
-    # rob.move_to_pose([-150.4, 0.0, 100.326, 0.0, 0.707, -0.707, 0.0])
+    # rob.move_to_pose([-280.4, -150.0, 240.326, 0.0, 0.707, -0.707, 0.0])
     time.sleep(3)
     input_twist = Twist()
-    print(f'the twist is {input_twist}')
     # input_twist.linear.y = 100.0
-    input_twist.linear.z = 50.0
+    input_twist.linear.y = 50.0
     # input_twist.angular.z = 10.0
 
-    rob.set_velocity(input_twist, 0.1)
+    rob.set_velocity(input_twist)
