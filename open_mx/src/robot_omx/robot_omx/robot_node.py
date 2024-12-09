@@ -53,7 +53,7 @@ class Robot(Node):
         rclpy.spin_once(self)
         joint_values = self.joint_values
         print(f'The joint velocities are {joint_velocities}')
-        time = 0
+        time_elapsed = 0
         
 
         while(True):
@@ -68,8 +68,8 @@ class Robot(Node):
 
             joint_values = self.update_position(q_dot_vec, interval, joint_values)
             rclpy.spin_once(self)
-            time+=interval
-            file.writerow([time, self.curr_pose.x, self.curr_pose.y, self.curr_pose.z])
+            time_elapsed+=interval
+            file.writerow([time_elapsed, self.curr_pose.x, self.curr_pose.y, self.curr_pose.z])
 
         return 0
 
