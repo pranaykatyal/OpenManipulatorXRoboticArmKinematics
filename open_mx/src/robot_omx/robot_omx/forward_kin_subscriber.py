@@ -13,6 +13,7 @@ class Joint_Subscriber(Node):
         super().__init__('joint_subscriber')
         #self.subscription = self.create_subscription(Float32MultiArray, 'joint_values', self.listener_callback, 10) # Old Code
         self.subscription = self.create_subscription(JointState, 'joint_states', self.listener_callback, 10)
+        self.publisher = self.create_publisher(Pose,'EndAffectorPose', 10)
         self.step = 0
 
     def listener_callback(self, msg):

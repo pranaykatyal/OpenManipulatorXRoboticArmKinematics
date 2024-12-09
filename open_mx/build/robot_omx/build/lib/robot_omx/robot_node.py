@@ -6,12 +6,15 @@ from custom_messages.srv import InvKin, InvVel
 from sensor_msgs.msg import JointState # We will need to test this in person
 from open_manipulator_msgs.srv import SetJointPosition, SetKinematicsPose
 import time
+import csv
 
 class Robot(Node):
     def __init__(self):
         super().__init__('Gripper_Robot')
 
         self.subscription = self.create_subscription(JointState, 'joint_states', self.listener_callback, 10)
+        self.pose_sub = self.create_subscription(Pose, 'EndAffectorPose', self.pose_callback, 10)
+
         self.cli = self.create_client(InvKin, 'inverse_server')
         self.inv_vel_client = self.create_client(InvVel, 'inverse_velocity_server')
         self.goal_joint_space = self.create_client(SetJointPosition, 'goal_joint_space_path')
@@ -42,48 +45,65 @@ class Robot(Node):
     def listener_callback(self, msg):
         self.joint_values = msg.position        
     
-    def set_velocity(self, twist, interval):
+    def set_velocity(self, twist):
         print(f'The twist received is {twist}\n\n')
-        req = InvVel.Request()
-        req.twist = twist
-        response = self.inv_vel_client.call_async(req)
-        rclpy.spin_until_future_complete(self,
-                                         response)  # Ensures program waits for a result prior to printing to the terminal.
-        joint_velocities = response.result()  # Posting result
+        i = 0
+        interval = 0.1
+        with open('positions.csv', 'w', newline='') as csvfile:
+            file = csv.writer(csvfile)
+            file.writerow(["Time", "X", "Y", "Z"])
 
-        q_dot_vec = [joint_velocities.q_1_dot, joint_velocities.q_2_dot, joint_velocities.q_3_dot, joint_velocities.q_4_dot]
-        rclpy.spin_once(self)
-
-        print(f'The joint velocities are {joint_velocities}')
-        while(self.update_position(q_dot_vec, interval) == 1):
-            time.sleep(interval)
             rclpy.spin_once(self)
+            joint_values = self.joint_values
+            time_elapsed = 0
 
+            while(i < 100000):
+
+                req = InvVel.Request()
+                req.twist = twist
+                response = self.inv_vel_client.call_async(req)
+                rclpy.spin_until_future_complete(self, response)  # Ensures program waits for a result prior to printing to the terminal.
+                joint_velocities = response.result()  # Posting result
+                time.sleep(interval)
+
+                q_dot_vec = [joint_velocities.q_1_dot, joint_velocities.q_2_dot, joint_velocities.q_3_dot, joint_velocities.q_4_dot]
+
+                joint_values = self.update_position(q_dot_vec, interval, joint_values)
+                rclpy.spin_once(self)
+
+                i = i + 1
+                time_elapsed+=interval
+                print(f'The x position is {self.curr_pose.position.x}\n')
+                file.writerow([time_elapsed, self.curr_pose.position.x, self.curr_pose.position.y, self.curr_pose.position.z])
         return 0
 
 
-    def update_position(self, velocities, interval):
+    def update_position(self, velocities, interval, initial_joint_values):
         req = SetJointPosition.Request()
         new_joint_values = []
 
 
         for i in range(len(velocities)):
-            new_joint_values.append(self.joint_values[i] + velocities[i]*interval)
+            new_joint_values.append(initial_joint_values[i] + velocities[i]*interval)
 
         print(f'The joint angles are now: {new_joint_values}\n')
         # Set request variable including joint names, joint values, and path time
         req.joint_position.joint_name = ['joint1', 'joint2', 'joint3', 'joint4', 'gripper']
         new_joint_values.append(0.0)
         req.joint_position.position = new_joint_values
-        req.path_time = 0.01
+        req.path_time = interval
+
 
         # make the request and return failure if it fails
         try:
             self.goal_joint_space.call_async(req)
         except Exception as e:
             self.get_logger().info('Sending Goal Joint failed %r' % (e,))
-            return -1
-        return 1
+        return new_joint_values
+
+    def pose_callback(self, msg):
+        self.curr_pose = msg
+        print(f'The msg {msg}\n')
 
 
 
@@ -93,12 +113,11 @@ def main():
     rclpy.init()
     rob = Robot()
 
-    rob.move_to_pose([-281.4, 0.0, 224.326, 0.0, 0.707, -0.707, 0.0])
+    # rob.move_to_pose([-280.4, -150.0, 240.326, 0.0, 0.707, -0.707, 0.0])
     time.sleep(3)
     input_twist = Twist()
-
-    input_twist.linear.y = 100.0
-    # input_twist.linear.z = 500.0
+    # input_twist.linear.y = 100.0
+    input_twist.linear.y = 50.0
     # input_twist.angular.z = 10.0
 
-    rob.set_velocity(input_twist, 0.1)
+    rob.set_velocity(input_twist)
