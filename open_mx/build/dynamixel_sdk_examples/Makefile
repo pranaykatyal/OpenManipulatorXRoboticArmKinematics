@@ -210,6 +210,43 @@ read_write_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_node.dir/build.make CMakeFiles/read_write_node.dir/build
 .PHONY : read_write_node/fast
 
+#=============================================================================
+# Target rules for targets named current_read_write_node
+
+# Build rule for target.
+current_read_write_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 current_read_write_node
+.PHONY : current_read_write_node
+
+# fast build rule for target.
+current_read_write_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/current_read_write_node.dir/build.make CMakeFiles/current_read_write_node.dir/build
+.PHONY : current_read_write_node/fast
+
+src/current_read_write_node.o: src/current_read_write_node.cpp.o
+.PHONY : src/current_read_write_node.o
+
+# target to build an object file
+src/current_read_write_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/current_read_write_node.dir/build.make CMakeFiles/current_read_write_node.dir/src/current_read_write_node.cpp.o
+.PHONY : src/current_read_write_node.cpp.o
+
+src/current_read_write_node.i: src/current_read_write_node.cpp.i
+.PHONY : src/current_read_write_node.i
+
+# target to preprocess a source file
+src/current_read_write_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/current_read_write_node.dir/build.make CMakeFiles/current_read_write_node.dir/src/current_read_write_node.cpp.i
+.PHONY : src/current_read_write_node.cpp.i
+
+src/current_read_write_node.s: src/current_read_write_node.cpp.s
+.PHONY : src/current_read_write_node.s
+
+# target to generate assembly for a file
+src/current_read_write_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/current_read_write_node.dir/build.make CMakeFiles/current_read_write_node.dir/src/current_read_write_node.cpp.s
+.PHONY : src/current_read_write_node.cpp.s
+
 src/read_write_node.o: src/read_write_node.cpp.o
 .PHONY : src/read_write_node.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... dynamixel_sdk_examples_uninstall"
 	@echo "... uninstall"
+	@echo "... current_read_write_node"
 	@echo "... read_write_node"
+	@echo "... src/current_read_write_node.o"
+	@echo "... src/current_read_write_node.i"
+	@echo "... src/current_read_write_node.s"
 	@echo "... src/read_write_node.o"
 	@echo "... src/read_write_node.i"
 	@echo "... src/read_write_node.s"

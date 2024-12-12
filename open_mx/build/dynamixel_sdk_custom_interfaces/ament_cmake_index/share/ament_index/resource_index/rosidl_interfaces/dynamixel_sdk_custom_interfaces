@@ -1,5 +1,11 @@
+msg/SetCurrent.idl
+msg/SetCurrent.msg
 msg/SetPosition.idl
 msg/SetPosition.msg
+srv/GetCurrent.idl
+srv/GetCurrent.srv
+srv/GetCurrent_Request.msg
+srv/GetCurrent_Response.msg
 srv/GetPosition.idl
 srv/GetPosition.srv
 srv/GetPosition_Request.msg

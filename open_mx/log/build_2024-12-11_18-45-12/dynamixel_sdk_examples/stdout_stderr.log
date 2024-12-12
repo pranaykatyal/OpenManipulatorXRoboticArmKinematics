@@ -1,0 +1,9 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/current_read_write_node.dir/src/current_read_write_node.cpp.o[0m
+[ 75%] Built target read_write_node
+[01m[K/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_examples/src/current_read_write_node.cpp:37:10:[m[K [01;31m[Kfatal error: [m[Kdynamixel_sdk_custom_interfaces/msg/set_current.hpp: No such file or directory
+   37 | #include [01;31m[K"dynamixel_sdk_custom_interfaces/msg/set_current.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/current_read_write_node.dir/build.make:76: CMakeFiles/current_read_write_node.dir/src/current_read_write_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/current_read_write_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

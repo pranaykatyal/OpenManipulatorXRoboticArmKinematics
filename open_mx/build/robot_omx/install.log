@@ -1,3 +1,4 @@
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/joint_controller.py
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/gripper_server.py
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/__init__.py
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/kinematic_library.py
@@ -8,6 +9,7 @@
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/robot_node.py
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/rot_to_quat.py
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/forward_kin_subscriber.py
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/__pycache__/joint_controller.cpython-310.pyc
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/__pycache__/gripper_server.cpython-310.pyc
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/__pycache__/__init__.cpython-310.pyc
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx/__pycache__/kinematic_library.cpython-310.pyc
@@ -29,6 +31,7 @@
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/python3.10/site-packages/robot_omx-0.0.0-py3.10.egg-info/zip-safe
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx/inverse_client
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx/inverse_server
+/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx/joint_controller
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx/joint_listener
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx/robot
 /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx/lib/robot_omx/velocity_server

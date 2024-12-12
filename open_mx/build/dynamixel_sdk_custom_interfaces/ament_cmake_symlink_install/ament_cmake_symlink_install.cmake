@@ -361,11 +361,20 @@ include("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamix
 # install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/msg/SetPosition.idl" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/msg")
 ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/msg/SetPosition.idl" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/msg")
 
+# install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/msg/SetCurrent.idl" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/msg")
+ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/msg/SetCurrent.idl" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/msg")
+
 # install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/GetPosition.idl" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
 ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/GetPosition.idl" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
 
+# install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/GetCurrent.idl" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
+ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/GetCurrent.idl" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
+
 # install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/msg")
 ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/msg")
+
+# install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetCurrent.msg" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/msg")
+ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetCurrent.msg" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/msg")
 
 # install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/srv/GetPosition.srv" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
 ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/srv/GetPosition.srv" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
@@ -375,6 +384,15 @@ ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinema
 
 # install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_cmake/srv/GetPosition_Response.msg" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
 ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_cmake/srv/GetPosition_Response.msg" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
+
+# install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/srv/GetCurrent.srv" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
+ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/srv/GetCurrent.srv" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
+
+# install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_cmake/srv/GetCurrent_Request.msg" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
+ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_cmake/srv/GetCurrent_Request.msg" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
+
+# install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_cmake/srv/GetCurrent_Response.msg" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
+ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/rosidl_cmake/srv/GetCurrent_Response.msg" "DESTINATION" "share/dynamixel_sdk_custom_interfaces/srv")
 
 # install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_custom_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces" FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_custom_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_custom_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

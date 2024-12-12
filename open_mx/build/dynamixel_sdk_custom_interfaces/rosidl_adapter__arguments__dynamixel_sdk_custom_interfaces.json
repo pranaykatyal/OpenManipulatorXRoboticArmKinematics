@@ -2,6 +2,8 @@
   "package_name": "dynamixel_sdk_custom_interfaces",
   "non_idl_tuples": [
     "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces:msg/SetPosition.msg",
-    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces:srv/GetPosition.srv"
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces:msg/SetCurrent.msg",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces:srv/GetPosition.srv",
+    "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces:srv/GetCurrent.srv"
   ]
 }

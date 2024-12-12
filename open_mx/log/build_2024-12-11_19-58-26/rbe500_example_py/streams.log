@@ -1,0 +1,20 @@
+[0.400s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/rbe500_example_py': PYTHONPATH=/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500_example_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/rbe500_example_py build --build-base /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500_example_py/build install --record /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500_example_py/install.log --single-version-externally-managed install_data
+[0.554s] running egg_info
+[0.554s] writing ../../build/rbe500_example_py/rbe500_example_py.egg-info/PKG-INFO
+[0.554s] writing dependency_links to ../../build/rbe500_example_py/rbe500_example_py.egg-info/dependency_links.txt
+[0.554s] writing entry points to ../../build/rbe500_example_py/rbe500_example_py.egg-info/entry_points.txt
+[0.554s] writing requirements to ../../build/rbe500_example_py/rbe500_example_py.egg-info/requires.txt
+[0.554s] writing top-level names to ../../build/rbe500_example_py/rbe500_example_py.egg-info/top_level.txt
+[0.555s] reading manifest file '../../build/rbe500_example_py/rbe500_example_py.egg-info/SOURCES.txt'
+[0.556s] writing manifest file '../../build/rbe500_example_py/rbe500_example_py.egg-info/SOURCES.txt'
+[0.556s] running build
+[0.556s] running build_py
+[0.556s] running install
+[0.556s] running install_lib
+[0.557s] running install_data
+[0.557s] running install_egg_info
+[0.558s] removing '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py/lib/python3.10/site-packages/rbe500_example_py-0.0.0-py3.10.egg-info' (and everything under it)
+[0.558s] Copying ../../build/rbe500_example_py/rbe500_example_py.egg-info to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py/lib/python3.10/site-packages/rbe500_example_py-0.0.0-py3.10.egg-info
+[0.559s] running install_scripts
+[0.572s] Installing basic_robot_control script to /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py/lib/rbe500_example_py
+[0.572s] writing list of installed files to '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/rbe500_example_py/install.log'

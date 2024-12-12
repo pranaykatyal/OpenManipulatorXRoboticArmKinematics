@@ -67,9 +67,13 @@ include CMakeFiles/dynamixel_sdk_custom_interfaces.dir/compiler_depend.make
 include CMakeFiles/dynamixel_sdk_custom_interfaces.dir/progress.make
 
 CMakeFiles/dynamixel_sdk_custom_interfaces: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg
+CMakeFiles/dynamixel_sdk_custom_interfaces: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetCurrent.msg
 CMakeFiles/dynamixel_sdk_custom_interfaces: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/srv/GetPosition.srv
 CMakeFiles/dynamixel_sdk_custom_interfaces: rosidl_cmake/srv/GetPosition_Request.msg
 CMakeFiles/dynamixel_sdk_custom_interfaces: rosidl_cmake/srv/GetPosition_Response.msg
+CMakeFiles/dynamixel_sdk_custom_interfaces: /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/srv/GetCurrent.srv
+CMakeFiles/dynamixel_sdk_custom_interfaces: rosidl_cmake/srv/GetCurrent_Request.msg
+CMakeFiles/dynamixel_sdk_custom_interfaces: rosidl_cmake/srv/GetCurrent_Response.msg
 CMakeFiles/dynamixel_sdk_custom_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/dynamixel_sdk_custom_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 

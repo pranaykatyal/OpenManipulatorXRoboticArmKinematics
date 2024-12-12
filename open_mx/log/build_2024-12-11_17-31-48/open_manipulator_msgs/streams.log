@@ -1,0 +1,23 @@
+[0.021s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py:/opt/ros/humble /usr/bin/cmake --build /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/open_manipulator_msgs -- -j20 -l20
+[0.086s] [  1%] Built target open_manipulator_msgs__cpp
+[0.089s] [  8%] Built target ament_cmake_python_symlink_open_manipulator_msgs
+[0.089s] [ 12%] Built target open_manipulator_msgs__rosidl_generator_c
+[0.109s] [ 24%] Built target open_manipulator_msgs__rosidl_typesupport_cpp
+[0.110s] [ 35%] Built target open_manipulator_msgs__rosidl_typesupport_fastrtps_cpp
+[0.113s] [ 47%] Built target open_manipulator_msgs__rosidl_typesupport_c
+[0.115s] [ 58%] Built target open_manipulator_msgs__rosidl_typesupport_introspection_cpp
+[0.117s] [ 76%] Built target open_manipulator_msgs__rosidl_typesupport_introspection_c
+[0.117s] [ 82%] Built target open_manipulator_msgs__rosidl_typesupport_fastrtps_c
+[0.136s] [ 82%] Built target open_manipulator_msgs
+[0.156s] [ 83%] Built target open_manipulator_msgs__py
+[0.184s] [ 93%] Built target open_manipulator_msgs__rosidl_generator_py
+[0.201s] [ 95%] Built target open_manipulator_msgs__rosidl_typesupport_introspection_c__pyext
+[0.205s] [100%] Built target open_manipulator_msgs__rosidl_typesupport_c__pyext
+[0.205s] [100%] Built target open_manipulator_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.230s] running egg_info
+[0.231s] writing open_manipulator_msgs.egg-info/PKG-INFO
+[0.231s] writing dependency_links to open_manipulator_msgs.egg-info/dependency_links.txt
+[0.231s] writing top-level names to open_manipulator_msgs.egg-info/top_level.txt
+[0.233s] reading manifest file 'open_manipulator_msgs.egg-info/SOURCES.txt'
+[0.234s] writing manifest file 'open_manipulator_msgs.egg-info/SOURCES.txt'
+[0.252s] [100%] Built target ament_cmake_python_build_open_manipulator_msgs_egg

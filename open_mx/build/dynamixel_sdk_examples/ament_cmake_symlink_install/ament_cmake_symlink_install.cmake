@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "read_write_node" "DESTINATION" "lib/dynamixel_sdk_examples")
+# install("TARGETS" "read_write_node" "current_read_write_node" "DESTINATION" "lib/dynamixel_sdk_examples")
 include("/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_examples/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/dynamixel_sdk_examples/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_examples" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

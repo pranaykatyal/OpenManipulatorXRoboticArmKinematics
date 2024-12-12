@@ -1,0 +1,24 @@
+[0.018s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules:/opt/ros/humble /usr/bin/cmake --build /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages -- -j20 -l20
+[0.061s] [  2%] Built target custom_messages__cpp
+[0.062s] [ 12%] Built target custom_messages__rosidl_generator_c
+[0.073s] [ 12%] Built target ament_cmake_python_symlink_custom_messages
+[0.084s] [ 23%] Built target custom_messages__rosidl_typesupport_cpp
+[0.087s] [ 34%] Built target custom_messages__rosidl_typesupport_fastrtps_cpp
+[0.088s] [ 44%] Built target custom_messages__rosidl_typesupport_introspection_cpp
+[0.088s] [ 55%] Built target custom_messages__rosidl_typesupport_introspection_c
+[0.089s] [ 65%] Built target custom_messages__rosidl_typesupport_c
+[0.090s] [ 76%] Built target custom_messages__rosidl_typesupport_fastrtps_c
+[0.106s] [ 76%] Built target custom_messages
+[0.123s] [ 78%] Built target custom_messages__py
+[0.141s] [ 87%] Built target custom_messages__rosidl_generator_py
+[0.161s] [ 91%] Built target custom_messages__rosidl_typesupport_fastrtps_c__pyext
+[0.162s] [ 95%] Built target custom_messages__rosidl_typesupport_introspection_c__pyext
+[0.163s] [100%] Built target custom_messages__rosidl_typesupport_c__pyext
+[0.224s] running egg_info
+[0.225s] writing custom_messages.egg-info/PKG-INFO
+[0.225s] writing dependency_links to custom_messages.egg-info/dependency_links.txt
+[0.225s] writing top-level names to custom_messages.egg-info/top_level.txt
+[0.226s] reading manifest file 'custom_messages.egg-info/SOURCES.txt'
+[0.226s] writing manifest file 'custom_messages.egg-info/SOURCES.txt'
+[0.243s] [100%] Built target ament_cmake_python_build_custom_messages_egg
+[0.253s] Invoked command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/open_manipulator_x_description:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/cmake_modules:/opt/ros/humble /usr/bin/cmake --build /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages -- -j20 -l20

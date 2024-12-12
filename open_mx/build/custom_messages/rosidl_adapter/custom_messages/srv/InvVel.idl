@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_messages/srv/InvVel.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Twist.idl"
+
+module custom_messages {
+  module srv {
+    struct InvVel_Request {
+      geometry_msgs::msg::Twist twist;
+    };
+    struct InvVel_Response {
+      float q_1_dot;
+
+      float q_2_dot;
+
+      float q_3_dot;
+
+      float q_4_dot;
+    };
+  };
+};

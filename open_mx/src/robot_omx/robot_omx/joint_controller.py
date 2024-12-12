@@ -4,6 +4,7 @@ from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray # This standard message type is used to receive the 3 parameters as an array.
 from geometry_msgs.msg import Pose
 from sensor_msgs.msg import JointState # We will need to test this in person
+from dynamixel_sdk_custom_interfaces.msg import SetCurrent
 
 class JointController(Node):
 
@@ -32,5 +33,25 @@ class JointController(Node):
 
         #TODO: set effort
 
+
+# The below class creates a node that sends a pose to a server. The server then returns the joint parameters for that pose.
+class Control_Publisher(Node):
+
+    def __init__(self):
+        # Creating a client that sends a desired pose to inverse_server
+        super().__init__('control_publisher')
+        self.publisher = self.create_publisher(SetCurrent, 'control_values', 10)  # (Type, name)
+
+    def control_client_request(self, id, current):
+        self.get_logger().info(f'The current value is {current}, of type {type(current)}') # Posting the result to the terminal
+        self.publisher.publish(id, current)
+
+
+
+def main():
+    rclpy.init()
+    control_publisher = Control_Publisher()  # initializing the publisher object
+    control_publisher.control_client_request(14, 1.0)
+    rclpy.spin(control_publisher)  # Running the node continously
 
     

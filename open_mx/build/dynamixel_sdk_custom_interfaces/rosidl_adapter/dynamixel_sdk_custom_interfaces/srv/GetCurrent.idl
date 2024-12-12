@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dynamixel_sdk_custom_interfaces/srv/GetCurrent.srv
+// generated code does not contain a copyright notice
+
+
+module dynamixel_sdk_custom_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Constants" "\n"
+      "Request")
+    struct GetCurrent_Request {
+      uint8 id;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct GetCurrent_Response {
+      int16 current;
+    };
+  };
+};

@@ -1,0 +1,23 @@
+[0.020s] Invoking command in '/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/robot_omx:/home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/install/rbe500_example_py:/opt/ros/humble /usr/bin/cmake --build /home/lucasb/OpenManipulatorXRoboticArmKinematics/open_mx/build/custom_messages -- -j20 -l20
+[0.081s] [ 10%] Built target custom_messages__rosidl_generator_c
+[0.084s] [ 12%] Built target custom_messages__cpp
+[0.086s] [ 12%] Built target ament_cmake_python_symlink_custom_messages
+[0.099s] [ 23%] Built target custom_messages__rosidl_typesupport_introspection_c
+[0.103s] [ 34%] Built target custom_messages__rosidl_typesupport_fastrtps_c
+[0.103s] [ 44%] Built target custom_messages__rosidl_typesupport_introspection_cpp
+[0.104s] [ 55%] Built target custom_messages__rosidl_typesupport_c
+[0.105s] [ 65%] Built target custom_messages__rosidl_typesupport_cpp
+[0.108s] [ 76%] Built target custom_messages__rosidl_typesupport_fastrtps_cpp
+[0.127s] [ 76%] Built target custom_messages
+[0.146s] [ 78%] Built target custom_messages__py
+[0.171s] [ 87%] Built target custom_messages__rosidl_generator_py
+[0.190s] [ 91%] Built target custom_messages__rosidl_typesupport_introspection_c__pyext
+[0.194s] [ 95%] Built target custom_messages__rosidl_typesupport_c__pyext
+[0.194s] [100%] Built target custom_messages__rosidl_typesupport_fastrtps_c__pyext
+[0.228s] running egg_info
+[0.229s] writing custom_messages.egg-info/PKG-INFO
+[0.229s] writing dependency_links to custom_messages.egg-info/dependency_links.txt
+[0.229s] writing top-level names to custom_messages.egg-info/top_level.txt
+[0.230s] reading manifest file 'custom_messages.egg-info/SOURCES.txt'
+[0.231s] writing manifest file 'custom_messages.egg-info/SOURCES.txt'
+[0.249s] [100%] Built target ament_cmake_python_build_custom_messages_egg
