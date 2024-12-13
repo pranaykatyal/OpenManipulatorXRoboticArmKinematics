@@ -32,8 +32,8 @@
 #include <string>
 
 #include "dynamixel_sdk/dynamixel_sdk.h"
-// #include "dynamixel_sdk_custom_interfaces/msg/set_position.hpp"
-// #include "dynamixel_sdk_custom_interfaces/srv/get_position.hpp"
+#include "dynamixel_sdk_custom_interfaces/msg/set_position.hpp"
+#include "dynamixel_sdk_custom_interfaces/srv/get_position.hpp"
 #include "dynamixel_sdk_custom_interfaces/msg/set_current.hpp"
 #include "dynamixel_sdk_custom_interfaces/srv/get_current.hpp"
 #include "rclcpp/rclcpp.hpp"
@@ -45,7 +45,7 @@
 #define ADDR_OPERATING_MODE 11
 #define ADDR_TORQUE_ENABLE 64
 // #define ADDR_GOAL_POSITION 116
-// #define ADDR_PRESENT_POSITION 132
+#define ADDR_PRESENT_POSITION 132
 
 // smh I added these for current control ----------------------------------------------------
 #define ADDR_GOAL_CURRENT 102
@@ -146,6 +146,34 @@ ReadWriteNode::ReadWriteNode()
     };
 
   get_current_server_ = create_service<GetCurrent>("get_current", get_present_current);
+
+  auto get_present_position =
+    [this](
+    const std::shared_ptr<GetPosition::Request> request,
+    std::shared_ptr<GetPosition::Response> response) -> void
+    {
+      // Read Present Position (length : 4 bytes) and Convert uint32 -> int32
+      // When reading 2 byte data from AX / MX(1.0), use read2ByteTxRx() instead.
+      dxl_comm_result = packetHandler->read4ByteTxRx(
+        portHandler,
+        (uint8_t) request->id,
+        ADDR_PRESENT_POSITION,
+        reinterpret_cast<uint32_t *>(&present_position),
+        &dxl_error
+      );
+
+      RCLCPP_INFO(
+        this->get_logger(),
+        "Get [ID: %d] [Present Position: %d]",
+        request->id,
+        present_position
+      );
+
+      response->position = present_position;
+
+    };
+
+  get_position_server_ = create_service<GetPosition>("get_position", get_present_position);
 }
 
 ReadWriteNode::~ReadWriteNode()

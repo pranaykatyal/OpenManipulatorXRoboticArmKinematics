@@ -17,7 +17,7 @@ class Inv_Client(Node):
         super().__init__('inv_client')
         self.cli = self.create_client(InvKin, 'inverse_server') #(Type, name)
         while not self.cli.wait_for_service(timeout_sec=1.0): # Every second it checks to see if the server is available
-        	self.get_logger().info('The serviice is not available yet. Will try again every second')
+            self.get_logger().info('The serviice is not available yet. Will try again every second')
         self.req = InvKin.Request() # Creating a request object that is filled in the request method below
         # self.goal_joint_space_req = SetJointPosition.Request()
 

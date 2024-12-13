@@ -127,9 +127,11 @@ ReadWriteNode::ReadWriteNode()
       );
 
       response->position = present_position;
+
     };
 
   get_position_server_ = create_service<GetPosition>("get_position", get_present_position);
+
 }
 
 ReadWriteNode::~ReadWriteNode()
