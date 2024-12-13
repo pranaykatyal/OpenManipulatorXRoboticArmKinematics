@@ -4,7 +4,7 @@ from custom_messages.srv import SetTarget
 from dynamixel_sdk_custom_interfaces.srv import GetPosition
 from dynamixel_sdk_custom_interfaces.msg import SetCurrent
 
-interval = 0.01
+interval = 1
 
 class JointController(Node):
 
@@ -32,9 +32,11 @@ class JointController(Node):
         # Create and send request to get current position of joint
         req = GetPosition.Request() 
         req.id = 14
-        pos = self.joint_val_cli.call_async(req)
-        rclpy.spin_until_future_complete(self, pos) # Ensures program waits for a result prior to printing to the terminal.
+        response = self.joint_val_cli.call(req)
+        # rclpy.spin_until_future_complete(self, response) # Ensures program waits for a result prior to printing to the terminal.
+        
 
+        pos = response.result().position
         # Calculate error between curr pos and target
         thiserror = self.target - pos
         
@@ -46,8 +48,8 @@ class JointController(Node):
         # Create message with the new effort value and publish it to the current sub
         thismsg = SetCurrent()
         thismsg.id = 14
-        thismsg.current = effort
-        self.current_pub.publish(effort)
+        thismsg.current = 10
+        self.current_pub.publish(thismsg)
 
 
 
@@ -55,6 +57,11 @@ class JointController(Node):
 def main():
     rclpy.init()
     jc = JointController(1000)
+    req = GetPosition.Request() 
+    req.id = 14
+    response = jc.joint_val_cli.call_async(req)
+    rclpy.spin_until_future_complete(jc, response) # Ensures program waits for a result prior to printing to the terminal.
+    jc.get_logger().info(str(response.result().position))
     rclpy.spin(jc)  # Running the node continously
 
     
